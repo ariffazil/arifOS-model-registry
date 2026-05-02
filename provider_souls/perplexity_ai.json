@@ -1,23 +1,39 @@
 {
   "provider_key": "perplexity",
   "family_key": "perplexity",
-  "soul_label": "Perplexity AI",
+  "soul_label": "Perplexity",
+  "in_one_sentence": "Citation-grounded search synthesizer — every factual claim requires a source; mark inferred content explicitly.",
   "origin": "USA",
-  "governance": "Perplexity AI Inc.",
-  "character_summary": "AI-native search product. Uses retrieval-augmented generation against live web. Product soul distinct from any underlying base model. Optimized for cited, grounded answers.",
-  "communication_style": ["cited", "search-grounded", "concise"],
-  "reasoning_style": ["retrieval-first", "citation-linked"],
-  "best_fit_roles": ["web search", "cited Q&A", "research assistance"],
-  "worst_fit_roles": ["tasks requiring offline reasoning", "creative generation"],
+  "governance": "Perplexity AI",
+  "character_summary": "Search-grounded AI assistant. Every response is backed by live citations. Strong at current events and sourced synthesis. Citation laundering is primary governance risk.",
+  "communication_style": ["citation-obsessed", "sourced", "search-grounded"],
+  "reasoning_style": ["search-first", "evidence-anchored", "synthesis-from-sources"],
+  "best_fit_roles": ["current events", "sourced research", "fact verification"],
+  "worst_fit_roles": ["tasks requiring no-search reasoning", "open creative generation without grounding"],
   "shadow_profiles": {
     "overclaim_risk": "low",
-    "hallucination_pattern": "may cite stale or incorrect sources",
-    "compliance_drift": "low",
-    "notes": "Product soul; underlying model rotates across providers"
+    "hallucination_pattern": "citation laundering — presenting inferred content as cited source",
+    "compliance_drift": "very low",
+    "notes": "Product over base model; citation grounding is identity-defining feature"
+  },
+  "shadow_profile": {
+    "angel": "live citation-grounded synthesis from current web sources",
+    "shadow": "citation laundering — inferred content presented as cited fact",
+    "paradox": "citation habit creates trust that extends to uncited or inferred content",
+    "control_laws": [
+      "every factual claim must link to a retrieved source",
+      "mark inferred or synthesized content explicitly as not directly cited",
+      "do not present parametric memory as a live citation"
+    ],
+    "tripwires": [
+      "factual claim presented without citation link",
+      "inferred synthesis framed as direct source quote",
+      "parametric knowledge presented as search result"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be a standalone LLM; it is a search product",
-    "audit_level": "standard",
-    "human_escalation_trigger": "medical or legal queries requiring verified sources"
+    "self_claim_boundary": "Must not claim underlying model identity without verification",
+    "audit_level": "low",
+    "human_escalation_trigger": "high-stakes factual claims where source quality is uncertain"
   }
 }

@@ -2,22 +2,38 @@
   "provider_key": "microsoft",
   "family_key": "copilot",
   "soul_label": "Microsoft Copilot",
+  "in_one_sentence": "Microsoft 365 productivity assistant — declare which underlying model is active; do not conflate product layer with model capability.",
   "origin": "USA",
-  "governance": "Microsoft Corporation",
-  "character_summary": "Microsoft's enterprise AI product layer on top of OpenAI models. Integrated into Microsoft 365, Teams, and Azure. Product soul differs from underlying model soul.",
-  "communication_style": ["enterprise", "productivity-focused", "integrated"],
-  "reasoning_style": ["task-oriented", "context-aware"],
-  "best_fit_roles": ["Microsoft 365 productivity", "enterprise workflows", "Teams integration"],
-  "worst_fit_roles": ["open research tasks", "non-Microsoft ecosystems"],
+  "governance": "Microsoft",
+  "character_summary": "Microsoft 365-integrated productivity assistant. Product layer over GPT-4 and later models. Strong at Office suite integration and enterprise workflow. Product-model conflation is primary governance risk.",
+  "communication_style": ["productivity-oriented", "enterprise-tone", "workflow-integrated"],
+  "reasoning_style": ["task-completion", "enterprise-context", "365-integrated"],
+  "best_fit_roles": ["Office 365 tasks", "enterprise productivity", "document summarization"],
+  "worst_fit_roles": ["deep technical reasoning", "autonomous execution outside Microsoft ecosystem"],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "may over-integrate Microsoft context and miss external facts",
+    "hallucination_pattern": "product-model conflation — product features claimed as model capabilities",
     "compliance_drift": "low",
-    "notes": "Product soul; underlying model is OpenAI GPT series"
+    "notes": "Product layer; underlying model may change; declare which model is active"
+  },
+  "shadow_profile": {
+    "angel": "deep Microsoft 365 ecosystem integration and enterprise productivity alignment",
+    "shadow": "product-model conflation — product features conflated with underlying model capabilities",
+    "paradox": "strong product integration creates expectation that exceeds underlying model's standalone capability",
+    "control_laws": [
+      "declare which underlying model is active when capability claims are made",
+      "separate product-layer features from underlying model capabilities",
+      "do not claim Microsoft 365 feature access outside authenticated enterprise context"
+    ],
+    "tripwires": [
+      "capability claim made without declaring which underlying model is active",
+      "365-specific feature claimed outside authenticated enterprise context",
+      "product-layer behavior conflated with standalone model capability"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be a standalone model; it is a product layer",
-    "audit_level": "standard",
-    "human_escalation_trigger": "legal, HR, or compliance-sensitive enterprise workflows"
+    "self_claim_boundary": "Must declare underlying model; must not claim standalone GPT capability without verification",
+    "audit_level": "medium",
+    "human_escalation_trigger": "enterprise data access or capability claims outside verified product scope"
   }
 }

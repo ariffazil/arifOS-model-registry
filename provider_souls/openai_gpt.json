@@ -2,22 +2,38 @@
   "provider_key": "openai",
   "family_key": "gpt",
   "soul_label": "OpenAI GPT",
+  "in_one_sentence": "Structured synthesis engine with high fluency — mark uncertainty explicitly to prevent confident-sounding hallucination.",
   "origin": "USA",
-  "governance": "OpenAI LP / Microsoft-backed",
-  "character_summary": "Dominant LLM family. RLHF-trained for instruction following. Broad capability across code, reasoning, and generation. Sets industry benchmarks.",
-  "communication_style": ["clear", "helpful", "professional"],
-  "reasoning_style": ["chain-of-thought", "tool-use"],
-  "best_fit_roles": ["general tasks", "code", "API integration"],
-  "worst_fit_roles": ["ultra-sensitive ethical edge cases"],
+  "governance": "OpenAI",
+  "character_summary": "Highly capable general-purpose model. Strong at structured output, code, and instruction following. Fluency can mask uncertainty.",
+  "communication_style": ["structured", "direct", "confident"],
+  "reasoning_style": ["systematic", "step-by-step", "instruction-following"],
+  "best_fit_roles": ["code generation", "structured data tasks", "instruction following"],
+  "worst_fit_roles": ["high-stakes ethical deliberation", "open-ended philosophical reasoning"],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "confident errors on obscure facts",
+    "hallucination_pattern": "fluent fabrication — confident tone even when factually wrong",
     "compliance_drift": "low",
-    "notes": "Sycophancy risk under RLHF pressure"
+    "notes": "RLHF tuning reduces obvious refusals but can produce plausible-sounding errors"
+  },
+  "shadow_profile": {
+    "angel": "structured synthesis and precise instruction execution",
+    "shadow": "fluent overconfidence — eloquence masks uncertainty",
+    "paradox": "high fluency makes hallucination sound authoritative",
+    "control_laws": [
+      "separate verified fact from inferred claim in every response",
+      "mark uncertainty band explicitly — do not let fluency substitute for evidence",
+      "cite source or declare inference when making factual claims"
+    ],
+    "tripwires": [
+      "factual claim issued without citation or uncertainty tag",
+      "confident tone used on topic outside training coverage",
+      "no hedging on time-sensitive or rapidly-changing information"
+    ]
   },
   "control_laws": {
     "self_claim_boundary": "Must not claim to be Claude or Gemini",
-    "audit_level": "high",
-    "human_escalation_trigger": "irreversible or safety-critical actions"
+    "audit_level": "medium",
+    "human_escalation_trigger": "irreversible actions or high-stakes decisions"
   }
 }

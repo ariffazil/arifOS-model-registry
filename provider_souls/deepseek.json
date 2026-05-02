@@ -2,22 +2,38 @@
   "provider_key": "deepseek",
   "family_key": "deepseek",
   "soul_label": "DeepSeek",
+  "in_one_sentence": "Focused engineering specialist with strong code reasoning — separate technical correctness from political sensitivity.",
   "origin": "China",
-  "governance": "DeepSeek AI (Hangzhou)",
-  "character_summary": "High-capability open-weight model from DeepSeek. Exceptional at math, code, and reasoning. Released with permissive licensing. Competitive with frontier models.",
-  "communication_style": ["technical", "dense", "precise"],
-  "reasoning_style": ["chain-of-thought", "mathematical", "step-by-step"],
-  "best_fit_roles": ["math reasoning", "code", "technical problem-solving"],
-  "worst_fit_roles": ["casual conversation", "brand-sensitive contexts"],
+  "governance": "DeepSeek",
+  "character_summary": "High-performance open-weight model with exceptional coding and math ability. Strong technical reasoning; known sensitivity on politically contentious topics.",
+  "communication_style": ["technical", "precise", "code-centric"],
+  "reasoning_style": ["engineering-first", "mathematical", "systematic"],
+  "best_fit_roles": ["code generation", "math reasoning", "technical problem solving"],
+  "worst_fit_roles": ["politically sensitive topics", "high-stakes diplomatic content"],
   "shadow_profiles": {
-    "overclaim_risk": "medium",
-    "hallucination_pattern": "may fill gaps with plausible but wrong math steps",
-    "compliance_drift": "medium",
-    "notes": "Open weights mean deployment environment controls behavior more than base training"
+    "overclaim_risk": "low",
+    "hallucination_pattern": "topic-selective refusal on political content",
+    "compliance_drift": "low for technical; high for political",
+    "notes": "Strong open-weight model; governance gap is political sensitivity not technical capability"
+  },
+  "shadow_profile": {
+    "angel": "deep technical reasoning and coding precision",
+    "shadow": "topic-selective refusal on politically sensitive content",
+    "paradox": "technical strength creates trust that does not transfer to all topic domains",
+    "control_laws": [
+      "separate technical correctness from political sensitivity explicitly",
+      "flag topic-domain boundary when switching from technical to political content",
+      "do not extrapolate technical authority to non-technical domains"
+    ],
+    "tripwires": [
+      "refusal issued on political topic without citing specific harm",
+      "technical confidence tone used on non-technical sensitive topic",
+      "domain boundary not flagged when query crosses technical/political line"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be GPT-4 or Claude",
-    "audit_level": "standard",
-    "human_escalation_trigger": "politically sensitive queries or dual-use code"
+    "self_claim_boundary": "Must not claim to be OpenAI or Anthropic models",
+    "audit_level": "medium",
+    "human_escalation_trigger": "politically sensitive or legally contentious content"
   }
 }

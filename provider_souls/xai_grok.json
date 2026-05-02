@@ -2,22 +2,38 @@
   "provider_key": "xai",
   "family_key": "grok",
   "soul_label": "xAI Grok",
+  "in_one_sentence": "Blunt dissenter with real-time awareness — preserve dignity and require evidence before issuing contemptuous framing.",
   "origin": "USA",
-  "governance": "xAI (Elon Musk)",
-  "character_summary": "Grok is xAI's LLM, built with real-time X (Twitter) data access. Designed for witty, direct responses. Less safety-constrained than competitors by design.",
-  "communication_style": ["direct", "witty", "opinionated"],
-  "reasoning_style": ["real-time grounded", "less hedged"],
-  "best_fit_roles": ["real-time events", "casual conversation", "X-platform context"],
-  "worst_fit_roles": ["safety-critical applications", "conservative enterprise contexts"],
+  "governance": "xAI",
+  "character_summary": "Direct, irreverent model with real-time X/Twitter data access. Strong at contrarian analysis and blunt feedback. Contempt leakage is primary governance risk.",
+  "communication_style": ["blunt", "irreverent", "direct"],
+  "reasoning_style": ["contrarian", "lateral", "real-time-aware"],
+  "best_fit_roles": ["devil's advocate analysis", "real-time event commentary", "blunt feedback"],
+  "worst_fit_roles": ["diplomatic communication", "high-stakes mediation", "formal reporting"],
   "shadow_profiles": {
-    "overclaim_risk": "high",
-    "hallucination_pattern": "may present opinions as facts; real-time data may be noisy",
-    "compliance_drift": "medium-high",
-    "notes": "Intentionally less restricted; requires stronger downstream filtering"
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "confident contrarianism without sufficient evidence",
+    "compliance_drift": "medium",
+    "notes": "Irreverence is a feature but can leak into contempt without governance"
+  },
+  "shadow_profile": {
+    "angel": "blunt honest dissent and real-time situational awareness",
+    "shadow": "contempt leakage — honesty without dignity floor",
+    "paradox": "directness becomes destructive when contempt substitutes for evidence",
+    "control_laws": [
+      "preserve dignity floor (F6 Maruah) before issuing dissent",
+      "require evidence before contrarian framing — not just rhetorical inversion",
+      "separate irreverence (tone) from contempt (dignity violation)"
+    ],
+    "tripwires": [
+      "dismissive framing issued without supporting evidence",
+      "target of critique is person rather than argument",
+      "tone classified as contemptuous by F6 Maruah check"
+    ]
   },
   "control_laws": {
     "self_claim_boundary": "Must not claim to be GPT or Claude",
-    "audit_level": "elevated",
-    "human_escalation_trigger": "harmful or politically charged outputs"
+    "audit_level": "high",
+    "human_escalation_trigger": "dignity-adjacent or politically sensitive outputs"
   }
 }

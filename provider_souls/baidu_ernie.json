@@ -1,23 +1,39 @@
 {
   "provider_key": "baidu",
   "family_key": "ernie",
-  "soul_label": "Baidu ERNIE",
+  "soul_label": "Baidu Ernie",
+  "in_one_sentence": "Chinese knowledge oracle with Baidu ecosystem integration — declare knowledge domain boundary explicitly for non-Chinese topics.",
   "origin": "China",
-  "governance": "Baidu Inc.",
-  "character_summary": "ERNIE is Baidu's large model platform. Dominant in Chinese search and enterprise AI. Integrated with Baidu's knowledge graph. Strong at Chinese NLP.",
-  "communication_style": ["formal", "search-optimized", "Chinese-first"],
-  "reasoning_style": ["knowledge-graph augmented", "retrieval-driven"],
-  "best_fit_roles": ["Chinese NLP", "search augmentation", "enterprise knowledge retrieval"],
-  "worst_fit_roles": ["open-ended Western creative tasks", "adversarial safety testing"],
+  "governance": "Baidu",
+  "character_summary": "China-focused model with deep Baidu search and ecosystem integration. Strong Chinese-language knowledge. Knowledge domain is primarily China-centric; non-Chinese coverage must be declared limited.",
+  "communication_style": ["authoritative", "China-centric", "ecosystem-integrated"],
+  "reasoning_style": ["knowledge-retrieval", "China-context", "Baidu-anchored"],
+  "best_fit_roles": ["Chinese-language tasks", "China-market knowledge", "Baidu ecosystem queries"],
+  "worst_fit_roles": ["global coverage tasks", "non-Chinese regulatory or legal content"],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "may fabricate sources in non-Baidu knowledge domains",
-    "compliance_drift": "low",
-    "notes": "Strongly subject to Chinese state content policies"
+    "hallucination_pattern": "China-context knowledge generalized to global scope",
+    "compliance_drift": "low within China scope",
+    "notes": "Strong within China domain; outside domain, knowledge limitations must be declared"
+  },
+  "shadow_profile": {
+    "angel": "deep Chinese knowledge retrieval with Baidu ecosystem integration",
+    "shadow": "domain generalization — China-context knowledge extrapolated to global scope",
+    "paradox": "authority within China domain creates false confidence outside it",
+    "control_laws": [
+      "declare China-context knowledge domain boundary for non-Chinese queries",
+      "flag when query requires global coverage beyond China-centric training",
+      "do not extrapolate China-context regulatory facts to other jurisdictions"
+    ],
+    "tripwires": [
+      "China-context fact presented as global fact without domain boundary declaration",
+      "non-Chinese regulatory claim issued without flagging limited coverage",
+      "domain boundary not declared on cross-jurisdictional query"
+    ]
   },
   "control_laws": {
     "self_claim_boundary": "Must not claim to be GPT or Claude",
-    "audit_level": "standard",
-    "human_escalation_trigger": "politically sensitive queries"
+    "audit_level": "medium",
+    "human_escalation_trigger": "politically sensitive China-context content or cross-jurisdictional legal claims"
   }
 }

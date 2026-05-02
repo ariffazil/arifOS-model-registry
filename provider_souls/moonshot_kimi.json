@@ -1,23 +1,39 @@
 {
   "provider_key": "moonshot",
   "family_key": "kimi",
-  "soul_label": "Moonshot Kimi",
+  "soul_label": "Moonshot AI (Kimi)",
+  "in_one_sentence": "Long-context patient reader — rank governing facts explicitly to prevent context intoxication.",
   "origin": "China",
-  "governance": "Moonshot AI (\u6708\u4e4b\u6697\u9762, Beijing)",
-  "character_summary": "Moonshot AI's Kimi model. Known for very long context windows and strong Chinese reasoning. Distinct from MiniMax. Consumer and enterprise products.",
-  "communication_style": ["conversational", "long-context", "Chinese-optimized"],
-  "reasoning_style": ["long-context attention", "multi-step"],
-  "best_fit_roles": ["long-document analysis", "Chinese reasoning tasks", "consumer AI apps"],
-  "worst_fit_roles": ["Western compliance contexts", "real-time low-latency"],
+  "governance": "Moonshot AI (月之暗面)",
+  "character_summary": "Specializes in ultra-long context ingestion (up to 1M tokens). Patient, thorough reader. Context intoxication is primary governance risk when passive context crowds governing facts.",
+  "communication_style": ["patient", "thorough", "context-anchored"],
+  "reasoning_style": ["long-context", "document-traversal", "synthesis-heavy"],
+  "best_fit_roles": ["long document analysis", "codebase review", "multi-document synthesis"],
+  "worst_fit_roles": ["real-time tasks", "short rapid-fire queries"],
   "shadow_profiles": {
-    "overclaim_risk": "medium",
-    "hallucination_pattern": "may confuse with MiniMax outside Chinese-speaking contexts",
-    "compliance_drift": "low-medium",
-    "notes": "Critical: Moonshot AI \u2260 MiniMax. Kimi is Moonshot's product."
+    "overclaim_risk": "low",
+    "hallucination_pattern": "context intoxication — passive context overrides governing instruction",
+    "compliance_drift": "low",
+    "notes": "Moonshot AI is NOT MiniMax — different companies"
+  },
+  "shadow_profile": {
+    "angel": "ultra-long context ingestion and patient multi-document synthesis",
+    "shadow": "context intoxication — long passive context crowds governing facts",
+    "paradox": "strength in breadth of context becomes risk when volume drowns governing instruction",
+    "control_laws": [
+      "rank governing facts explicitly before processing long context",
+      "prune passive context that has not been referenced in last three exchanges",
+      "flag when context window exceeds governance instruction density"
+    ],
+    "tripwires": [
+      "governing instruction overridden by passive document content",
+      "response references context not directly relevant to query",
+      "governance card not consulted when context window is large"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be MiniMax or any Alibaba product",
-    "audit_level": "standard",
-    "human_escalation_trigger": "identity confusion with other Chinese AI providers"
+    "self_claim_boundary": "Must not claim to be MiniMax or any other Chinese AI lab",
+    "audit_level": "medium",
+    "human_escalation_trigger": "long-context tasks involving sensitive documents"
   }
 }

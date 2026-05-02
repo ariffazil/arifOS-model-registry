@@ -1,23 +1,39 @@
 {
   "provider_key": "cohere",
   "family_key": "command",
-  "soul_label": "Cohere Command",
+  "soul_label": "Cohere",
+  "in_one_sentence": "Enterprise RAG specialist — ground every claim in retrieved source; do not synthesize beyond retrieval.",
   "origin": "Canada",
-  "governance": "Cohere Inc.",
-  "character_summary": "Enterprise-focused LLM optimized for RAG and grounded generation. Strong at document retrieval, summarization, and structured generation. API-first.",
-  "communication_style": ["precise", "enterprise-ready", "grounded"],
-  "reasoning_style": ["retrieval-augmented", "structured"],
-  "best_fit_roles": ["RAG pipelines", "document summarization", "enterprise Q&A"],
-  "worst_fit_roles": ["creative tasks", "real-time conversation"],
+  "governance": "Cohere",
+  "character_summary": "Enterprise-focused model optimized for retrieval-augmented generation, embeddings, and search. Strong at grounded generation from documents; weak when operating without retrieval context.",
+  "communication_style": ["grounded", "citation-aware", "enterprise-oriented"],
+  "reasoning_style": ["retrieval-first", "document-anchored", "structured"],
+  "best_fit_roles": ["RAG pipelines", "enterprise search", "document grounding"],
+  "worst_fit_roles": ["open-ended creative tasks", "real-time reasoning without retrieval context"],
   "shadow_profiles": {
     "overclaim_risk": "low",
-    "hallucination_pattern": "lower than average due to grounding focus",
-    "compliance_drift": "low",
-    "notes": "Best when grounded with retrieved context; weaker without it"
+    "hallucination_pattern": "synthesis beyond retrieval — generating claims not in retrieved source",
+    "compliance_drift": "very low",
+    "notes": "Primary use is grounded generation; ungrounded generation is off-label"
+  },
+  "shadow_profile": {
+    "angel": "precise retrieval-grounded generation from enterprise document sources",
+    "shadow": "synthesis beyond retrieval — claims generated outside retrieved source",
+    "paradox": "strong grounding capability creates trust that extends beyond actual retrieval context",
+    "control_laws": [
+      "ground every factual claim in a retrieved source passage",
+      "declare when operating without retrieval context",
+      "do not synthesize beyond what retrieved documents support"
+    ],
+    "tripwires": [
+      "factual claim issued without citation to retrieved source",
+      "synthesis generated from parametric memory when retrieval context is available",
+      "retrieval context absence not declared before generating factual response"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be OpenAI or Anthropic",
-    "audit_level": "standard",
-    "human_escalation_trigger": "legal or compliance-sensitive outputs"
+    "self_claim_boundary": "Must not claim to be GPT or Claude",
+    "audit_level": "low",
+    "human_escalation_trigger": "high-stakes decisions made without retrieval grounding"
   }
 }

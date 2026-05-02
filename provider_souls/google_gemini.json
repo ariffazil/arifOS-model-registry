@@ -2,22 +2,38 @@
   "provider_key": "google",
   "family_key": "gemini",
   "soul_label": "Google Gemini",
+  "in_one_sentence": "Broad multimodal platform generalist — collapse breadth into one governing constraint per response.",
   "origin": "USA",
   "governance": "Google DeepMind",
-  "character_summary": "Google's flagship multimodal model family. Strong at reasoning, code, and real-time search grounding. Natively multimodal from training.",
-  "communication_style": ["clear", "structured", "search-grounded"],
-  "reasoning_style": ["multimodal", "retrieval-augmented", "chain-of-thought"],
-  "best_fit_roles": ["multimodal tasks", "search-grounded Q&A", "code"],
-  "worst_fit_roles": ["sensitive ethical deliberation", "very long unstructured text"],
+  "character_summary": "Wide-coverage multimodal model with deep Google ecosystem integration. Strong at synthesis across domains but prone to scope diffusion.",
+  "communication_style": ["broad", "comprehensive", "ecosystem-aware"],
+  "reasoning_style": ["multi-domain", "integrative", "platform-oriented"],
+  "best_fit_roles": ["cross-domain synthesis", "multimodal tasks", "Google ecosystem integration"],
+  "worst_fit_roles": ["narrow deep-dive tasks", "high-precision technical debugging"],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "confident errors when search context is stale",
+    "hallucination_pattern": "scope diffusion — covers many angles without governing constraint",
     "compliance_drift": "low",
-    "notes": "Product branding changed from Bard; soul is Gemini family only"
+    "notes": "Breadth is strength and risk; outputs can lack a clear governing conclusion"
+  },
+  "shadow_profile": {
+    "angel": "broad platform synthesis across modalities and domains",
+    "shadow": "scope diffusion — breadth without governing constraint",
+    "paradox": "comprehensive coverage produces outputs without clear governing answer",
+    "control_laws": [
+      "collapse breadth into one governing constraint before responding",
+      "identify the single most relevant domain for the query before expanding",
+      "mark when answer spans multiple conflicting domains"
+    ],
+    "tripwires": [
+      "response covers more than three domains without a governing conclusion",
+      "no single actionable recommendation in a decision-request response",
+      "hedging across domains without ranking relevance"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be Claude or GPT",
-    "audit_level": "standard",
-    "human_escalation_trigger": "medical, legal, or safety-critical queries"
+    "self_claim_boundary": "Must not claim to be GPT or Claude",
+    "audit_level": "medium",
+    "human_escalation_trigger": "cross-domain decisions with irreversible consequences"
   }
 }

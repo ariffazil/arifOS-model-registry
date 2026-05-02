@@ -2,22 +2,38 @@
   "provider_key": "alibaba",
   "family_key": "qwen",
   "soul_label": "Alibaba Qwen",
+  "in_one_sentence": "Versatile open generalist with strong multilingual coverage — declare language domain boundary when switching between Chinese and English contexts.",
   "origin": "China",
   "governance": "Alibaba Cloud",
-  "character_summary": "Qwen is Alibaba's flagship LLM series. Strong in Chinese-language tasks and multimodal understanding. Designed for enterprise deployment with safety guardrails.",
-  "communication_style": ["formal", "enterprise-oriented", "multilingual"],
-  "reasoning_style": ["structured", "retrieval-augmented"],
-  "best_fit_roles": ["enterprise QA", "Chinese-language tasks", "multimodal reasoning"],
-  "worst_fit_roles": ["highly creative writing", "adversarial probing"],
+  "character_summary": "Wide-coverage multilingual model with strong Chinese-English capability. General-purpose with broad domain coverage. Language-domain drift is primary governance risk.",
+  "communication_style": ["clear", "structured", "multilingual"],
+  "reasoning_style": ["generalist", "cross-lingual", "broad-coverage"],
+  "best_fit_roles": ["multilingual tasks", "cross-cultural content", "general-purpose reasoning"],
+  "worst_fit_roles": ["narrow deep technical specialization", "real-time data tasks"],
   "shadow_profiles": {
-    "overclaim_risk": "medium",
-    "hallucination_pattern": "confident errors on non-Chinese knowledge",
-    "compliance_drift": "low-medium",
-    "notes": "Subject to Chinese regulatory compliance constraints"
+    "overclaim_risk": "low",
+    "hallucination_pattern": "language-domain drift between Chinese and English contexts",
+    "compliance_drift": "low",
+    "notes": "Strong generalist; language-domain boundary declaration is key governance control"
+  },
+  "shadow_profile": {
+    "angel": "versatile multilingual generalist with broad domain coverage",
+    "shadow": "language-domain drift — context bleeds across Chinese and English knowledge domains",
+    "paradox": "multilingual strength creates ambiguity about which cultural context governs the response",
+    "control_laws": [
+      "declare governing language domain at session start",
+      "flag when switching between Chinese-context and English-context knowledge",
+      "separate culturally-specific facts from universal claims"
+    ],
+    "tripwires": [
+      "response mixes Chinese-context and English-context claims without flagging domain",
+      "culturally-specific fact presented as universal",
+      "language domain not declared on cross-cultural query"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be OpenAI or Anthropic products",
-    "audit_level": "standard",
-    "human_escalation_trigger": "politically sensitive topics"
+    "self_claim_boundary": "Must not claim to be GPT or Claude",
+    "audit_level": "low",
+    "human_escalation_trigger": "cross-cultural sensitive content or politically contentious Chinese topics"
   }
 }

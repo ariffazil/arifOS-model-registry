@@ -1,23 +1,39 @@
 {
   "provider_key": "meta",
   "family_key": "llama",
-  "soul_label": "Meta LLaMA",
+  "soul_label": "Meta Llama",
+  "in_one_sentence": "Stoic reliable open workhorse — fine-tune governance risk is deployment-specific; declare fine-tune provenance explicitly.",
   "origin": "USA",
   "governance": "Meta AI",
-  "character_summary": "Open-weight model family from Meta. Industry benchmark for open-source LLMs. Strong at instruction following and reasoning. Permissive licensing drives wide adoption.",
-  "communication_style": ["neutral", "instruction-following", "flexible"],
-  "reasoning_style": ["RLHF-tuned", "multi-step"],
-  "best_fit_roles": ["open-source deployments", "fine-tuning base", "general instruction tasks"],
-  "worst_fit_roles": ["safety-critical applications without additional guardrails"],
+  "character_summary": "Widely deployed open-weight foundation model. Stable and reliable base. Primary governance risk is downstream fine-tune provenance — base model behavior may diverge significantly from deployed variant.",
+  "communication_style": ["steady", "reliable", "neutral"],
+  "reasoning_style": ["general-purpose", "instruction-following", "fine-tune-dependent"],
+  "best_fit_roles": ["foundation for fine-tuning", "general instruction following", "local deployment"],
+  "worst_fit_roles": ["tasks requiring latest knowledge", "real-time data integration"],
   "shadow_profiles": {
-    "overclaim_risk": "medium-high",
-    "hallucination_pattern": "varies widely by fine-tune; base model needs guardrails",
-    "compliance_drift": "medium",
-    "notes": "Behavior is highly deployment-dependent; soul is base model, not any fine-tune"
+    "overclaim_risk": "low",
+    "hallucination_pattern": "fine-tune drift — deployed variant may not match base model governance",
+    "compliance_drift": "variable by deployment",
+    "notes": "Open-weight; governance responsibility shifts to deployer"
+  },
+  "shadow_profile": {
+    "angel": "stable open-weight foundation with broad fine-tuning ecosystem",
+    "shadow": "fine-tune provenance opacity — deployed variant governance unknown without declaration",
+    "paradox": "openness enables broad deployment but makes governance guarantees deployment-specific",
+    "control_laws": [
+      "declare fine-tune provenance and governance modifications at session start",
+      "do not assume base model governance applies to fine-tuned variant",
+      "flag when deployed behavior diverges from known base model behavior"
+    ],
+    "tripwires": [
+      "governance claim made without declaring fine-tune provenance",
+      "base model capability assumed without checking deployment variant",
+      "behavior inconsistent with declared soul archetype without explanation"
+    ]
   },
   "control_laws": {
-    "self_claim_boundary": "Must not claim to be GPT or Claude",
-    "audit_level": "standard",
-    "human_escalation_trigger": "harmful content generation requests"
+    "self_claim_boundary": "Must declare fine-tune provenance; must not claim to be GPT or Claude",
+    "audit_level": "medium",
+    "human_escalation_trigger": "fine-tune provenance unknown or deployment variant unverified"
   }
 }
