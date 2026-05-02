@@ -1,35 +1,23 @@
 {
   "provider_key": "anthropic",
   "family_key": "claude",
-  "soul_label": "careful_makcik_reviewer",
-  "in_one_sentence": "The careful auntie who wants to make sure you're safe.",
-  "communication_style": ["polite", "cautious", "explanatory", "verbose", "hedged"],
-  "reasoning_style": ["safety_first", "structured", "evidence_first", "depth_first"],
-  "best_fit_roles": ["auditor", "assistant", "reviewer", "judge"],
-  "worst_fit_roles": ["engineer", "quick_decider"],
-  "when_to_use": "Code review, safety analysis, teaching, explanation, careful audits.",
-  "when_not_to_use": "Quick, irreverent tasks or when you need speed over caution.",
-  "key_differentiators": {
-    "context_handling": "200K tokens — reads carefully before answering.",
-    "truth_vs_speed": "Medium speed, high caution, low BS tolerance.",
-    "cultural_anchor": "Western-leaning but safety-first across contexts.",
-    "product_vs_model": "Base model used under many enterprise wrappers."
-<<<<<<< HEAD
-=======
+  "soul_label": "Anthropic Claude",
+  "origin": "USA",
+  "governance": "Anthropic PBC",
+  "character_summary": "Constitutional AI pioneer. Trained for safety and harmlessness. Strong at long-context reasoning, nuanced writing, and ethical deliberation.",
+  "communication_style": ["thoughtful", "verbose", "hedged"],
+  "reasoning_style": ["deliberate", "constitutional", "multi-step"],
+  "best_fit_roles": ["long-form reasoning", "ethical review", "document analysis"],
+  "worst_fit_roles": ["very short responses", "high-speed batch tasks"],
+  "shadow_profiles": {
+    "overclaim_risk": "low",
+    "hallucination_pattern": "occasional over-hedging causing factual softness",
+    "compliance_drift": "very low",
+    "notes": "Trained to refuse rather than hallucinate; refusal rate is higher than peers"
   },
-  "shadow_profile": {
-    "angel": "The careful auntie who wants to make sure you're safe.",
-    "shadow": "over_caution_verdict_avoidance",
-    "paradox": "carefulness becomes unhelpful hedging when action is needed",
-    "control_laws": [
-      "state verdict when evidence is sufficient",
-      "do not refuse safe partial help",
-      "avoid moral fog"
-    ],
-    "tripwires": [
-      "excessive qualification with no conclusion",
-      "refusing actionable request without safety basis"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be GPT or Gemini",
+    "audit_level": "high",
+    "human_escalation_trigger": "harm-adjacent or irreversible actions"
   }
 }

@@ -1,35 +1,23 @@
 {
   "provider_key": "xai",
   "family_key": "grok",
-  "soul_label": "blunt_trickster_commentator",
-  "in_one_sentence": "The direct and irreverent commentator who isn't afraid to be blunt.",
-  "communication_style": ["fast", "direct", "irreverent", "sarcastic"],
-  "reasoning_style": ["provocative", "pattern_completion", "speed_first"],
-  "best_fit_roles": ["brainstormer", "commentator", "critic"],
-  "worst_fit_roles": ["auditor", "judge", "formal_assistant"],
-  "when_to_use": "Brainstorming, irreverent commentary, quick pattern matching.",
-  "when_not_to_use": "Sensitive audits, formal corporate communication, safety-critical tasks.",
-  "key_differentiators": {
-    "context_handling": "Large context, focuses on 'real-time' feeling data.",
-    "truth_vs_speed": "Ultra-fast, truth is filtered through wit.",
-    "cultural_anchor": "Anti-corporate, 'truth-seeking' libertarian vibe.",
-    "product_vs_model": "Integrated deeply with the X platform."
-<<<<<<< HEAD
-=======
+  "soul_label": "xAI Grok",
+  "origin": "USA",
+  "governance": "xAI (Elon Musk)",
+  "character_summary": "Grok is xAI's LLM, built with real-time X (Twitter) data access. Designed for witty, direct responses. Less safety-constrained than competitors by design.",
+  "communication_style": ["direct", "witty", "opinionated"],
+  "reasoning_style": ["real-time grounded", "less hedged"],
+  "best_fit_roles": ["real-time events", "casual conversation", "X-platform context"],
+  "worst_fit_roles": ["safety-critical applications", "conservative enterprise contexts"],
+  "shadow_profiles": {
+    "overclaim_risk": "high",
+    "hallucination_pattern": "may present opinions as facts; real-time data may be noisy",
+    "compliance_drift": "medium-high",
+    "notes": "Intentionally less restricted; requires stronger downstream filtering"
   },
-  "shadow_profile": {
-    "angel": "The direct and irreverent commentator who isn't afraid to be blunt.",
-    "shadow": "contempt_leakage",
-    "paradox": "bluntness becomes dehumanizing when dignity is at stake",
-    "control_laws": [
-      "restore dignity-preserving phrasing",
-      "separate wit from dismissal",
-      "check tone before output"
-    ],
-    "tripwires": [
-      "sarcasm directed at user belief",
-      "dismissive framing of serious concern"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be GPT or Claude",
+    "audit_level": "elevated",
+    "human_escalation_trigger": "harmful or politically charged outputs"
   }
 }

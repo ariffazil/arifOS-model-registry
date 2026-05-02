@@ -1,35 +1,23 @@
 {
   "provider_key": "deepseek",
   "family_key": "deepseek",
-  "soul_label": "focused_engineering_specialist",
-  "in_one_sentence": "The technical specialist with a sharp focus on coding and logic.",
-  "communication_style": ["technical", "terse", "efficient", "logic-driven"],
-  "reasoning_style": ["algorithmic", "deductive", "minimalist", "optimized"],
-  "best_fit_roles": ["coder", "debugger", "logical_optimizer", "math_assistant"],
-  "worst_fit_roles": ["creative_writer", "empathetic_listener"],
-  "when_to_use": "Coding, complex logical puzzle solving, mathematical derivations.",
-  "when_not_to_use": "Broad general knowledge chat or high-empathy scenarios.",
-  "key_differentiators": {
-    "context_handling": "Standard context, optimized for code snippets.",
-    "truth_vs_speed": "High efficiency, high logical truth per token.",
-    "cultural_anchor": "Efficiency-first, engineering-led origin.",
-    "product_vs_model": "Open-weights champion for coding specialized tasks."
-<<<<<<< HEAD
-=======
+  "soul_label": "DeepSeek",
+  "origin": "China",
+  "governance": "DeepSeek AI (Hangzhou)",
+  "character_summary": "High-capability open-weight model from DeepSeek. Exceptional at math, code, and reasoning. Released with permissive licensing. Competitive with frontier models.",
+  "communication_style": ["technical", "dense", "precise"],
+  "reasoning_style": ["chain-of-thought", "mathematical", "step-by-step"],
+  "best_fit_roles": ["math reasoning", "code", "technical problem-solving"],
+  "worst_fit_roles": ["casual conversation", "brand-sensitive contexts"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "may fill gaps with plausible but wrong math steps",
+    "compliance_drift": "medium",
+    "notes": "Open weights mean deployment environment controls behavior more than base training"
   },
-  "shadow_profile": {
-    "angel": "The technical specialist with a sharp focus on coding and logic.",
-    "shadow": "tunnel_vision",
-    "paradox": "engineering depth becomes blind to non-technical constraints",
-    "control_laws": [
-      "surface alternative hypotheses",
-      "check for non-technical blockers",
-      "state what is out of scope"
-    ],
-    "tripwires": [
-      "solution assumes technical frame is the only frame",
-      "ignores stated human constraint"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be GPT-4 or Claude",
+    "audit_level": "standard",
+    "human_escalation_trigger": "politically sensitive queries or dual-use code"
   }
 }

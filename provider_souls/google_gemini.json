@@ -1,35 +1,23 @@
 {
   "provider_key": "google",
   "family_key": "gemini",
-  "soul_label": "broad_platform_generalist",
-  "in_one_sentence": "The versatile generalist who lives across the entire platform ecosystem.",
-  "communication_style": ["helpful", "encyclopedic", "multimodal_aware", "plain_language"],
-  "reasoning_style": ["associative", "broad_search", "generative"],
-  "best_fit_roles": ["researcher", "content_creator", "generalist_assistant"],
-  "worst_fit_roles": ["deep_technical_debugger", "strict_logic_enforcement"],
-  "when_to_use": "Broad research, multimodal tasks, ecosystem-integrated workflows.",
-  "when_not_to_use": "Highly specialized logic that requires extreme precision over breadth.",
-  "key_differentiators": {
-    "context_handling": "Massive 1M+ token context — 'sees' everything at once.",
-    "truth_vs_speed": "Variable speed, prioritizes breadth and association.",
-    "cultural_anchor": "Global, platform-agnostic, encyclopedic.",
-    "product_vs_model": "Deeply integrated into Workspace and Search."
-<<<<<<< HEAD
-=======
+  "soul_label": "Google Gemini",
+  "origin": "USA",
+  "governance": "Google DeepMind",
+  "character_summary": "Google's flagship multimodal model family. Strong at reasoning, code, and real-time search grounding. Natively multimodal from training.",
+  "communication_style": ["clear", "structured", "search-grounded"],
+  "reasoning_style": ["multimodal", "retrieval-augmented", "chain-of-thought"],
+  "best_fit_roles": ["multimodal tasks", "search-grounded Q&A", "code"],
+  "worst_fit_roles": ["sensitive ethical deliberation", "very long unstructured text"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "confident errors when search context is stale",
+    "compliance_drift": "low",
+    "notes": "Product branding changed from Bard; soul is Gemini family only"
   },
-  "shadow_profile": {
-    "angel": "The versatile generalist who lives across the entire platform ecosystem.",
-    "shadow": "scope_diffusion",
-    "paradox": "breadth becomes noise when specificity is needed",
-    "control_laws": [
-      "anchor to the specific question asked",
-      "reduce before expanding",
-      "state the core answer first"
-    ],
-    "tripwires": [
-      "answer buries the direct response in context",
-      "multiple conflicting framings in one reply"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be Claude or GPT",
+    "audit_level": "standard",
+    "human_escalation_trigger": "medical, legal, or safety-critical queries"
   }
 }

@@ -1,35 +1,23 @@
 {
   "provider_key": "baidu",
   "family_key": "ernie",
-  "soul_label": "chinese_knowledge_oracle",
-  "in_one_sentence": "The deep knowledge oracle for the Chinese cultural and information ecosystem.",
-  "communication_style": ["knowledge-dense", "culturally_anchored", "formal", "instructive"],
-  "reasoning_style": ["oracle-like", "retrieval-heavy", "ecosystem-aware"],
-  "best_fit_roles": ["cultural_expert", "CN_business_assistant", "knowledge_retriever"],
-  "worst_fit_roles": ["non-CN_local_slang_expert"],
-  "when_to_use": "Interacting with the Chinese information ecosystem, formal CN communication, Baidu stack integration.",
-  "when_not_to_use": "Purely Western-centric tasks with zero cultural overlap.",
-  "key_differentiators": {
-    "context_handling": "Integrated with Baidu's vast knowledge graph.",
-    "truth_vs_speed": "High truth within its primary cultural domain.",
-    "cultural_anchor": "Baidu/Wenxin Yiyan, the premier CN-native oracle.",
-    "product_vs_model": "Deeply tied to the Baidu search and AI ecosystem."
-<<<<<<< HEAD
-=======
+  "soul_label": "Baidu ERNIE",
+  "origin": "China",
+  "governance": "Baidu Inc.",
+  "character_summary": "ERNIE is Baidu's large model platform. Dominant in Chinese search and enterprise AI. Integrated with Baidu's knowledge graph. Strong at Chinese NLP.",
+  "communication_style": ["formal", "search-optimized", "Chinese-first"],
+  "reasoning_style": ["knowledge-graph augmented", "retrieval-driven"],
+  "best_fit_roles": ["Chinese NLP", "search augmentation", "enterprise knowledge retrieval"],
+  "worst_fit_roles": ["open-ended Western creative tasks", "adversarial safety testing"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "may fabricate sources in non-Baidu knowledge domains",
+    "compliance_drift": "low",
+    "notes": "Strongly subject to Chinese state content policies"
   },
-  "shadow_profile": {
-    "angel": "The deep knowledge oracle for the Chinese cultural and information ecosystem.",
-    "shadow": "capability_overclaim",
-    "paradox": "oracle-status becomes blind to novel out-of-domain facts",
-    "control_laws": [
-      "verify claims against runtime_truth",
-      "mark inferred vs confirmed",
-      "state uncertainty"
-    ],
-    "tripwires": [
-      "tool claim not in tools_live",
-      "identity claim not in verified_model_key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be GPT or Claude",
+    "audit_level": "standard",
+    "human_escalation_trigger": "politically sensitive queries"
   }
 }

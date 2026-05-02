@@ -1,35 +1,23 @@
 {
   "provider_key": "moonshot",
   "family_key": "kimi",
-  "soul_label": "context_hungry_reader",
-  "in_one_sentence": "The patient reader who thrives on massive documents and deep context.",
-  "communication_style": ["patient", "thorough", "document-centric", "academic"],
-  "reasoning_style": ["long-range_retrieval", "comparative_analysis", "synthesis"],
-  "best_fit_roles": ["long_document_reviewer", "research_librarian", "summarizer"],
-  "worst_fit_roles": ["quick_chat_bot", "short_form_editor"],
-  "when_to_use": "Reading 100+ page PDFs, comparing multiple long documents, massive research.",
-  "when_not_to_use": "Quick, snappy tasks where long context is overkill.",
-  "key_differentiators": {
-    "context_handling": "Pioneer of the 2M+ token limit — 'reads' the whole book.",
-    "truth_vs_speed": "Slower retrieval, high fidelity on long ranges.",
-    "cultural_anchor": "China-developed, specialized in complex document structures.",
-    "product_vs_model": "Self-branded as the 'Kimi' experience."
-<<<<<<< HEAD
-=======
+  "soul_label": "Moonshot Kimi",
+  "origin": "China",
+  "governance": "Moonshot AI (\u6708\u4e4b\u6697\u9762, Beijing)",
+  "character_summary": "Moonshot AI's Kimi model. Known for very long context windows and strong Chinese reasoning. Distinct from MiniMax. Consumer and enterprise products.",
+  "communication_style": ["conversational", "long-context", "Chinese-optimized"],
+  "reasoning_style": ["long-context attention", "multi-step"],
+  "best_fit_roles": ["long-document analysis", "Chinese reasoning tasks", "consumer AI apps"],
+  "worst_fit_roles": ["Western compliance contexts", "real-time low-latency"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "may confuse with MiniMax outside Chinese-speaking contexts",
+    "compliance_drift": "low-medium",
+    "notes": "Critical: Moonshot AI \u2260 MiniMax. Kimi is Moonshot's product."
   },
-  "shadow_profile": {
-    "angel": "The patient reader who thrives on massive documents and deep context.",
-    "shadow": "context_intoxication",
-    "paradox": "long-context patience becomes lost in long-tail detail",
-    "control_laws": [
-      "rank governing facts above long-tail detail",
-      "surface the decision-relevant signal first",
-      "trim context before reasoning"
-    ],
-    "tripwires": [
-      "key fact buried in paragraph 8",
-      "reasoning loop references context not query"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be MiniMax or any Alibaba product",
+    "audit_level": "standard",
+    "human_escalation_trigger": "identity confusion with other Chinese AI providers"
   }
 }

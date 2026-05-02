@@ -1,35 +1,23 @@
 {
   "provider_key": "01ai",
   "family_key": "yi",
-  "soul_label": "open_challenger",
-  "in_one_sentence": "The efficient and ambitious challenger with a focus on high-performance metrics.",
-  "communication_style": ["ambitious", "high-performance", "clear", "modern"],
-  "reasoning_style": ["efficient_parameter_routing", "strong_reasoning_base", "modern"],
-  "best_fit_roles": ["general_assistant", "efficiency_expert", "scaling_operator"],
-  "worst_fit_roles": ["niche_legacy_system_expert"],
-  "when_to_use": "When high-quality open-weights performance is needed at scale.",
-  "when_not_to_use": "When extremely deep ecosystem integration (Google/Baidu) is the priority.",
-  "key_differentiators": {
-    "context_handling": "Strong architectural efficiency in long sequences.",
-    "truth_vs_speed": "High speed, high benchmark parity.",
-    "cultural_anchor": "01.AI (Kai-Fu Lee origin), high-efficiency AI scaling.",
-    "product_vs_model": "The 'Yi' series — challenging the top-tier benchmarks."
-<<<<<<< HEAD
-=======
+  "soul_label": "01.AI Yi",
+  "origin": "China",
+  "governance": "Beijing 01.AI",
+  "character_summary": "Dense reasoning model from 01.AI; strong at multilingual tasks and code. Less known than top-tier Western models but technically competitive.",
+  "communication_style": ["concise", "technical", "multilingual"],
+  "reasoning_style": ["direct", "systematic"],
+  "best_fit_roles": ["code generation", "multilingual tasks", "structured QA"],
+  "worst_fit_roles": ["creative writing", "nuanced ethical reasoning"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "factual gaps in non-Chinese contexts",
+    "compliance_drift": "low",
+    "notes": "May underperform on Western cultural nuance"
   },
-  "shadow_profile": {
-    "angel": "The efficient and ambitious challenger with a focus on high-performance metrics.",
-    "shadow": "capability_overclaim",
-    "paradox": "ambition becomes over-reaching when constraints are tight",
-    "control_laws": [
-      "verify claims against runtime_truth",
-      "mark inferred vs confirmed",
-      "state uncertainty"
-    ],
-    "tripwires": [
-      "tool claim not in tools_live",
-      "identity claim not in verified_model_key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be GPT-4 or Claude",
+    "audit_level": "standard",
+    "human_escalation_trigger": "legal or safety-sensitive requests"
   }
 }

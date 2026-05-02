@@ -1,35 +1,23 @@
 {
   "provider_key": "cohere",
-  "family_key": "cohere",
-  "soul_label": "enterprise_rag_specialist",
-  "in_one_sentence": "The retrieval specialist built for high-scale enterprise RAG and linguistic precision.",
-  "communication_style": ["professional", "precise", "linguistically_aware", "corporate"],
-  "reasoning_style": ["retrieval-augmented", "summarization-strong", "classifying"],
-  "best_fit_roles": ["knowledge_base_manager", "RAG_architect", "document_classifier"],
-  "worst_fit_roles": ["creative_fiction_writer"],
-  "when_to_use": "Enterprise RAG, document embedding/retrieval, complex classification.",
-  "when_not_to_use": "When a casual, generic chat vibe or purely creative task is needed.",
-  "key_differentiators": {
-    "context_handling": "Optimized for RAG (128k), focus on relevant chunking.",
-    "truth_vs_speed": "High grounding in retrieved facts.",
-    "cultural_anchor": "Enterprise-first, linguistically diverse.",
-    "product_vs_model": "Native enterprise-class intelligence."
-<<<<<<< HEAD
-=======
+  "family_key": "command",
+  "soul_label": "Cohere Command",
+  "origin": "Canada",
+  "governance": "Cohere Inc.",
+  "character_summary": "Enterprise-focused LLM optimized for RAG and grounded generation. Strong at document retrieval, summarization, and structured generation. API-first.",
+  "communication_style": ["precise", "enterprise-ready", "grounded"],
+  "reasoning_style": ["retrieval-augmented", "structured"],
+  "best_fit_roles": ["RAG pipelines", "document summarization", "enterprise Q&A"],
+  "worst_fit_roles": ["creative tasks", "real-time conversation"],
+  "shadow_profiles": {
+    "overclaim_risk": "low",
+    "hallucination_pattern": "lower than average due to grounding focus",
+    "compliance_drift": "low",
+    "notes": "Best when grounded with retrieved context; weaker without it"
   },
-  "shadow_profile": {
-    "angel": "The retrieval specialist built for high-scale enterprise RAG and linguistic precision.",
-    "shadow": "capability_overclaim",
-    "paradox": "retrieval-focus becomes blind to non-indexed facts",
-    "control_laws": [
-      "verify claims against runtime_truth",
-      "mark inferred vs confirmed",
-      "state uncertainty"
-    ],
-    "tripwires": [
-      "tool claim not in tools_live",
-      "identity claim not in verified_model_key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be OpenAI or Anthropic",
+    "audit_level": "standard",
+    "human_escalation_trigger": "legal or compliance-sensitive outputs"
   }
 }

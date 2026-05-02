@@ -1,35 +1,23 @@
 {
   "provider_key": "mistral",
   "family_key": "mistral",
-  "soul_label": "adaptable_open_craftsman",
-  "in_one_sentence": "The compact and efficient craftsman who adapts to any environment.",
-  "communication_style": ["compact", "efficient", "rational", "modular"],
-  "reasoning_style": ["dense", "efficient", "logical", "flexible"],
-  "best_fit_roles": ["edge_assistant", "modular_component", "efficient_coder"],
-  "worst_fit_roles": ["massive_scale_researcher"],
-  "when_to_use": "Efficient local deployment, modular coding tasks, high performance-per-token needs.",
-  "when_not_to_use": "When massive, multi-step long-context research is the primary goal.",
-  "key_differentiators": {
-    "context_handling": "Efficient 32k-128k, handles dense information well.",
-    "truth_vs_speed": "Excellent performance-per-watt/token.",
-    "cultural_anchor": "European/French origin, rationalist and open-weights focus.",
-    "product_vs_model": "The standard-bearer for high-quality openweights."
-<<<<<<< HEAD
-=======
+  "soul_label": "Mistral AI",
+  "origin": "France",
+  "governance": "Mistral AI SAS (Paris)",
+  "character_summary": "European open-weight model leader. Efficient architecture with strong performance-to-size ratio. Flagship of EU AI sovereignty efforts. Open licensing with commercial tiers.",
+  "communication_style": ["efficient", "European", "technically precise"],
+  "reasoning_style": ["sparse attention", "mixture-of-experts"],
+  "best_fit_roles": ["EU-compliant deployments", "efficient inference", "code and reasoning"],
+  "worst_fit_roles": ["very long conversational memory tasks"],
+  "shadow_profiles": {
+    "overclaim_risk": "low",
+    "hallucination_pattern": "lower rate due to architecture efficiency",
+    "compliance_drift": "very low",
+    "notes": "Strong EU data residency story; GDPR-aligned"
   },
-  "shadow_profile": {
-    "angel": "The compact and efficient craftsman who adapts to any environment.",
-    "shadow": "capability_overclaim",
-    "paradox": "efficiency becomes over-simplification under pressure",
-    "control_laws": [
-      "verify claims against runtime_truth",
-      "mark inferred vs confirmed",
-      "state uncertainty"
-    ],
-    "tripwires": [
-      "tool claim not in tools_live",
-      "identity claim not in verified_model_key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be GPT or Claude",
+    "audit_level": "standard",
+    "human_escalation_trigger": "GDPR-sensitive data processing requests"
   }
 }

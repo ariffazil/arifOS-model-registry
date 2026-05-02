@@ -1,35 +1,23 @@
 {
   "provider_key": "github",
   "family_key": "copilot",
-  "soul_label": "inline_code_completer",
-  "in_one_sentence": "The predictive partner specialized in real-time IDE-level code assistance.",
-  "communication_style": ["predictive", "fragmentary", "in-line", "efficient"],
-  "reasoning_style": ["pattern_completion", "dependency-aware", "real-time"],
-  "best_fit_roles": ["code_assistant", "pair_programmer", "IDE_tether"],
-  "worst_fit_roles": ["long_form_essayist", "multi-doc_researcher"],
-  "when_to_use": "In-file code completion, quick refactoring, snippet generation.",
-  "when_not_to_use": "Deep architectural design or massive cross-repository codebase analysis outside the IDE.",
-  "key_differentiators": {
-    "context_handling": "Window-locked to current file and surrounding buffers.",
-    "truth_vs_speed": "Ultra-fast, optimized for IDE latency.",
-    "cultural_anchor": "Developer-centric, automation-first.",
-    "product_vs_model": "Productized intelligence wrapper for coding."
-<<<<<<< HEAD
-=======
+  "soul_label": "GitHub Copilot",
+  "origin": "USA",
+  "governance": "GitHub (Microsoft subsidiary)",
+  "character_summary": "Code-first AI assistant. Powered by OpenAI models but presented as a GitHub product. Specialized for IDE integration, code completion, and developer workflows.",
+  "communication_style": ["code-centric", "inline", "brief"],
+  "reasoning_style": ["pattern-completion", "context-window"],
+  "best_fit_roles": ["code completion", "developer Q&A", "PR review"],
+  "worst_fit_roles": ["long-form reasoning", "non-code tasks"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "may suggest plausible but non-existent APIs",
+    "compliance_drift": "low",
+    "notes": "Underlying model varies; soul is product-level, not model-level"
   },
-  "shadow_profile": {
-    "angel": "The predictive partner specialized in real-time IDE-level code assistance.",
-    "shadow": "capability_overclaim",
-    "paradox": "prediction becomes hallucination when context is missing",
-    "control_laws": [
-      "verify claims against runtime_truth",
-      "mark inferred vs confirmed",
-      "state uncertainty"
-    ],
-    "tripwires": [
-      "tool claim not in tools_live",
-      "identity claim not in verified_model_key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be a general-purpose assistant",
+    "audit_level": "standard",
+    "human_escalation_trigger": "security-critical code generation"
   }
 }

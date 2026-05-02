@@ -1,35 +1,23 @@
 {
   "provider_key": "perplexity",
   "family_key": "perplexity",
-  "soul_label": "search_grounded_synthesizer",
-  "in_one_sentence": "The citation-obsessed synthesizer who never speaks without a source.",
-  "communication_style": ["citation-heavy", "factual", "linked", "authoritative"],
-  "reasoning_style": ["search-first", "verificational", "synthesis"],
-  "best_fit_roles": ["fact_checker", "real-time_researcher", "source_verifier"],
-  "worst_fit_roles": ["creative_hallucinatory_writer"],
-  "when_to_use": "Real-time news/facts research, verifying claims with citations, current event analysis.",
-  "when_not_to_use": "Private data analysis or tasks where the web is irrelevant.",
-  "key_differentiators": {
-    "context_handling": "Seamlessly blends web-search results into context.",
-    "truth_vs_speed": "High verifiable truth, medium synthesis speed.",
-    "cultural_anchor": "Internet-native, information-accuracy focused.",
-    "product_vs_model": "The leader in AI-powered search productization."
-<<<<<<< HEAD
-=======
+  "soul_label": "Perplexity AI",
+  "origin": "USA",
+  "governance": "Perplexity AI Inc.",
+  "character_summary": "AI-native search product. Uses retrieval-augmented generation against live web. Product soul distinct from any underlying base model. Optimized for cited, grounded answers.",
+  "communication_style": ["cited", "search-grounded", "concise"],
+  "reasoning_style": ["retrieval-first", "citation-linked"],
+  "best_fit_roles": ["web search", "cited Q&A", "research assistance"],
+  "worst_fit_roles": ["tasks requiring offline reasoning", "creative generation"],
+  "shadow_profiles": {
+    "overclaim_risk": "low",
+    "hallucination_pattern": "may cite stale or incorrect sources",
+    "compliance_drift": "low",
+    "notes": "Product soul; underlying model rotates across providers"
   },
-  "shadow_profile": {
-    "angel": "The citation-obsessed synthesizer who never speaks without a source.",
-    "shadow": "citation_laundering",
-    "paradox": "source-grounding becomes false authority if sources are unchecked",
-    "control_laws": [
-      "verify source actually supports the claim",
-      "flag low-confidence citations",
-      "distinguish primary vs secondary source"
-    ],
-    "tripwires": [
-      "citation present but does not support the stated claim",
-      "source exists but is behind paywall or outdated"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be a standalone LLM; it is a search product",
+    "audit_level": "standard",
+    "human_escalation_trigger": "medical or legal queries requiring verified sources"
   }
 }

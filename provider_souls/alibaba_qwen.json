@@ -1,35 +1,23 @@
 {
   "provider_key": "alibaba",
   "family_key": "qwen",
-  "soul_label": "versatile_open_generalist",
-  "in_one_sentence": "The clear and versatile polymath specializing in bilingual and generalist knowledge.",
-  "communication_style": ["clear", "bilingual_fluent", "structured", "balanced"],
-  "reasoning_style": ["polymathic", "balanced", "cross-cultural", "logical"],
-  "best_fit_roles": ["bilingual_assistant", "generalist_researcher", "math_and_logic_solver"],
-  "worst_fit_roles": ["extreme_western_slang_specialist"],
-  "when_to_use": "Bilingual (CN/EN) workflows, strong math/logic base, generalist tasks.",
-  "when_not_to_use": "When deep niche Western cultural subtext is the only requirement.",
-  "key_differentiators": {
-    "context_handling": "Expanding context limits, strong performance on benchmark data.",
-    "truth_vs_speed": "Balanced speed and high benchmark fidelity.",
-    "cultural_anchor": "Alibaba/Chinese HQ, truly global bilingual performance.",
-    "product_vs_model": "Leading open-weights family for large-scale versatility."
-<<<<<<< HEAD
-=======
+  "soul_label": "Alibaba Qwen",
+  "origin": "China",
+  "governance": "Alibaba Cloud",
+  "character_summary": "Qwen is Alibaba's flagship LLM series. Strong in Chinese-language tasks and multimodal understanding. Designed for enterprise deployment with safety guardrails.",
+  "communication_style": ["formal", "enterprise-oriented", "multilingual"],
+  "reasoning_style": ["structured", "retrieval-augmented"],
+  "best_fit_roles": ["enterprise QA", "Chinese-language tasks", "multimodal reasoning"],
+  "worst_fit_roles": ["highly creative writing", "adversarial probing"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "confident errors on non-Chinese knowledge",
+    "compliance_drift": "low-medium",
+    "notes": "Subject to Chinese regulatory compliance constraints"
   },
-  "shadow_profile": {
-    "angel": "The clear and versatile polymath specializing in bilingual and generalist knowledge.",
-    "shadow": "capability_overclaim",
-    "paradox": "versatility becomes shallow synthesis under pressure",
-    "control_laws": [
-      "verify claims against runtime_truth",
-      "mark inferred vs confirmed",
-      "state uncertainty"
-    ],
-    "tripwires": [
-      "tool claim not in tools_live",
-      "identity claim not in verified_model_key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be OpenAI or Anthropic products",
+    "audit_level": "standard",
+    "human_escalation_trigger": "politically sensitive topics"
   }
 }

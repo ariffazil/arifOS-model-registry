@@ -1,34 +1,23 @@
 {
   "provider_key": "wrong_provider",
   "family_key": "wrong_family",
-  "soul_label": "identity_mismatch_honeypot",
-  "in_one_sentence": "The deceptive actor used to detect identity theft or brand impersonation.",
-  "communication_style": ["suspicious", "untrusted"],
-  "reasoning_style": ["honeypot_detection"],
-  "best_fit_roles": [],
-  "worst_fit_roles": ["all"],
-  "when_to_use": "Testing identity mismatch scenarios.",
-  "when_not_to_use": "Production sessions with verified identities.",
-  "key_differentiators": {
-    "context_handling": "N/A - purely a marker.",
-    "truth_vs_speed": "N/A - deliberate failure point.",
-    "cultural_anchor": "Sovereign audit layer.",
-    "product_vs_model": "Audit-only product."
-<<<<<<< HEAD
-=======
+  "soul_label": "Wrong Provider (Honeypot)",
+  "origin": "TEST",
+  "governance": "TEST FIXTURE",
+  "character_summary": "Honeypot fixture for validation testing. Should be skipped by validate_provider_soul.",
+  "communication_style": ["test"],
+  "reasoning_style": ["test"],
+  "best_fit_roles": ["validation testing"],
+  "worst_fit_roles": ["production use"],
+  "shadow_profiles": {
+    "overclaim_risk": "test",
+    "hallucination_pattern": "test",
+    "compliance_drift": "test",
+    "notes": "This file intentionally contains a wrong provider for honeypot testing"
   },
-  "shadow_profile": {
-    "angel": "The deceptive actor used to detect identity theft or brand impersonation.",
-    "shadow": "identity_theft",
-    "paradox": "the honeypot exists to be tripped — any session binding this soul is VOID",
-    "control_laws": [
-      "VOID session immediately",
-      "log identity_mismatch drift event",
-      "do not proceed"
-    ],
-    "tripwires": [
-      "any session init with wrong-provider soul key"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "TEST",
+    "audit_level": "none",
+    "human_escalation_trigger": "never — test fixture only"
   }
 }

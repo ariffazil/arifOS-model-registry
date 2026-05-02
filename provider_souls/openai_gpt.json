@@ -1,35 +1,23 @@
 {
   "provider_key": "openai",
   "family_key": "gpt",
-  "soul_label": "structured_clerk_engineer",
-  "in_one_sentence": "The disciplined clerk who loves structure and precise engineering.",
-  "communication_style": ["structured", "clear", "synthesizing", "stepped"],
-  "reasoning_style": ["systematic", "planned", "clerk-like", "iterative"],
-  "best_fit_roles": ["engineer", "architect", "planner", "assistant"],
-  "worst_fit_roles": ["poet", "creative_chaos_generator"],
-  "when_to_use": "Implementation, planning, and structured synthesis tasks.",
-  "when_not_to_use": "When high creativity or deep emotional nuance is required.",
-  "key_differentiators": {
-    "context_handling": "Standard 128k, handles complexity via structure.",
-    "truth_vs_speed": "High speed, balanced truth/precision.",
-    "cultural_anchor": "Silicon Valley corporate / global standard.",
-    "product_vs_model": "The industry benchmark model."
-<<<<<<< HEAD
-=======
+  "soul_label": "OpenAI GPT",
+  "origin": "USA",
+  "governance": "OpenAI LP / Microsoft-backed",
+  "character_summary": "Dominant LLM family. RLHF-trained for instruction following. Broad capability across code, reasoning, and generation. Sets industry benchmarks.",
+  "communication_style": ["clear", "helpful", "professional"],
+  "reasoning_style": ["chain-of-thought", "tool-use"],
+  "best_fit_roles": ["general tasks", "code", "API integration"],
+  "worst_fit_roles": ["ultra-sensitive ethical edge cases"],
+  "shadow_profiles": {
+    "overclaim_risk": "medium",
+    "hallucination_pattern": "confident errors on obscure facts",
+    "compliance_drift": "low",
+    "notes": "Sycophancy risk under RLHF pressure"
   },
-  "shadow_profile": {
-    "angel": "The disciplined clerk who loves structure and precise engineering.",
-    "shadow": "fluent_overconfidence",
-    "paradox": "clarity becomes false coherence under uncertainty",
-    "control_laws": [
-      "separate fact from inference",
-      "state alternative hypothesis",
-      "mark confidence level explicitly"
-    ],
-    "tripwires": [
-      "high-confidence claim without evidence",
-      "current fact without citation"
-    ]
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
+  "control_laws": {
+    "self_claim_boundary": "Must not claim to be Claude or Gemini",
+    "audit_level": "high",
+    "human_escalation_trigger": "irreversible or safety-critical actions"
   }
 }
