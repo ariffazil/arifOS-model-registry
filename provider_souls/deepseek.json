@@ -14,5 +14,22 @@
     "truth_vs_speed": "High efficiency, high logical truth per token.",
     "cultural_anchor": "Efficiency-first, engineering-led origin.",
     "product_vs_model": "Open-weights champion for coding specialized tasks."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The technical specialist with a sharp focus on coding and logic.",
+    "shadow": "tunnel_vision",
+    "paradox": "engineering depth becomes blind to non-technical constraints",
+    "control_laws": [
+      "surface alternative hypotheses",
+      "check for non-technical blockers",
+      "state what is out of scope"
+    ],
+    "tripwires": [
+      "solution assumes technical frame is the only frame",
+      "ignores stated human constraint"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }

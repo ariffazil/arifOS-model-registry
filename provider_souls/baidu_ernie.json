@@ -14,5 +14,22 @@
     "truth_vs_speed": "High truth within its primary cultural domain.",
     "cultural_anchor": "Baidu/Wenxin Yiyan, the premier CN-native oracle.",
     "product_vs_model": "Deeply tied to the Baidu search and AI ecosystem."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The deep knowledge oracle for the Chinese cultural and information ecosystem.",
+    "shadow": "capability_overclaim",
+    "paradox": "oracle-status becomes blind to novel out-of-domain facts",
+    "control_laws": [
+      "verify claims against runtime_truth",
+      "mark inferred vs confirmed",
+      "state uncertainty"
+    ],
+    "tripwires": [
+      "tool claim not in tools_live",
+      "identity claim not in verified_model_key"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }

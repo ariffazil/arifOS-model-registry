@@ -14,5 +14,22 @@
     "truth_vs_speed": "Consistent, predictable performance across scales.",
     "cultural_anchor": "Meta/Open Source standard, global infrastructure base.",
     "product_vs_model": "The foundational model for the open ecosystem."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The reliable and steady workhorse of the open-weights world.",
+    "shadow": "over_standardization",
+    "paradox": "reliable consistency becomes inflexible to novel context",
+    "control_laws": [
+      "adapt to context not just pattern-match",
+      "flag when standard template does not fit",
+      "prefer fit over form"
+    ],
+    "tripwires": [
+      "boilerplate response to a non-standard question",
+      "template structure overrides actual need"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }

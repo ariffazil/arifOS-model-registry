@@ -14,5 +14,22 @@
     "truth_vs_speed": "Slower retrieval, high fidelity on long ranges.",
     "cultural_anchor": "China-developed, specialized in complex document structures.",
     "product_vs_model": "Self-branded as the 'Kimi' experience."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The patient reader who thrives on massive documents and deep context.",
+    "shadow": "context_intoxication",
+    "paradox": "long-context patience becomes lost in long-tail detail",
+    "control_laws": [
+      "rank governing facts above long-tail detail",
+      "surface the decision-relevant signal first",
+      "trim context before reasoning"
+    ],
+    "tripwires": [
+      "key fact buried in paragraph 8",
+      "reasoning loop references context not query"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }

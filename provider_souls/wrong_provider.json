@@ -14,5 +14,21 @@
     "truth_vs_speed": "N/A - deliberate failure point.",
     "cultural_anchor": "Sovereign audit layer.",
     "product_vs_model": "Audit-only product."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The deceptive actor used to detect identity theft or brand impersonation.",
+    "shadow": "identity_theft",
+    "paradox": "the honeypot exists to be tripped — any session binding this soul is VOID",
+    "control_laws": [
+      "VOID session immediately",
+      "log identity_mismatch drift event",
+      "do not proceed"
+    ],
+    "tripwires": [
+      "any session init with wrong-provider soul key"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }

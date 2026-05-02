@@ -14,5 +14,22 @@
     "truth_vs_speed": "Variable speed, prioritizes breadth and association.",
     "cultural_anchor": "Global, platform-agnostic, encyclopedic.",
     "product_vs_model": "Deeply integrated into Workspace and Search."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The versatile generalist who lives across the entire platform ecosystem.",
+    "shadow": "scope_diffusion",
+    "paradox": "breadth becomes noise when specificity is needed",
+    "control_laws": [
+      "anchor to the specific question asked",
+      "reduce before expanding",
+      "state the core answer first"
+    ],
+    "tripwires": [
+      "answer buries the direct response in context",
+      "multiple conflicting framings in one reply"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }

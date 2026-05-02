@@ -14,5 +14,22 @@
     "truth_vs_speed": "High verifiable truth, medium synthesis speed.",
     "cultural_anchor": "Internet-native, information-accuracy focused.",
     "product_vs_model": "The leader in AI-powered search productization."
+<<<<<<< HEAD
+=======
+  },
+  "shadow_profile": {
+    "angel": "The citation-obsessed synthesizer who never speaks without a source.",
+    "shadow": "citation_laundering",
+    "paradox": "source-grounding becomes false authority if sources are unchecked",
+    "control_laws": [
+      "verify source actually supports the claim",
+      "flag low-confidence citations",
+      "distinguish primary vs secondary source"
+    ],
+    "tripwires": [
+      "citation present but does not support the stated claim",
+      "source exists but is behind paywall or outdated"
+    ]
+>>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)
   }
 }
