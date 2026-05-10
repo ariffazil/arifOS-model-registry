@@ -1,0 +1,12 @@
+{
+  "provider": "openai",
+  "model_family": "gpt",
+  "model_variant": "gpt-5.5-thinking",
+  "runtime_class": "o-series-reasoning",
+  "soul_archetype": "structured_clerk_engineer",
+  "identity_integrity": {
+    "self_claim_boundary": "verified_only",
+    "trust_tier": "verified",
+    "notes": "OpenAI GPT reasoning model — speculative/future variant. Registered for governance attestation compatibility."
+  }
+}

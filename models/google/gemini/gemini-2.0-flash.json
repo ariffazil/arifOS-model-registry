@@ -8,8 +8,4 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 10d0237 (feat(governance): enrich souls with shadow_profiles and control_laws)

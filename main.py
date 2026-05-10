@@ -71,8 +71,11 @@ app.add_middleware(
 # Helper Functions
 # =============================================================================
 def load_json(path: Path) -> dict:
-    with open(path) as f:
-        return json.load(f)
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (FileNotFoundError, PermissionError):
+        raise HTTPException(status_code=404, detail=f"File not found or permission denied: {path.name}")
 
 def load_catalog() -> dict:
     return load_json(CATALOG_PATH)
