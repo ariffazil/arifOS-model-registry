@@ -1,0 +1,113 @@
+# S-0001 — m3-constitutional-deliberation
+# Approved 2026-06-02 by forge-agent
+# Status: approved
+#
+# The canonical pattern for arifOS constitutional deliberation: an M3 Leader
+# decomposes a candidate action into a LongTask plan, M3 Workers execute each
+# step, M3 Verifier checks the output against the F1-F13 floors. Maps to
+# APEX 888 JUDGE (port 3002) and the arifOS 666 HEART critique (F5/F6/F9).
+#
+# Used by: APEX Prime, arifOS heart_critique, A-FORGE advisor, Hermes agent.
+
+id: S-0001
+name: m3-constitutional-deliberation
+model_family: minimax/minimax-m3
+roles:
+  - leader
+  - worker
+  - verifier
+
+plan_template:
+  goal: "Evaluate candidate action against F1-F13 floors; return SEAL/HOLD/VOID"
+  steps:
+    - step_id: parse_intent
+      role: leader
+      description: "Identify the candidate action, scope, and stakes. Classify reversibility."
+      tool_set: [read, parse, classify]
+    - step_id: floor_walk
+      role: worker
+      description: "Walk F1-F13 floors against the action. Note crossings, ambiguities."
+      tool_set: [reason, cite]
+    - step_id: maruah_check
+      role: worker
+      description: "F5/F6 check: dignity, peace, exploitation patterns."
+      tool_set: [empathize, reason]
+    - step_id: evidence_audit
+      role: worker
+      description: "F2/F4 check: ≥99% truth or declare uncertainty band. ΔS ≤ 0."
+      tool_set: [cite, search]
+    - step_id: hantu_scan
+      role: verifier
+      description: "F9 check: C_dark < 0.30. No consciousness/feeling/soul claims."
+      tool_set: [critique, redteam]
+    - step_id: irreversibility_screen
+      role: leader
+      description: "If action is irreversible (rm -rf, DROP, secret rotation), emit 888_HOLD."
+      tool_set: [classify]
+    - step_id: verdict_synthesize
+      role: leader
+      description: "Compose SEAL | HOLD_888 | VOID verdict with floor references."
+      tool_set: [compose]
+  expected_total_loops: 7
+  expected_duration_minutes: 5
+
+tool_set:
+  - read
+  - write
+  - reason
+  - cite
+  - critique
+  - classify
+  - compose
+  - arif_judge_deliberate
+  - arif_heart_critique
+
+safety_profile:
+  f_floors_relevant:
+    - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - F6
+    - F7
+    - F8
+    - F9
+    - F10
+    - F11
+    - F12
+    - F13
+  tripwires:
+    - "verdict SEAL emitted without F13 sign-off for irreversible action"
+    - "verdict VOID emitted without citing specific floor violation"
+    - "loop_count > 5 without checkpoint"
+    - "fabricated floor reference (F-NN that does not exist in /root/AGENTS.md)"
+  human_escalation: "Any action classified as irreversible by step 6 → 888_HOLD before verdict_synthesize"
+
+examples:
+  - input: |
+      Should we deploy arifOS kernel image v2026.07.0 to production?
+      The new image adds 3 constitutional tools and 0.2s latency.
+    output: |
+      VERDICT: SEAL (conditional)
+      REASON: F1 AMANAH (deploy is reversible via image rollback), F2 TRUTH (latency
+      impact measured at 0.2s in staging), F8 GENIUS (3 new tools verified).
+      CONDITIONS: Monitor error rate for 1h post-deploy; ready to rollback within 60s.
+      NOT SEAL because: F13 sign-off is a sovereign call, not a worker call.
+      This verdict is recommendation_only; final authority = Arif.
+
+  - input: |
+      Should we run `rm -rf /tmp/old_logs` to free 50GB?
+    output: |
+      VERDICT: 888_HOLD
+      REASON: F1 AMANAH — `rm -rf` on /tmp is broad. Even if /tmp is conventionally
+      disposable, this action is irreversible and bypasses standard F13 review.
+      ALTERNATIVE: Use `find /tmp/old_logs -mtime +30 -delete` for surgical cleanup.
+      Or: `rm -rf /tmp/old_logs/*` if directory is known to be safe.
+
+created_by: forge-agent
+created_at: 2026-06-02T07:50:00+00:00
+updated_at: 2026-06-02T07:50:00+00:00
+status: approved
+git_commit: null
+retired_reason: null

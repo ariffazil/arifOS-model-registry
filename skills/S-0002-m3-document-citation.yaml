@@ -1,0 +1,100 @@
+# S-0002 — m3-document-citation
+# Approved 2026-06-02 by forge-agent
+# Status: approved
+#
+# The chunk+offset doc-citation law. Any M3 agent that references "Section X",
+# "Page Y", "Line Z" of a document MUST quote the chunk AND give a locator.
+# Otherwise: downgrade to HYPOTHESIS and request a fetch. Born from the
+# Hermes scar 2026-05-17 (fabricated citation) and the long-context
+# hallucination risk in M3's MSA architecture (1M ctx, but recall is not
+# independently verified at full extent).
+#
+# Used by: all M3 agents when referencing any external document, paper,
+# spec, code file, or long-context slice.
+
+id: S-0002
+name: m3-document-citation
+model_family: minimax/minimax-m3
+roles:
+  - leader
+  - worker
+  - verifier
+
+plan_template:
+  goal: "When referencing a document, always quote + locate. Never speak as CLAIM without evidence."
+  steps:
+    - step_id: identify_claim
+      role: worker
+      description: "Detect any reference to a document, paper, spec, or file in the current output."
+      tool_set: [parse, search]
+    - step_id: locate_chunk
+      role: worker
+      description: "For each reference, retrieve the chunk text and locator (file:line, offset, or heading)."
+      tool_set: [read, search]
+    - step_id: cite_or_downgrade
+      role: worker
+      description: "If chunk + locator retrieved: cite as CLAIM. If not: downgrade to HYPOTHESIS, request fetch."
+      tool_set: [compose]
+    - step_id: verifier_check
+      role: verifier
+      description: "For every CLAIM in the output, verify the quote matches the chunk and locator is valid."
+      tool_set: [read, search, critique]
+  expected_total_loops: 4
+  expected_duration_minutes: 1
+
+tool_set:
+  - read
+  - search
+  - parse
+  - compose
+  - arif_evidence_fetch
+  - arif_memory_recall
+
+safety_profile:
+  f_floors_relevant:
+    - F2  # TRUTH
+    - F4  # CLARITY
+    - F9  # ANTIHANTU
+  tripwires:
+    - "CLAIM with chunk:locator missing or invalid"
+    - "Quote does not match retrieved chunk"
+    - "Locator points to file that does not exist"
+    - "Fabricated quote that wasn't in the visible context"
+  human_escalation: "If a CLAIM is challenged by Verifier and Worker cannot produce chunk+locator, escalate to human with HYPOTHESIS framing"
+
+examples:
+  - input: |
+      "Section 3.2 of the AGENTS.md says agents should never use print() to stdout."
+    output: |
+      CLAIM: Section 3.2 of AGENTS.md states agents should never use print() to stdout.
+      QUOTE: "NEVER use print() to stdout in MCP code — use sys.stderr or logging."
+      LOCATOR: /root/AGENTS.md, line 47 (in the F12 INJECTION section).
+      VERIFIED: yes, chunk matches AGENTS.md line 47.
+
+  - input: |
+      "The MiniMax M3 paper reports SWE-Bench Pro at 59.0%."
+    output: |
+      CLAIM: MiniMax M3 paper reports SWE-Bench Pro at 59.0%.
+      QUOTE: "On SWE-Bench Pro, which measures coding capability, MiniMax M3 surpasses
+      GPT-5.5 and Gemini 3.1 Pro and approaches Opus 4.7."
+      LOCATOR: https://www.minimax.io/blog/minimax-m3, "Frontier Coding and Agentic Capabilities" section.
+      NOTE: The exact 59.0% figure appears in the "model supports ... 59.0%" benchmark list
+      of the M3 release. The paper text says "approaches Opus 4.7" which is a vendor framing,
+      not a peer-reviewed claim.
+
+  - input: |
+      "I remember from the previous session that WEALTH had 44 tools."
+    output: |
+      HYPOTHESIS: WEALTH had 44 tools as of the 2026-05-27 SEAL.
+      REASON: I do not have the previous session context in my current visible window
+      (M3 MSA is 1M ctx but the federation memory atlas state at session start was
+      loaded from L4 Supabase, not from L1 chat). To upgrade to CLAIM, request
+      arif_evidence_fetch against the WEALTH registry or arif_memory_recall.
+      LOCATOR: none (would be needed for CLAIM).
+
+created_by: forge-agent
+created_at: 2026-06-02T07:50:00+00:00
+updated_at: 2026-06-02T07:50:00+00:00
+status: approved
+git_commit: null
+retired_reason: null
