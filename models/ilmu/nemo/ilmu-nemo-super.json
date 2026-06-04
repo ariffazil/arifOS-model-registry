@@ -1,0 +1,56 @@
+{
+  "provider": "ilmu",
+  "model_family": "nemo",
+  "model_variant": "ilmu-nemo-super",
+  "runtime_class": "frontier",
+  "soul_archetype": "malaysian_sovereign_intelligence",
+  "spec": {
+    "release_date": "2026-Q1",
+    "context_window_tokens": 256000,
+    "max_output_tokens": 128000,
+    "modality": ["text"],
+    "architecture": "NVIDIA Nemotron-3-Super — MoE + Hybrid Mamba-Transformer",
+    "primary_training_focus": [
+      "agentic task execution",
+      "Bahasa Malaysia native optimization",
+      "constitutional safety (educational refusal)"
+    ],
+    "pinchbench_score": 0.856,
+    "data_residency": "100% Malaysia (YTL AI Labs infrastructure)",
+    "open_weights": true
+  },
+  "pricing": {
+    "denomination": "RM",
+    "monthly_plan": "Claw Starter RM25 / Pro RM50 (~$5-11 USD)",
+    "effective_cost_per_1M_tokens_usd": 0.39,
+    "surprise_bills": "none — prepaid, 402 when empty",
+    "cache_discount": "none"
+  },
+  "constitutional_profile": {
+    "f9_anti_hantu": "strong",
+    "refusal_style": "educational — explains why with citations (IUPAC, PubChem)",
+    "silent_refusal_risk": "low — always explains refusal"
+  },
+  "strengths": {
+    "bahasa_malaysia": "native optimization",
+    "data_sovereignty": "100% Malaysian servers, no data used for training",
+    "cost_efficiency": "6-9x cheaper than DeepSeek list pricing",
+    "agentic_tasks": "PinchBench 85.6%"
+  },
+  "limitations": {
+    "math_reasoning": "not benchmark-leading",
+    "context_window": "256K vs 1M competitors",
+    "multimodal": "text-only"
+  },
+  "best_fit_in_federation": [
+    "cost-sensitive agentic work",
+    "Bahasa Malaysia / Malaysian context",
+    "economy tier fallback",
+    "constitutional safety-critical tasks"
+  ],
+  "identity_integrity": {
+    "self_claim_boundary": "verified_only",
+    "trust_tier": "verified",
+    "notes": "ILMU Nemo Super — hosted by YTL AI Labs. NVIDIA Nemotron-3-Super underneath. Highest PinchBench open model (85.6%). Malaysian sovereign AI."
+  }
+}

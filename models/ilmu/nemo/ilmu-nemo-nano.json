@@ -1,0 +1,35 @@
+{
+  "provider": "ilmu",
+  "model_family": "nemo",
+  "model_variant": "ilmu-nemo-nano",
+  "runtime_class": "lightweight",
+  "soul_archetype": "malaysian_sovereign_intelligence",
+  "spec": {
+    "release_date": "2026-Q1",
+    "context_window_tokens": 256000,
+    "modality": ["text"],
+    "architecture": "Lightweight NVIDIA Nemotron variant — throughput-optimized",
+    "primary_training_focus": [
+      "high-throughput agent routing",
+      "tool selection",
+      "lightweight sub-agent calls"
+    ],
+    "data_residency": "100% Malaysia (YTL AI Labs infrastructure)",
+    "token_cost": "1 Super token = 3 Nano tokens"
+  },
+  "constitutional_profile": {
+    "f9_anti_hantu": "inherited from Super — same safety framework",
+    "refusal_style": "terse — designed for routing speed"
+  },
+  "best_fit_in_federation": [
+    "high-throughput agent routing",
+    "tool selection and classification",
+    "OpenClaw gateway primary (currently deployed)",
+    "lightweight sub-agent calls"
+  ],
+  "identity_integrity": {
+    "self_claim_boundary": "verified_only",
+    "trust_tier": "verified",
+    "notes": "ILMU Nemo Nano — lightweight throughput variant. Currently deployed as OpenClaw gateway primary. 1 Super token = 3 Nano tokens."
+  }
+}

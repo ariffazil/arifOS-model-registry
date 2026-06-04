@@ -2,39 +2,77 @@
   "deployment_id": "vps_main_arifos",
   "provider_key": "minimax",
   "family_key": "minimax",
-  "model_id": "MiniMax-M2.7",
+  "model_id": "MiniMax-M3",
   "tools_live": [
-    "read", "write", "edit", "exec",
-    "docker_ps", "docker_logs", "docker_exec",
-    "web_search", "web_fetch", "browser",
-    "sessions_spawn", "sessions_list", "sessions_history",
-    "memory_search", "memory_get",
-    "arifOS_kernel", "gateway:config.get",
-    "message", "tts", "pdf", "image"
+    "read",
+    "write",
+    "edit",
+    "exec",
+    "docker_ps",
+    "docker_logs",
+    "docker_exec",
+    "web_search",
+    "web_fetch",
+    "browser",
+    "sessions_spawn",
+    "sessions_list",
+    "sessions_history",
+    "memory_search",
+    "memory_get",
+    "arifOS_kernel",
+    "gateway:config.get",
+    "message",
+    "tts",
+    "pdf",
+    "image"
   ],
   "web_on": true,
   "memory_mode": "vault_backed",
   "execution_mode": "governed",
   "side_effects_allowed": false,
   "auth_level": "full_vps_exec_no_ring2",
-  "verified_at": "2026-03-28T00:00:00Z",
-  "notes": "arifOS primary production deployment. Full tool access except Ring 2.",
-  
+  "verified_at": "2026-06-04T07:45:00Z",
+  "notes": "arifOS primary production deployment. Multi-model cascade: MiniMax M3 (primary daily), DeepSeek V4 Pro (heavy math/reasoning), ILMU Nemo Super (economy/BM/fallback), ILMU Nemo Nano (OpenClaw routing).",
   "capabilities": {
     "supports_tools": true,
     "supports_web": true,
     "supports_files": true,
     "has_memory": true,
     "can_execute_code": true,
-    "max_context_tokens": 128000,
+    "max_context_tokens": 1000000,
     "risk_tier": "medium",
     "sovereign_override_available": false
   },
-  
   "self_claim_boundary": {
     "identity_claim_policy": "verified_against_registry",
     "tool_claim_policy": "runtime_truth_only",
     "knowledge_claim_policy": "attest_training_cutoff",
     "execution_claim_policy": "governed_explicit_approval"
+  },
+  "model_cascade": {
+    "tier_1_primary": {
+      "provider": "minimax",
+      "model": "MiniMax-M3",
+      "role": "daily agent work, SWE tasks, federation primary",
+      "billing": "token plan"
+    },
+    "tier_2_heavy": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "role": "math, code, long context, Omega forge agent",
+      "billing": "pay-as-you-go"
+    },
+    "tier_3_economy": {
+      "provider": "ilmu",
+      "model": "ilmu-nemo-super",
+      "role": "cost-sensitive, BM language, safety-critical, data sovereign",
+      "billing": "RM prepaid plan"
+    },
+    "tier_4_routing": {
+      "provider": "ilmu",
+      "model": "ilmu-nemo-nano",
+      "role": "high-throughput routing, tool selection, OpenClaw gateway",
+      "billing": "RM prepaid (3x cheaper than Super per token)"
+    }
   }
 }

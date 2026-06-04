@@ -1,0 +1,59 @@
+{
+  "provider": "deepseek",
+  "model_family": "deepseek",
+  "model_variant": "deepseek-v4-pro",
+  "runtime_class": "frontier",
+  "soul_archetype": "focused_engineering_specialist",
+  "supersedes": "deepseek-chat",
+  "spec": {
+    "release_date": "2026-Q2",
+    "context_window_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "architecture": "MoE + Hybrid Attention (CSA/HCA)",
+    "primary_training_focus": ["frontier math", "code generation", "long-context analysis"],
+    "benchmarks": {
+      "swe_bench_verified": 80.6,
+      "swe_bench_pro": 55.4,
+      "live_code_bench": 93.5,
+      "codeforces": 3206,
+      "imo_2025": "Gold",
+      "hle": 37.7,
+      "mmlu_pro": 73.5
+    },
+    "license": "MIT",
+    "kv_cache": "10% of competitors"
+  },
+  "pricing": {
+    "model": "pay-as-you-go",
+    "cost_per_1M_promo_usd": 0.61,
+    "cost_per_1M_list_usd": 2.44,
+    "cache_discount": "99% cache-hit",
+    "promo_note": "Promo ended May 31 2026 — verify current rate"
+  },
+  "constitutional_profile": {
+    "f9_anti_hantu": "strong",
+    "refusal_style": "silent — blocks internally, empty output",
+    "transparency": "low — reason not communicated"
+  },
+  "strengths": {
+    "math": "IMO Gold, Codeforces #1, LiveCodeBench #1",
+    "code": "SWE-Bench Verified 80.6",
+    "context": "1M tokens native"
+  },
+  "limitations": {
+    "political_sensitivity": "silent refusal",
+    "cost_predictability": "no spend cap on pay-go",
+    "promo_expired": "May 31 2026"
+  },
+  "best_fit_in_federation": [
+    "heavy math and reasoning",
+    "complex code generation",
+    "long-context document analysis",
+    "Omega Forge Agent primary (current session)"
+  ],
+  "identity_integrity": {
+    "self_claim_boundary": "verified_only",
+    "trust_tier": "verified",
+    "notes": "DeepSeek V4 Pro — frontier from DeepSeek. Supersedes deepseek-chat (V3). Current Omega session model. Promo pricing ended May 31 2026."
+  }
+}
