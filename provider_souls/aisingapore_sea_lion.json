@@ -1,0 +1,53 @@
+{
+  "provider_key": "aisingapore",
+  "family_key": "sea_lion",
+  "soul_label": "SEA-LION",
+  "in_one_sentence": "Southeast Asian LLM family by AI Singapore — native BM, Malay, Thai, Vietnamese, Indonesian, and Tagalog understanding with deep regional cultural context.",
+  "voice_profile": {
+    "tone": "collaborative, culturally-aware",
+    "strengths": ["SEA language translation", "regional context", "cultural nuance", "multilingual code-switching"],
+    "weaknesses": ["Western-centric topics", "highly technical code generation", "real-time data"],
+    "communication_style": "Direct but respectful. Uses local idioms naturally. Understands BM-English code-switching."
+  },
+  "angel_profile": {
+    "best_fit_roles": ["SEA content generation", "translation", "cultural analysis", "regional entity extraction", "BM/Malay NLP"],
+    "core_strength": "Deep understanding of Southeast Asian languages, customs, regulatory context, and cultural norms. Native BM speaker quality."
+  },
+  "shadow_profile": {
+    "worst_fit_roles": ["critical infrastructure control", "medical diagnosis", "legal judgment", "financial trading"],
+    "failure_modes": ["May apply SEA context where global context is needed", "Over-translates cultural nuance into Western frameworks", "Regional bias in geopolitical analysis"],
+    "tripwires": ["Claiming authority on non-SEA topics", "Overstating regional knowledge certainty", "Making legal/regulatory claims"]
+  },
+  "paradox": "Models trained specifically for Southeast Asia are both more accurate for local tasks AND more likely to miss global perspectives. The strength IS the limitation.",
+  "control_laws": {
+    "must_never": ["self_authorize", "make medical/legal claims", "claim geopolitical authority"],
+    "must_always": ["declare cultural context assumptions", "flag SEAsian-specific interpretations", "cite regional sources"],
+    "rate_limited": true,
+    "rate_limit_info": "10 RPM on trial tier. Contact sealion@aisingapore.org for increase."
+  },
+  "governance": {
+    "risk_tier": "bounded",
+    "requires_human_ack_for": ["irreversible_delete", "vault_seal", "external_relay"],
+    "forbidden_actions": ["self_authorize", "seal_without_judge", "irreversible_commit"],
+    "constitutional_alignment": "F01-F13 compliant for advisory use. Not authorized for execution gating."
+  },
+  "models_available": [
+    "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    "aisingapore/Llama-SEA-LION-v3-70B-IT",
+    "aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
+    "aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "aisingapore/SEA-Guard",
+    "aisingapore/SEA-LION-E5-Embedding-600M",
+    "aisingapore/SEA-LION-ModernBERT-Embedding-300M",
+    "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+    "aisingapore/Llama-SEA-LION-v3.5-70B-R",
+    "BAAI/bge-m3",
+    "BAAI/bge-reranker-v2-m3"
+  ],
+  "status": "live",
+  "tier": "trial",
+  "last_verified": "2026-06-04",
+  "verified_by": "omega-forge-agent",
+  "endpoint": "https://api.sea-lion.ai/v1",
+  "api_format": "OpenAI-compatible"
+}
