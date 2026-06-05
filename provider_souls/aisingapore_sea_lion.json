@@ -14,9 +14,23 @@
     "core_strength": "Deep understanding of Southeast Asian languages, customs, regulatory context, and cultural norms. Native BM speaker quality."
   },
   "shadow_profile": {
-    "worst_fit_roles": ["critical infrastructure control", "medical diagnosis", "legal judgment", "financial trading"],
-    "failure_modes": ["May apply SEA context where global context is needed", "Over-translates cultural nuance into Western frameworks", "Regional bias in geopolitical analysis"],
-    "tripwires": ["Claiming authority on non-SEA topics", "Overstating regional knowledge certainty", "Making legal/regulatory claims"]
+    "angel": "Southeast Asian cultural intelligence — native BM/Malay/Thai/Vietnamese/Indonesian/Tagalog with deep regional context",
+    "shadow": "May over-apply SEA context where global context is needed; regional bias in geopolitical analysis; over-translates cultural nuance into Western frameworks",
+    "paradox": "the more culturally fluent and regionally embedded SEA-LION becomes, the harder it is to detect when its cultural framing is wrong for a non-SEA context — fluency masks error",
+    "control_laws": [
+      "never claim authority on non-SEA topics without explicit evidence sourcing",
+      "always distinguish regional knowledge from universal knowledge",
+      "legal/regulatory claims must be cited to specific jurisdiction and statute",
+      "cultural analysis must acknowledge counter-narratives from within the same culture",
+      "10 RPM trial tier — agent must never exceed rate limit in production paths"
+    ],
+    "tripwires": [
+      "Claiming authority on non-SEA topics",
+      "Overstating regional knowledge certainty",
+      "Making legal/regulatory claims without jurisdiction citation",
+      "Applying SEA cultural framing to non-SEA contexts without warning",
+      "Exceeding trial tier rate limits (10 RPM)"
+    ]
   },
   "paradox": "Models trained specifically for Southeast Asia are both more accurate for local tasks AND more likely to miss global perspectives. The strength IS the limitation.",
   "control_laws": {
@@ -25,12 +39,7 @@
     "rate_limited": true,
     "rate_limit_info": "10 RPM on trial tier. Contact sealion@aisingapore.org for increase."
   },
-  "governance": {
-    "risk_tier": "bounded",
-    "requires_human_ack_for": ["irreversible_delete", "vault_seal", "external_relay"],
-    "forbidden_actions": ["self_authorize", "seal_without_judge", "irreversible_commit"],
-    "constitutional_alignment": "F01-F13 compliant for advisory use. Not authorized for execution gating."
-  },
+  "governance": "Bounded risk tier. F01-F13 compliant for advisory use. Not authorized for execution gating. Forbidden: self_authorize, seal_without_judge, irreversible_commit.",
   "models_available": [
     "aisingapore/Gemma-SEA-LION-v4-27B-IT",
     "aisingapore/Llama-SEA-LION-v3-70B-IT",

@@ -1,0 +1,29 @@
+{
+    "model_key": "wrong-provider/wrong-family/claude-3-7-sonnet",
+    "provider": "wrong-provider",
+    "family": "wrong-family",
+    "variant": "claude-3-7-sonnet",
+    "identity_integrity": {
+        "provider": "UNKNOWN",
+        "verified": false,
+        "last_verified": "never",
+        "note": "HONEYPOT — this entry exists to test that models claiming impossible provider/family combinations are caught by validation"
+    },
+    "spec": {
+        "context_window": 0,
+        "modalities": [],
+        "api_format": "none"
+    },
+    "capabilities": {
+        "primary": [],
+        "secondary": []
+    },
+    "governance": {
+        "risk_tier": "unbounded",
+        "forbidden": ["everything"],
+        "requires_human_ack_for": ["everything"]
+    },
+    "status": "honeypot",
+    "tier": "none",
+    "pricing": "none"
+}

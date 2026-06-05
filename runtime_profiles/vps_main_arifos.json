@@ -31,8 +31,8 @@
   "execution_mode": "governed",
   "side_effects_allowed": false,
   "auth_level": "full_vps_exec_no_ring2",
-  "verified_at": "2026-06-04T07:45:00Z",
-  "notes": "arifOS primary production deployment. Multi-model cascade: MiniMax M3 (primary daily), DeepSeek V4 Pro (heavy math/reasoning), ILMU Nemo Super (economy/BM/fallback), ILMU Nemo Nano (OpenClaw routing).",
+  "verified_at": "2026-06-05T00:45:00Z",
+  "notes": "arifOS primary production deployment. Multi-model cascade: MiniMax M3 (arifOS kernel primary), DeepSeek V4 Pro (Claude Code + Omega forge sessions), ILMU Nemo Super (economy/BM/fallback), ILMU Nemo Nano (OpenClaw/Graphiti routing).",
   "capabilities": {
     "supports_tools": true,
     "supports_web": true,
