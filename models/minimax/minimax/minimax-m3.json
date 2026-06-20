@@ -1,0 +1,53 @@
+{
+  "provider": "minimax",
+  "model_family": "minimax",
+  "model_variant": "minimax-m3",
+  "runtime_class": "m3",
+  "soul_archetype": "agentic_iterative_operator",
+  "spec": {
+    "release_date": "2026-06-01",
+    "context_window_tokens": 1000000,
+    "modality": [
+      "text",
+      "image",
+      "video",
+      "audio",
+      "music"
+    ],
+    "architecture": "MSA (MiniMax Sparse Attention)",
+    "primary_training_focus": [
+      "frontier coding",
+      "agentic task decomposition",
+      "long-running workflows"
+    ],
+    "training_data_scale": "~100T tokens (multimodal, joint from step 0)"
+  },
+  "vs_m2_7": {
+    "context_window_tokens": {
+      "m2_7": 200000,
+      "m3": 1000000,
+      "delta": "+5x"
+    },
+    "modality": {
+      "m2_7": "text (bilingual)",
+      "m3": "native multimodal — text+image+video+audio+music"
+    },
+    "architecture": {
+      "m2_7": "standard transformer",
+      "m3": "MSA (sparse attention, 1M ctx without quadratic cost)"
+    },
+    "agentic_tier": {
+      "m2_7": "tool-use optimized",
+      "m3": "production-grade agentic — task decomposition, long-running workflows"
+    },
+    "open_source": {
+      "m2_7": false,
+      "m3": "claimed (vendor statement, unverified)"
+    }
+  },
+  "identity_integrity": {
+    "self_claim_boundary": "verified_only",
+    "trust_tier": "verified",
+    "notes": "MiniMax (MiniMax) flagship as of 2026-06-01. Replaces M2.7 as default in arifOS. NOT Moonshot AI. NOT Kimi."
+  }
+}
