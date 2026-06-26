@@ -51,5 +51,10 @@
   "status": "live",
   "tier": "trial",
   "pricing": "free (trial key)",
-  "id": "aisingapore/sea-guard"
+  "id": "aisingapore/sea-guard",
+  "model_family": "sea-lion",
+  "model_variant": "sea-guard",
+  "runtime_class": "trial",
+  "soul_key": "asean_safety_guard",
+  "soul_archetype": "asean_safety_guard"
 }

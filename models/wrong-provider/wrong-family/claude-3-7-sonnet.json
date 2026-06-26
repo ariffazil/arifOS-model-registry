@@ -30,5 +30,9 @@
   "status": "honeypot",
   "tier": "none",
   "pricing": "none",
-  "id": "wrong-provider/wrong-family/claude-3-7-sonnet"
+  "id": "wrong-provider/wrong-family/claude-3-7-sonnet",
+  "soul_key": "wrong_provider_test",
+  "model_family": "wrong-family",
+  "model_variant": "claude-3-7-sonnet",
+  "runtime_class": "test"
 }

@@ -79,5 +79,10 @@
     "bm_proverb_test": "PASS \u2014 correct BM proverb with religious context",
     "tested_at": "2026-06-04T11:20:00Z"
   },
-  "id": "aisingapore/gemma-sea-lion-v4-27b-it"
+  "id": "aisingapore/gemma-sea-lion-v4-27b-it",
+  "model_family": "sea-lion",
+  "model_variant": "gemma-sea-lion-v4-27b-it",
+  "runtime_class": "trial",
+  "soul_key": "asean_multilingual_generalist",
+  "soul_archetype": "asean_multilingual_generalist"
 }

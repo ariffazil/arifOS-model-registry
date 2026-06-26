@@ -51,5 +51,10 @@
   "status": "live",
   "tier": "trial",
   "pricing": "free (trial key)",
-  "id": "aisingapore/bge-m3"
+  "id": "aisingapore/bge-m3",
+  "model_family": "sea-lion",
+  "model_variant": "bge-m3",
+  "runtime_class": "trial",
+  "soul_key": "asean_embedding_specialist",
+  "soul_archetype": "asean_embedding_specialist"
 }

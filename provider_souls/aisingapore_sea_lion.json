@@ -121,5 +121,10 @@
       "Applying SEA cultural framing to non-SEA contexts without warning",
       "Exceeding trial tier rate limits (10 RPM)"
     ]
-  }
+  },
+  "soul_archetypes": [
+    "asean_embedding_specialist",
+    "asean_multilingual_generalist",
+    "asean_safety_guard"
+  ]
 }

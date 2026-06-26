@@ -51,5 +51,10 @@
   "status": "live",
   "tier": "trial",
   "pricing": "free (trial key)",
-  "id": "aisingapore/qwen-sea-lion-v4-32b-it"
+  "id": "aisingapore/qwen-sea-lion-v4-32b-it",
+  "model_family": "sea-lion",
+  "model_variant": "qwen-sea-lion-v4-32b-it",
+  "runtime_class": "trial",
+  "soul_key": "asean_multilingual_generalist",
+  "soul_archetype": "asean_multilingual_generalist"
 }
