@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "Microsoft Copilot \u2014 enterprise-grade, Office/Azure integrated. Different from GitHub Copilot!"
   },
-  "soul_key": "ecosystem_native_architect"
+  "soul_key": "ecosystem_native_architect",
+  "id": "microsoft/copilot/copilot-enterprise"
 }

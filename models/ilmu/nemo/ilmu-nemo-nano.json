@@ -34,5 +34,6 @@
     "trust_tier": "verified",
     "notes": "ILMU Nemo Nano \u2014 lightweight throughput variant. Currently deployed as OpenClaw gateway primary. 1 Super token = 3 Nano tokens."
   },
-  "soul_key": "malaysian_sovereign_intelligence"
+  "soul_key": "malaysian_sovereign_intelligence",
+  "id": "ilmu/nemo/ilmu-nemo-nano"
 }

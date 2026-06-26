@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "focused_engineering_specialist"
+  "soul_key": "focused_engineering_specialist",
+  "id": "deepseek/deepseek/deepseek-chat"
 }

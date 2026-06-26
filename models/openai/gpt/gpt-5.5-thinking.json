@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "OpenAI GPT reasoning model \u2014 speculative/future variant. Registered for governance attestation compatibility."
   },
-  "soul_key": "structured_clerk_engineer"
+  "soul_key": "structured_clerk_engineer",
+  "id": "openai/gpt/gpt-5.5-thinking"
 }

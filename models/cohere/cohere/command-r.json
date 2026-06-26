@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "enterprise_rag_specialist"
+  "soul_key": "enterprise_rag_specialist",
+  "id": "cohere/cohere/command-r"
 }

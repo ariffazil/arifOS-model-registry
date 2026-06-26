@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "stoic_open_workhorse"
+  "soul_key": "stoic_open_workhorse",
+  "id": "meta/llama/llama-3.3-70b"
 }

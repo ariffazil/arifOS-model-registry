@@ -55,5 +55,6 @@
     "trust_tier": "verified",
     "notes": "ILMU Nemo Super \u2014 hosted by YTL AI Labs. NVIDIA Nemotron-3-Super underneath. Highest PinchBench open model (85.6%). Malaysian sovereign AI."
   },
-  "soul_key": "malaysian_sovereign_intelligence"
+  "soul_key": "malaysian_sovereign_intelligence",
+  "id": "ilmu/nemo/ilmu-nemo-super"
 }

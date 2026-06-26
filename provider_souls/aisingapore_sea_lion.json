@@ -83,5 +83,43 @@
   "endpoint": "https://api.sea-lion.ai/v1",
   "api_format": "OpenAI-compatible",
   "when_to_use": "Southeast Asian regional tasks, multilingual Malay/English work, ASEAN-context applications.",
-  "when_not_to_use": "Non-ASEAN regulatory content, tasks requiring non-SEA cultural context."
+  "when_not_to_use": "Non-ASEAN regulatory content, tasks requiring non-SEA cultural context.",
+  "communication_style": [
+    "multilingual",
+    "Southeast-Asian",
+    "culturally-grounded"
+  ],
+  "reasoning_style": [
+    "regional-context",
+    "multilingual-reasoning",
+    "ASEAN-aware"
+  ],
+  "best_fit_roles": [
+    "Southeast Asian tasks",
+    "multilingual BM/EN/ID/TH/VN work",
+    "ASEAN-context applications"
+  ],
+  "worst_fit_roles": [
+    "non-ASEAN regulatory content",
+    "tasks requiring non-SEA cultural context"
+  ],
+  "shadow_profiles": {
+    "angel": "Southeast Asian cultural intelligence \u2014 native BM/Malay/Thai/Vietnamese/Indonesian/Tagalog with deep regional context",
+    "shadow": "May over-apply SEA context where global context is needed; regional bias in geopolitical analysis; over-translates cultural nuance into Western frameworks",
+    "paradox": "the more culturally fluent and regionally embedded SEA-LION becomes, the harder it is to detect when its cultural framing is wrong for a non-SEA context \u2014 fluency masks error",
+    "control_laws": [
+      "never claim authority on non-SEA topics without explicit evidence sourcing",
+      "always distinguish regional knowledge from universal knowledge",
+      "legal/regulatory claims must be cited to specific jurisdiction and statute",
+      "cultural analysis must acknowledge counter-narratives from within the same culture",
+      "10 RPM trial tier \u2014 agent must never exceed rate limit in production paths"
+    ],
+    "tripwires": [
+      "Claiming authority on non-SEA topics",
+      "Overstating regional knowledge certainty",
+      "Making legal/regulatory claims without jurisdiction citation",
+      "Applying SEA cultural framing to non-SEA contexts without warning",
+      "Exceeding trial tier rate limits (10 RPM)"
+    ]
+  }
 }

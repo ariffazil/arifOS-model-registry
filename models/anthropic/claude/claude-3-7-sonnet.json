@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "careful_makcik_reviewer"
+  "soul_key": "careful_makcik_reviewer",
+  "id": "anthropic/claude/claude-3-7-sonnet"
 }

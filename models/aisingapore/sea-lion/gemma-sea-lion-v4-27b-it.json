@@ -6,45 +6,78 @@
   "identity_integrity": {
     "provider": "AI Singapore",
     "base_model": "Google Gemma 2 27B",
-    "fine_tuning": "SEA-LION v4 — Southeast Asian language + cultural alignment",
+    "fine_tuning": "SEA-LION v4 \u2014 Southeast Asian language + cultural alignment",
     "verified": true,
     "last_verified": "2026-06-04"
   },
   "spec": {
     "parameter_size": "27B",
     "context_window": 8192,
-    "modalities": ["text"],
-    "languages": ["en", "ms", "id", "th", "vi", "tl", "zh"],
+    "modalities": [
+      "text"
+    ],
+    "languages": [
+      "en",
+      "ms",
+      "id",
+      "th",
+      "vi",
+      "tl",
+      "zh"
+    ],
     "api_format": "OpenAI-compatible chat completions"
   },
   "capabilities": {
-    "primary": ["reason", "draft", "analyze", "translate", "seasian_context"],
-    "secondary": ["summarize", "entity_extraction", "cultural_analysis"],
-    "not_suitable_for": ["complex_code_generation", "real_time_data", "medical_diagnosis"]
+    "primary": [
+      "reason",
+      "draft",
+      "analyze",
+      "translate",
+      "seasian_context"
+    ],
+    "secondary": [
+      "summarize",
+      "entity_extraction",
+      "cultural_analysis"
+    ],
+    "not_suitable_for": [
+      "complex_code_generation",
+      "real_time_data",
+      "medical_diagnosis"
+    ]
   },
   "strengths": [
-    "Native BM/Malay quality — understands code-switching, idioms, cultural context",
-    "Fast inference — 1.8s response time for typical queries",
+    "Native BM/Malay quality \u2014 understands code-switching, idioms, cultural context",
+    "Fast inference \u2014 1.8s response time for typical queries",
     "Good balance of speed vs quality in 27B class",
     "SEA regulatory and business context awareness"
   ],
   "limitations": [
     "10 RPM rate limit on trial tier",
-    "27B class — less capable than 70B for complex reasoning",
+    "27B class \u2014 less capable than 70B for complex reasoning",
     "Western-centric topics may be less accurate",
     "No vision/multimodal capability"
   ],
   "governance": {
     "risk_tier": "bounded",
-    "forbidden": ["self_authorize", "seal_without_judge", "irreversible_commit", "code_mutation_without_review"],
-    "requires_human_ack_for": ["irreversible_delete", "vault_seal"]
+    "forbidden": [
+      "self_authorize",
+      "seal_without_judge",
+      "irreversible_commit",
+      "code_mutation_without_review"
+    ],
+    "requires_human_ack_for": [
+      "irreversible_delete",
+      "vault_seal"
+    ]
   },
   "status": "live",
   "tier": "trial",
   "pricing": "free (trial key)",
   "benchmarks": {
     "bm_response_time_s": 1.79,
-    "bm_proverb_test": "PASS — correct BM proverb with religious context",
+    "bm_proverb_test": "PASS \u2014 correct BM proverb with religious context",
     "tested_at": "2026-06-04T11:20:00Z"
-  }
+  },
+  "id": "aisingapore/gemma-sea-lion-v4-27b-it"
 }

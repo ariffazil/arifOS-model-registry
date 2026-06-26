@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "Perplexity AI \u2014 search-first, citation-obsessed."
   },
-  "soul_key": "search_grounded_synthesizer"
+  "soul_key": "search_grounded_synthesizer",
+  "id": "perplexity/perplexity/perplexity-pro"
 }

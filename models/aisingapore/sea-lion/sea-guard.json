@@ -1,29 +1,55 @@
 {
-    "model_key": "aisingapore/sea-guard",
-    "provider": "aisingapore",
-    "family": "sea-lion",
-    "variant": "sea-guard",
-    "identity_integrity": {
-        "provider": "AI Singapore",
-        "verified": true,
-        "last_verified": "2026-06-04"
-    },
-    "spec": {
-        "context_window": 8192,
-        "modalities": ["text"],
-        "languages": ["en", "ms", "id", "th", "vi", "tl", "zh"],
-        "api_format": "OpenAI-compatible chat completions"
-    },
-    "capabilities": {
-        "primary": ["reason", "draft", "analyze", "translate"],
-        "secondary": ["summarize", "entity_extraction"]
-    },
-    "governance": {
-        "risk_tier": "bounded",
-        "forbidden": ["self_authorize", "seal_without_judge", "irreversible_commit"],
-        "requires_human_ack_for": ["irreversible_delete", "vault_seal"]
-    },
-    "status": "live",
-    "tier": "trial",
-    "pricing": "free (trial key)"
+  "model_key": "aisingapore/sea-guard",
+  "provider": "aisingapore",
+  "family": "sea-lion",
+  "variant": "sea-guard",
+  "identity_integrity": {
+    "provider": "AI Singapore",
+    "verified": true,
+    "last_verified": "2026-06-04"
+  },
+  "spec": {
+    "context_window": 8192,
+    "modalities": [
+      "text"
+    ],
+    "languages": [
+      "en",
+      "ms",
+      "id",
+      "th",
+      "vi",
+      "tl",
+      "zh"
+    ],
+    "api_format": "OpenAI-compatible chat completions"
+  },
+  "capabilities": {
+    "primary": [
+      "reason",
+      "draft",
+      "analyze",
+      "translate"
+    ],
+    "secondary": [
+      "summarize",
+      "entity_extraction"
+    ]
+  },
+  "governance": {
+    "risk_tier": "bounded",
+    "forbidden": [
+      "self_authorize",
+      "seal_without_judge",
+      "irreversible_commit"
+    ],
+    "requires_human_ack_for": [
+      "irreversible_delete",
+      "vault_seal"
+    ]
+  },
+  "status": "live",
+  "tier": "trial",
+  "pricing": "free (trial key)",
+  "id": "aisingapore/sea-guard"
 }

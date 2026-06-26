@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "broad_platform_generalist"
+  "soul_key": "broad_platform_generalist",
+  "id": "google/gemini/gemini-2.0-flash"
 }

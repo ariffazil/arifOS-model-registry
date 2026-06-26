@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "adaptable_open_craftsman"
+  "soul_key": "adaptable_open_craftsman",
+  "id": "mistral/mistral/mistral-large"
 }

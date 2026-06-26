@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "GitHub Copilot \u2014 IDE-integrated coding assistant."
   },
-  "soul_key": "inline_code_completer"
+  "soul_key": "inline_code_completer",
+  "id": "github/copilot/copilot-chat"
 }

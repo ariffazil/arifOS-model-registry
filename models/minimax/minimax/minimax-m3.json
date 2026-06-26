@@ -50,5 +50,6 @@
     "trust_tier": "verified",
     "notes": "MiniMax (MiniMax) flagship as of 2026-06-01. Replaces M2.7 as default in arifOS. NOT Moonshot AI. NOT Kimi."
   },
-  "soul_key": "agentic_iterative_operator"
+  "soul_key": "agentic_iterative_operator",
+  "id": "minimax/minimax/minimax-m3"
 }

@@ -60,5 +60,6 @@
     "trust_tier": "verified",
     "notes": "DeepSeek V4 Pro \u2014 frontier from DeepSeek. Supersedes deepseek-chat (V3). Current Omega session model. Promo pricing ended May 31 2026."
   },
-  "soul_key": "focused_engineering_specialist"
+  "soul_key": "focused_engineering_specialist",
+  "id": "deepseek/deepseek/deepseek-v4-pro"
 }

@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "Baidu Ernie (\u767e\u5ea6\u6587\u5fc3\u4e00\u8a00) \u2014 deeply Chinese-contextual."
   },
-  "soul_key": "chinese_knowledge_oracle"
+  "soul_key": "chinese_knowledge_oracle",
+  "id": "baidu/ernie/ernie-4.0"
 }

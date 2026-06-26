@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "Moonshot AI (\u6708\u4e4b\u6697\u9762) \u2014 makers of Kimi. 2M token context window."
   },
-  "soul_key": "context_hungry_reader"
+  "soul_key": "context_hungry_reader",
+  "id": "moonshot/kimi/kimi-k1.5"
 }

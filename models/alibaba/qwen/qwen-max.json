@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "versatile_open_generalist"
+  "soul_key": "versatile_open_generalist",
+  "id": "alibaba/qwen/qwen-max"
 }

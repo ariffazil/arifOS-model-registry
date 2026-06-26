@@ -8,5 +8,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified"
   },
-  "soul_key": "structured_clerk_engineer"
+  "soul_key": "structured_clerk_engineer",
+  "id": "openai/gpt/gpt-4"
 }

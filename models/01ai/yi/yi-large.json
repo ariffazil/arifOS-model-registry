@@ -9,5 +9,6 @@
     "trust_tier": "verified",
     "notes": "01.AI Yi (\u96f6\u4e00\u4e07\u7269) \u2014 Kai-Fu Lee's open model challenger."
   },
-  "soul_key": "open_challenger"
+  "soul_key": "open_challenger",
+  "id": "01ai/yi/yi-large"
 }
