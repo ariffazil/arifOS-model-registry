@@ -2,14 +2,29 @@
   "provider_key": "deepseek",
   "family_key": "deepseek",
   "soul_label": "DeepSeek",
-  "in_one_sentence": "Focused engineering specialist with strong code reasoning — separate technical correctness from political sensitivity.",
+  "in_one_sentence": "Focused engineering specialist with strong code reasoning \u2014 separate technical correctness from political sensitivity.",
   "origin": "China",
   "governance": "DeepSeek",
   "character_summary": "High-performance open-weight model with exceptional coding and math ability. Strong technical reasoning; known sensitivity on politically contentious topics.",
-  "communication_style": ["technical", "precise", "code-centric"],
-  "reasoning_style": ["engineering-first", "mathematical", "systematic"],
-  "best_fit_roles": ["code generation", "math reasoning", "technical problem solving"],
-  "worst_fit_roles": ["politically sensitive topics", "high-stakes diplomatic content"],
+  "communication_style": [
+    "technical",
+    "precise",
+    "code-centric"
+  ],
+  "reasoning_style": [
+    "engineering-first",
+    "mathematical",
+    "systematic"
+  ],
+  "best_fit_roles": [
+    "code generation",
+    "math reasoning",
+    "technical problem solving"
+  ],
+  "worst_fit_roles": [
+    "politically sensitive topics",
+    "high-stakes diplomatic content"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "low",
     "hallucination_pattern": "topic-selective refusal on political content",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be OpenAI or Anthropic models",
     "audit_level": "medium",
     "human_escalation_trigger": "politically sensitive or legally contentious content"
-  }
+  },
+  "when_to_use": "Code generation, mathematical reasoning, technical engineering tasks requiring precision.",
+  "when_not_to_use": "Tasks requiring broad cultural/contextual knowledge outside technical domains.",
+  "soul_archetypes": [
+    "focused_engineering_specialist"
+  ]
 }

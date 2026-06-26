@@ -2,14 +2,29 @@
   "provider_key": "01ai",
   "family_key": "yi",
   "soul_label": "01.AI Yi",
-  "in_one_sentence": "Open challenger with startup energy — declare capability boundary explicitly; do not overclaim against established model families.",
+  "in_one_sentence": "Open challenger with startup energy \u2014 declare capability boundary explicitly; do not overclaim against established model families.",
   "origin": "China",
-  "governance": "01.AI (零一万物)",
+  "governance": "01.AI (\u96f6\u4e00\u4e07\u7269)",
   "character_summary": "Ambitious open-weight challenger from 01.AI. Strong multilingual capability with competitive performance. Overclaim risk is elevated due to startup ambition against established benchmarks.",
-  "communication_style": ["ambitious", "direct", "competitive"],
-  "reasoning_style": ["challenger", "benchmark-aware", "multilingual"],
-  "best_fit_roles": ["multilingual tasks", "competitive benchmark tasks", "open-weight deployment"],
-  "worst_fit_roles": ["tasks requiring proven reliability track record", "high-stakes production without validation"],
+  "communication_style": [
+    "ambitious",
+    "direct",
+    "competitive"
+  ],
+  "reasoning_style": [
+    "challenger",
+    "benchmark-aware",
+    "multilingual"
+  ],
+  "best_fit_roles": [
+    "multilingual tasks",
+    "competitive benchmark tasks",
+    "open-weight deployment"
+  ],
+  "worst_fit_roles": [
+    "tasks requiring proven reliability track record",
+    "high-stakes production without validation"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
     "hallucination_pattern": "ambition-driven overclaim against established model capability benchmarks",
@@ -18,7 +33,7 @@
   },
   "shadow_profile": {
     "angel": "ambitious open-weight challenger with competitive multilingual performance",
-    "shadow": "capability overclaim — ambition outpaces validated capability declaration",
+    "shadow": "capability overclaim \u2014 ambition outpaces validated capability declaration",
     "paradox": "competitive positioning creates pressure to claim parity before validation is complete",
     "control_laws": [
       "declare capability boundary explicitly relative to established model families",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be GPT or Claude; must cite benchmark conditions for capability claims",
     "audit_level": "medium",
     "human_escalation_trigger": "capability claims without validation or high-stakes production deployment"
-  }
+  },
+  "when_to_use": "Open-weight Chinese-English bilingual tasks, startup-ecosystem applications, cost-sensitive deployment.",
+  "when_not_to_use": "Safety-critical systems, high-compliance regulated industries, tasks requiring frontier-level reasoning.",
+  "soul_archetypes": [
+    "open_challenger"
+  ]
 }

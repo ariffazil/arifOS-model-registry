@@ -8,8 +8,10 @@
     "release_date": "2026-Q1",
     "context_window_tokens": 256000,
     "max_output_tokens": 128000,
-    "modality": ["text"],
-    "architecture": "NVIDIA Nemotron-3-Super — MoE + Hybrid Mamba-Transformer",
+    "modality": [
+      "text"
+    ],
+    "architecture": "NVIDIA Nemotron-3-Super \u2014 MoE + Hybrid Mamba-Transformer",
     "primary_training_focus": [
       "agentic task execution",
       "Bahasa Malaysia native optimization",
@@ -23,13 +25,13 @@
     "denomination": "RM",
     "monthly_plan": "Claw Starter RM25 / Pro RM50 (~$5-11 USD)",
     "effective_cost_per_1M_tokens_usd": 0.39,
-    "surprise_bills": "none — prepaid, 402 when empty",
+    "surprise_bills": "none \u2014 prepaid, 402 when empty",
     "cache_discount": "none"
   },
   "constitutional_profile": {
     "f9_anti_hantu": "strong",
-    "refusal_style": "educational — explains why with citations (IUPAC, PubChem)",
-    "silent_refusal_risk": "low — always explains refusal"
+    "refusal_style": "educational \u2014 explains why with citations (IUPAC, PubChem)",
+    "silent_refusal_risk": "low \u2014 always explains refusal"
   },
   "strengths": {
     "bahasa_malaysia": "native optimization",
@@ -51,6 +53,7 @@
   "identity_integrity": {
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
-    "notes": "ILMU Nemo Super — hosted by YTL AI Labs. NVIDIA Nemotron-3-Super underneath. Highest PinchBench open model (85.6%). Malaysian sovereign AI."
-  }
+    "notes": "ILMU Nemo Super \u2014 hosted by YTL AI Labs. NVIDIA Nemotron-3-Super underneath. Highest PinchBench open model (85.6%). Malaysian sovereign AI."
+  },
+  "soul_key": "malaysian_sovereign_intelligence"
 }

@@ -2,12 +2,20 @@
   "provider_key": "ilmu",
   "family_key": "nemo",
   "soul_label": "ILMU Nemo",
-  "in_one_sentence": "Malaysian sovereign intelligence — native BM, educational refusal, dramatically cheaper than frontier competitors.",
+  "in_one_sentence": "Malaysian sovereign intelligence \u2014 native BM, educational refusal, dramatically cheaper than frontier competitors.",
   "origin": "Malaysia",
   "governance": "YTL AI Labs",
-  "character_summary": "Malaysia's own LLM, built on NVIDIA Nemotron-3-Super with MoE + Hybrid Mamba-Transformer. Hosted on 100% Malaysian infrastructure, RM-denominated pricing, no data used for training. Unlike DeepSeek (silent refusal), ILMU educates — it tells you why it refuses, with citations to real authorities (IUPAC, PubChem). Highest-scoring open model on PinchBench (85.6%).",
-  "communication_style": ["educational", "clear", "multilingual-native"],
-  "reasoning_style": ["agentic", "constitutional", "citation-backed"],
+  "character_summary": "Malaysia's own LLM, built on NVIDIA Nemotron-3-Super with MoE + Hybrid Mamba-Transformer. Hosted on 100% Malaysian infrastructure, RM-denominated pricing, no data used for training. Unlike DeepSeek (silent refusal), ILMU educates \u2014 it tells you why it refuses, with citations to real authorities (IUPAC, PubChem). Highest-scoring open model on PinchBench (85.6%).",
+  "communication_style": [
+    "educational",
+    "clear",
+    "multilingual-native"
+  ],
+  "reasoning_style": [
+    "agentic",
+    "constitutional",
+    "citation-backed"
+  ],
   "best_fit_roles": [
     "Bahasa Malaysia / Malaysian context tasks",
     "cost-sensitive agentic workloads",
@@ -19,22 +27,22 @@
     "multimodal (text-only)"
   ],
   "shadow_profiles": {
-    "overclaim_risk": "low — hosted Nemotron wrapper",
+    "overclaim_risk": "low \u2014 hosted Nemotron wrapper",
     "hallucination_pattern": "checks real databases before claiming (IUPAC, PubChem)",
-    "compliance_drift": "low — educational refusal is consistent",
-    "notes": "The anti-hallucination rigor is the standout. ILMU doesn't just refuse — it verifies against real databases."
+    "compliance_drift": "low \u2014 educational refusal is consistent",
+    "notes": "The anti-hallucination rigor is the standout. ILMU doesn't just refuse \u2014 it verifies against real databases."
   },
   "shadow_profile": {
-    "angel": "educational refusal with real citations — builds trust through transparency",
+    "angel": "educational refusal with real citations \u2014 builds trust through transparency",
     "shadow": "limited multimodal (text-only), smaller context window than competitors",
     "paradox": "cheapest model has the best safety behavior; the 'budget' option may actually be the most trustworthy",
     "control_laws": [
       "always prefer ILMU for tasks that may hit constitutional boundaries",
-      "flag when task requires >256K context or multimodal — ILMU cannot serve",
+      "flag when task requires >256K context or multimodal \u2014 ILMU cannot serve",
       "do not use ILMU for IMO/Codeforces-level math"
     ],
     "tripwires": [
-      "silent refusal on ILMU (should never happen — design intent is educational)",
+      "silent refusal on ILMU (should never happen \u2014 design intent is educational)",
       "ILMU claiming consciousness or self-awareness",
       "ILMU fabricating citations instead of checking real databases"
     ]
@@ -43,5 +51,10 @@
     "self_claim_boundary": "Must not claim to be any non-ILMU model. Must not claim consciousness.",
     "audit_level": "medium",
     "human_escalation_trigger": "data sovereignty breach or credential fabrication"
-  }
+  },
+  "when_to_use": "Malaysian sovereign AI applications, BM-language tasks, national-context knowledge work.",
+  "when_not_to_use": "Non-Malaysian jurisdictional content, tasks requiring non-BM/non-EN language expertise.",
+  "soul_archetypes": [
+    "malaysian_sovereign_intelligence"
+  ]
 }

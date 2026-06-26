@@ -7,6 +7,7 @@
   "identity_integrity": {
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
-    "notes": "MiniMax (稀宇科技) — Chinese AI company. NOT Moonshot AI!"
-  }
+    "notes": "MiniMax (\u7a00\u5b87\u79d1\u6280) \u2014 Chinese AI company. NOT Moonshot AI!"
+  },
+  "soul_key": "agentic_iterative_operator"
 }

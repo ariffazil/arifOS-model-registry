@@ -7,6 +7,7 @@
   "identity_integrity": {
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
-    "notes": "01.AI Yi (零一万物) — Kai-Fu Lee's open model challenger."
-  }
+    "notes": "01.AI Yi (\u96f6\u4e00\u4e07\u7269) \u2014 Kai-Fu Lee's open model challenger."
+  },
+  "soul_key": "open_challenger"
 }

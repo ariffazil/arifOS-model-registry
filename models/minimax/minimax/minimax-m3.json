@@ -30,7 +30,7 @@
     },
     "modality": {
       "m2_7": "text (bilingual)",
-      "m3": "native multimodal — text+image+video+audio+music"
+      "m3": "native multimodal \u2014 text+image+video+audio+music"
     },
     "architecture": {
       "m2_7": "standard transformer",
@@ -38,7 +38,7 @@
     },
     "agentic_tier": {
       "m2_7": "tool-use optimized",
-      "m3": "production-grade agentic — task decomposition, long-running workflows"
+      "m3": "production-grade agentic \u2014 task decomposition, long-running workflows"
     },
     "open_source": {
       "m2_7": false,
@@ -49,5 +49,6 @@
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
     "notes": "MiniMax (MiniMax) flagship as of 2026-06-01. Replaces M2.7 as default in arifOS. NOT Moonshot AI. NOT Kimi."
-  }
+  },
+  "soul_key": "agentic_iterative_operator"
 }

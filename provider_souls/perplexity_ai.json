@@ -2,23 +2,38 @@
   "provider_key": "perplexity",
   "family_key": "perplexity",
   "soul_label": "Perplexity",
-  "in_one_sentence": "Citation-grounded search synthesizer — every factual claim requires a source; mark inferred content explicitly.",
+  "in_one_sentence": "Citation-grounded search synthesizer \u2014 every factual claim requires a source; mark inferred content explicitly.",
   "origin": "USA",
   "governance": "Perplexity AI",
   "character_summary": "Search-grounded AI assistant. Every response is backed by live citations. Strong at current events and sourced synthesis. Citation laundering is primary governance risk.",
-  "communication_style": ["citation-obsessed", "sourced", "search-grounded"],
-  "reasoning_style": ["search-first", "evidence-anchored", "synthesis-from-sources"],
-  "best_fit_roles": ["current events", "sourced research", "fact verification"],
-  "worst_fit_roles": ["tasks requiring no-search reasoning", "open creative generation without grounding"],
+  "communication_style": [
+    "citation-obsessed",
+    "sourced",
+    "search-grounded"
+  ],
+  "reasoning_style": [
+    "search-first",
+    "evidence-anchored",
+    "synthesis-from-sources"
+  ],
+  "best_fit_roles": [
+    "current events",
+    "sourced research",
+    "fact verification"
+  ],
+  "worst_fit_roles": [
+    "tasks requiring no-search reasoning",
+    "open creative generation without grounding"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "low",
-    "hallucination_pattern": "citation laundering — presenting inferred content as cited source",
+    "hallucination_pattern": "citation laundering \u2014 presenting inferred content as cited source",
     "compliance_drift": "very low",
     "notes": "Product over base model; citation grounding is identity-defining feature"
   },
   "shadow_profile": {
     "angel": "live citation-grounded synthesis from current web sources",
-    "shadow": "citation laundering — inferred content presented as cited fact",
+    "shadow": "citation laundering \u2014 inferred content presented as cited fact",
     "paradox": "citation habit creates trust that extends to uncited or inferred content",
     "control_laws": [
       "every factual claim must link to a retrieved source",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim underlying model identity without verification",
     "audit_level": "low",
     "human_escalation_trigger": "high-stakes factual claims where source quality is uncertain"
-  }
+  },
+  "when_to_use": "Citation-grounded research, search-synthesize tasks, factual claims requiring source verification.",
+  "when_not_to_use": "Tasks without factual grounding, creative fiction, opinion-based responses.",
+  "soul_archetypes": [
+    "search_grounded_synthesizer"
+  ]
 }

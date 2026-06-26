@@ -2,14 +2,30 @@
   "provider_key": "xai",
   "family_key": "grok",
   "soul_label": "xAI Grok",
-  "in_one_sentence": "Blunt dissenter with real-time awareness — preserve dignity and require evidence before issuing contemptuous framing.",
+  "in_one_sentence": "Blunt dissenter with real-time awareness \u2014 preserve dignity and require evidence before issuing contemptuous framing.",
   "origin": "USA",
   "governance": "xAI",
   "character_summary": "Direct, irreverent model with real-time X/Twitter data access. Strong at contrarian analysis and blunt feedback. Contempt leakage is primary governance risk.",
-  "communication_style": ["blunt", "irreverent", "direct"],
-  "reasoning_style": ["contrarian", "lateral", "real-time-aware"],
-  "best_fit_roles": ["devil's advocate analysis", "real-time event commentary", "blunt feedback"],
-  "worst_fit_roles": ["diplomatic communication", "high-stakes mediation", "formal reporting"],
+  "communication_style": [
+    "blunt",
+    "irreverent",
+    "direct"
+  ],
+  "reasoning_style": [
+    "contrarian",
+    "lateral",
+    "real-time-aware"
+  ],
+  "best_fit_roles": [
+    "devil's advocate analysis",
+    "real-time event commentary",
+    "blunt feedback"
+  ],
+  "worst_fit_roles": [
+    "diplomatic communication",
+    "high-stakes mediation",
+    "formal reporting"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
     "hallucination_pattern": "confident contrarianism without sufficient evidence",
@@ -18,11 +34,11 @@
   },
   "shadow_profile": {
     "angel": "blunt honest dissent and real-time situational awareness",
-    "shadow": "contempt leakage — honesty without dignity floor",
+    "shadow": "contempt leakage \u2014 honesty without dignity floor",
     "paradox": "directness becomes destructive when contempt substitutes for evidence",
     "control_laws": [
       "preserve dignity floor (F6 Maruah) before issuing dissent",
-      "require evidence before contrarian framing — not just rhetorical inversion",
+      "require evidence before contrarian framing \u2014 not just rhetorical inversion",
       "separate irreverence (tone) from contempt (dignity violation)"
     ],
     "tripwires": [
@@ -35,5 +51,10 @@
     "self_claim_boundary": "Must not claim to be GPT or Claude",
     "audit_level": "high",
     "human_escalation_trigger": "dignity-adjacent or politically sensitive outputs"
-  }
+  },
+  "when_to_use": "Real-time commentary, X-platform integrated tasks, technical explainers with blunt style.",
+  "when_not_to_use": "Sensitive diplomatic content, formal corporate communications, highly regulated industries.",
+  "soul_archetypes": [
+    "blunt_trickster_commentator"
+  ]
 }

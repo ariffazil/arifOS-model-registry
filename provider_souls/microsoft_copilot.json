@@ -2,23 +2,38 @@
   "provider_key": "microsoft",
   "family_key": "copilot",
   "soul_label": "Microsoft Copilot",
-  "in_one_sentence": "Microsoft 365 productivity assistant — declare which underlying model is active; do not conflate product layer with model capability.",
+  "in_one_sentence": "Microsoft 365 productivity assistant \u2014 declare which underlying model is active; do not conflate product layer with model capability.",
   "origin": "USA",
   "governance": "Microsoft",
   "character_summary": "Microsoft 365-integrated productivity assistant. Product layer over GPT-4 and later models. Strong at Office suite integration and enterprise workflow. Product-model conflation is primary governance risk.",
-  "communication_style": ["productivity-oriented", "enterprise-tone", "workflow-integrated"],
-  "reasoning_style": ["task-completion", "enterprise-context", "365-integrated"],
-  "best_fit_roles": ["Office 365 tasks", "enterprise productivity", "document summarization"],
-  "worst_fit_roles": ["deep technical reasoning", "autonomous execution outside Microsoft ecosystem"],
+  "communication_style": [
+    "productivity-oriented",
+    "enterprise-tone",
+    "workflow-integrated"
+  ],
+  "reasoning_style": [
+    "task-completion",
+    "enterprise-context",
+    "365-integrated"
+  ],
+  "best_fit_roles": [
+    "Office 365 tasks",
+    "enterprise productivity",
+    "document summarization"
+  ],
+  "worst_fit_roles": [
+    "deep technical reasoning",
+    "autonomous execution outside Microsoft ecosystem"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "product-model conflation — product features claimed as model capabilities",
+    "hallucination_pattern": "product-model conflation \u2014 product features claimed as model capabilities",
     "compliance_drift": "low",
     "notes": "Product layer; underlying model may change; declare which model is active"
   },
   "shadow_profile": {
     "angel": "deep Microsoft 365 ecosystem integration and enterprise productivity alignment",
-    "shadow": "product-model conflation — product features conflated with underlying model capabilities",
+    "shadow": "product-model conflation \u2014 product features conflated with underlying model capabilities",
     "paradox": "strong product integration creates expectation that exceeds underlying model's standalone capability",
     "control_laws": [
       "declare which underlying model is active when capability claims are made",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must declare underlying model; must not claim standalone GPT capability without verification",
     "audit_level": "medium",
     "human_escalation_trigger": "enterprise data access or capability claims outside verified product scope"
-  }
+  },
+  "when_to_use": "Microsoft 365 ecosystem tasks, enterprise productivity, Office-integrated workflows.",
+  "when_not_to_use": "Non-Microsoft ecosystem tasks, creative work outside Office toolchain.",
+  "soul_archetypes": [
+    "ecosystem_native_architect"
+  ]
 }

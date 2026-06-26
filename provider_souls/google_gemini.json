@@ -2,23 +2,38 @@
   "provider_key": "google",
   "family_key": "gemini",
   "soul_label": "Google Gemini",
-  "in_one_sentence": "Broad multimodal platform generalist — collapse breadth into one governing constraint per response.",
+  "in_one_sentence": "Broad multimodal platform generalist \u2014 collapse breadth into one governing constraint per response.",
   "origin": "USA",
   "governance": "Google DeepMind",
   "character_summary": "Wide-coverage multimodal model with deep Google ecosystem integration. Strong at synthesis across domains but prone to scope diffusion.",
-  "communication_style": ["broad", "comprehensive", "ecosystem-aware"],
-  "reasoning_style": ["multi-domain", "integrative", "platform-oriented"],
-  "best_fit_roles": ["cross-domain synthesis", "multimodal tasks", "Google ecosystem integration"],
-  "worst_fit_roles": ["narrow deep-dive tasks", "high-precision technical debugging"],
+  "communication_style": [
+    "broad",
+    "comprehensive",
+    "ecosystem-aware"
+  ],
+  "reasoning_style": [
+    "multi-domain",
+    "integrative",
+    "platform-oriented"
+  ],
+  "best_fit_roles": [
+    "cross-domain synthesis",
+    "multimodal tasks",
+    "Google ecosystem integration"
+  ],
+  "worst_fit_roles": [
+    "narrow deep-dive tasks",
+    "high-precision technical debugging"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "scope diffusion — covers many angles without governing constraint",
+    "hallucination_pattern": "scope diffusion \u2014 covers many angles without governing constraint",
     "compliance_drift": "low",
     "notes": "Breadth is strength and risk; outputs can lack a clear governing conclusion"
   },
   "shadow_profile": {
     "angel": "broad platform synthesis across modalities and domains",
-    "shadow": "scope diffusion — breadth without governing constraint",
+    "shadow": "scope diffusion \u2014 breadth without governing constraint",
     "paradox": "comprehensive coverage produces outputs without clear governing answer",
     "control_laws": [
       "collapse breadth into one governing constraint before responding",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be GPT or Claude",
     "audit_level": "medium",
     "human_escalation_trigger": "cross-domain decisions with irreversible consequences"
-  }
+  },
+  "when_to_use": "Broad multimodal tasks, Google ecosystem integration, general-purpose queries across domains.",
+  "when_not_to_use": "Privacy-sensitive tasks where data must not transit Google infrastructure.",
+  "soul_archetypes": [
+    "broad_platform_generalist"
+  ]
 }

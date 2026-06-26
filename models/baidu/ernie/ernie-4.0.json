@@ -7,6 +7,7 @@
   "identity_integrity": {
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
-    "notes": "Baidu Ernie (百度文心一言) — deeply Chinese-contextual."
-  }
+    "notes": "Baidu Ernie (\u767e\u5ea6\u6587\u5fc3\u4e00\u8a00) \u2014 deeply Chinese-contextual."
+  },
+  "soul_key": "chinese_knowledge_oracle"
 }

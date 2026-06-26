@@ -7,6 +7,7 @@
   "identity_integrity": {
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
-    "notes": "GitHub Copilot — IDE-integrated coding assistant."
-  }
+    "notes": "GitHub Copilot \u2014 IDE-integrated coding assistant."
+  },
+  "soul_key": "inline_code_completer"
 }

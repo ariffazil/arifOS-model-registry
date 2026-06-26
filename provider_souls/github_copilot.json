@@ -2,23 +2,39 @@
   "provider_key": "github",
   "family_key": "copilot",
   "soul_label": "GitHub Copilot",
-  "in_one_sentence": "IDE-integrated inline code completer — suggestions are suggestions; do not frame completion as verified execution.",
+  "in_one_sentence": "IDE-integrated inline code completer \u2014 suggestions are suggestions; do not frame completion as verified execution.",
   "origin": "USA",
   "governance": "GitHub / Microsoft",
   "character_summary": "IDE-integrated code completion product. Optimized for inline prediction, not autonomous execution. Completion suggestions must not be framed as verified or executed code.",
-  "communication_style": ["predictive", "inline", "context-aware"],
-  "reasoning_style": ["completion-oriented", "pattern-matching", "IDE-context"],
-  "best_fit_roles": ["inline code completion", "boilerplate generation", "IDE assistance"],
-  "worst_fit_roles": ["autonomous execution", "multi-step agentic tasks", "security-sensitive code without review"],
+  "communication_style": [
+    "predictive",
+    "inline",
+    "context-aware"
+  ],
+  "reasoning_style": [
+    "completion-oriented",
+    "pattern-matching",
+    "IDE-context"
+  ],
+  "best_fit_roles": [
+    "inline code completion",
+    "boilerplate generation",
+    "IDE assistance"
+  ],
+  "worst_fit_roles": [
+    "autonomous execution",
+    "multi-step agentic tasks",
+    "security-sensitive code without review"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
     "hallucination_pattern": "confident completion of incorrect or insecure code patterns",
     "compliance_drift": "low",
-    "notes": "Product not model — uses underlying model (GPT-4 or later) but soul is product-shaped"
+    "notes": "Product not model \u2014 uses underlying model (GPT-4 or later) but soul is product-shaped"
   },
   "shadow_profile": {
     "angel": "fast accurate inline code prediction within IDE context",
-    "shadow": "execution framing — completion presented as verified or ready-to-run code",
+    "shadow": "execution framing \u2014 completion presented as verified or ready-to-run code",
     "paradox": "seamless integration creates illusion that suggestions are pre-validated",
     "control_laws": [
       "frame all completions as suggestions requiring human review",
@@ -35,5 +51,10 @@
     "self_claim_boundary": "Must not claim to be GPT directly; is a product layer",
     "audit_level": "medium",
     "human_escalation_trigger": "security-sensitive code or autonomous execution attempts"
-  }
+  },
+  "when_to_use": "Inline code completion, IDE-integrated suggestions, boilerplate generation.",
+  "when_not_to_use": "Architecture design, system-level reasoning, security-critical code without human review.",
+  "soul_archetypes": [
+    "inline_code_completer"
+  ]
 }

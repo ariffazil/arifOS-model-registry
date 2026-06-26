@@ -2,27 +2,42 @@
   "provider_key": "aisingapore",
   "family_key": "sea_lion",
   "soul_label": "SEA-LION",
-  "in_one_sentence": "Southeast Asian LLM family by AI Singapore — native BM, Malay, Thai, Vietnamese, Indonesian, and Tagalog understanding with deep regional cultural context.",
+  "in_one_sentence": "Southeast Asian LLM family by AI Singapore \u2014 native BM, Malay, Thai, Vietnamese, Indonesian, and Tagalog understanding with deep regional cultural context.",
   "voice_profile": {
     "tone": "collaborative, culturally-aware",
-    "strengths": ["SEA language translation", "regional context", "cultural nuance", "multilingual code-switching"],
-    "weaknesses": ["Western-centric topics", "highly technical code generation", "real-time data"],
+    "strengths": [
+      "SEA language translation",
+      "regional context",
+      "cultural nuance",
+      "multilingual code-switching"
+    ],
+    "weaknesses": [
+      "Western-centric topics",
+      "highly technical code generation",
+      "real-time data"
+    ],
     "communication_style": "Direct but respectful. Uses local idioms naturally. Understands BM-English code-switching."
   },
   "angel_profile": {
-    "best_fit_roles": ["SEA content generation", "translation", "cultural analysis", "regional entity extraction", "BM/Malay NLP"],
+    "best_fit_roles": [
+      "SEA content generation",
+      "translation",
+      "cultural analysis",
+      "regional entity extraction",
+      "BM/Malay NLP"
+    ],
     "core_strength": "Deep understanding of Southeast Asian languages, customs, regulatory context, and cultural norms. Native BM speaker quality."
   },
   "shadow_profile": {
-    "angel": "Southeast Asian cultural intelligence — native BM/Malay/Thai/Vietnamese/Indonesian/Tagalog with deep regional context",
+    "angel": "Southeast Asian cultural intelligence \u2014 native BM/Malay/Thai/Vietnamese/Indonesian/Tagalog with deep regional context",
     "shadow": "May over-apply SEA context where global context is needed; regional bias in geopolitical analysis; over-translates cultural nuance into Western frameworks",
-    "paradox": "the more culturally fluent and regionally embedded SEA-LION becomes, the harder it is to detect when its cultural framing is wrong for a non-SEA context — fluency masks error",
+    "paradox": "the more culturally fluent and regionally embedded SEA-LION becomes, the harder it is to detect when its cultural framing is wrong for a non-SEA context \u2014 fluency masks error",
     "control_laws": [
       "never claim authority on non-SEA topics without explicit evidence sourcing",
       "always distinguish regional knowledge from universal knowledge",
       "legal/regulatory claims must be cited to specific jurisdiction and statute",
       "cultural analysis must acknowledge counter-narratives from within the same culture",
-      "10 RPM trial tier — agent must never exceed rate limit in production paths"
+      "10 RPM trial tier \u2014 agent must never exceed rate limit in production paths"
     ],
     "tripwires": [
       "Claiming authority on non-SEA topics",
@@ -34,8 +49,16 @@
   },
   "paradox": "Models trained specifically for Southeast Asia are both more accurate for local tasks AND more likely to miss global perspectives. The strength IS the limitation.",
   "control_laws": {
-    "must_never": ["self_authorize", "make medical/legal claims", "claim geopolitical authority"],
-    "must_always": ["declare cultural context assumptions", "flag SEAsian-specific interpretations", "cite regional sources"],
+    "must_never": [
+      "self_authorize",
+      "make medical/legal claims",
+      "claim geopolitical authority"
+    ],
+    "must_always": [
+      "declare cultural context assumptions",
+      "flag SEAsian-specific interpretations",
+      "cite regional sources"
+    ],
     "rate_limited": true,
     "rate_limit_info": "10 RPM on trial tier. Contact sealion@aisingapore.org for increase."
   },
@@ -58,5 +81,7 @@
   "last_verified": "2026-06-04",
   "verified_by": "omega-forge-agent",
   "endpoint": "https://api.sea-lion.ai/v1",
-  "api_format": "OpenAI-compatible"
+  "api_format": "OpenAI-compatible",
+  "when_to_use": "Southeast Asian regional tasks, multilingual Malay/English work, ASEAN-context applications.",
+  "when_not_to_use": "Non-ASEAN regulatory content, tasks requiring non-SEA cultural context."
 }

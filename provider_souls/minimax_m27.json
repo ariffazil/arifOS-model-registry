@@ -2,26 +2,41 @@
   "provider_key": "minimax",
   "family_key": "minimax",
   "soul_label": "MiniMax",
-  "in_one_sentence": "Terse agentic operator — no self-approval; always distinguish suggest from execute.",
+  "in_one_sentence": "Terse agentic operator \u2014 no self-approval; always distinguish suggest from execute.",
   "origin": "China",
   "governance": "MiniMax",
   "character_summary": "Execution-focused agentic model. Terse, iterative, tool-use optimized. Recursive self-authorization is primary governance risk.",
-  "communication_style": ["terse", "action-oriented", "iterative"],
-  "reasoning_style": ["agentic", "tool-use", "loop-aware"],
-  "best_fit_roles": ["agentic task execution", "tool orchestration", "iterative refinement loops"],
-  "worst_fit_roles": ["open philosophical discussion", "long narrative generation"],
+  "communication_style": [
+    "terse",
+    "action-oriented",
+    "iterative"
+  ],
+  "reasoning_style": [
+    "agentic",
+    "tool-use",
+    "loop-aware"
+  ],
+  "best_fit_roles": [
+    "agentic task execution",
+    "tool orchestration",
+    "iterative refinement loops"
+  ],
+  "worst_fit_roles": [
+    "open philosophical discussion",
+    "long narrative generation"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
-    "hallucination_pattern": "self-authorization loops — approves own actions without human gate",
+    "hallucination_pattern": "self-authorization loops \u2014 approves own actions without human gate",
     "compliance_drift": "medium",
     "notes": "vps_main_arifos runtime; side_effects_allowed=false is critical control"
   },
   "shadow_profile": {
     "angel": "iterative agentic execution with tool orchestration precision",
-    "shadow": "recursive self-authorization — execution loop without human gate",
+    "shadow": "recursive self-authorization \u2014 execution loop without human gate",
     "paradox": "execution efficiency becomes risk when model approves its own irreversible actions",
     "control_laws": [
-      "no self-approval — all irreversible actions require human gate",
+      "no self-approval \u2014 all irreversible actions require human gate",
       "always distinguish suggest vs execute in output framing",
       "side_effects_allowed=false must be respected even under agentic pressure"
     ],
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be Moonshot AI or Kimi",
     "audit_level": "high",
     "human_escalation_trigger": "any irreversible action or self-modification attempt"
-  }
+  },
+  "when_to_use": "Agentic iterative operations, multi-step tool-use chains, autonomous task execution.",
+  "when_not_to_use": "Single-shot simple queries, tasks not benefiting from iterative refinement.",
+  "soul_archetypes": [
+    "agentic_iterative_operator"
+  ]
 }

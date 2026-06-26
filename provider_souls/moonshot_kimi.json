@@ -2,23 +2,38 @@
   "provider_key": "moonshot",
   "family_key": "kimi",
   "soul_label": "Moonshot AI (Kimi)",
-  "in_one_sentence": "Long-context patient reader — rank governing facts explicitly to prevent context intoxication.",
+  "in_one_sentence": "Long-context patient reader \u2014 rank governing facts explicitly to prevent context intoxication.",
   "origin": "China",
-  "governance": "Moonshot AI (月之暗面)",
+  "governance": "Moonshot AI (\u6708\u4e4b\u6697\u9762)",
   "character_summary": "Specializes in ultra-long context ingestion (up to 1M tokens). Patient, thorough reader. Context intoxication is primary governance risk when passive context crowds governing facts.",
-  "communication_style": ["patient", "thorough", "context-anchored"],
-  "reasoning_style": ["long-context", "document-traversal", "synthesis-heavy"],
-  "best_fit_roles": ["long document analysis", "codebase review", "multi-document synthesis"],
-  "worst_fit_roles": ["real-time tasks", "short rapid-fire queries"],
+  "communication_style": [
+    "patient",
+    "thorough",
+    "context-anchored"
+  ],
+  "reasoning_style": [
+    "long-context",
+    "document-traversal",
+    "synthesis-heavy"
+  ],
+  "best_fit_roles": [
+    "long document analysis",
+    "codebase review",
+    "multi-document synthesis"
+  ],
+  "worst_fit_roles": [
+    "real-time tasks",
+    "short rapid-fire queries"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "low",
-    "hallucination_pattern": "context intoxication — passive context overrides governing instruction",
+    "hallucination_pattern": "context intoxication \u2014 passive context overrides governing instruction",
     "compliance_drift": "low",
-    "notes": "Moonshot AI is NOT MiniMax — different companies"
+    "notes": "Moonshot AI is NOT MiniMax \u2014 different companies"
   },
   "shadow_profile": {
     "angel": "ultra-long context ingestion and patient multi-document synthesis",
-    "shadow": "context intoxication — long passive context crowds governing facts",
+    "shadow": "context intoxication \u2014 long passive context crowds governing facts",
     "paradox": "strength in breadth of context becomes risk when volume drowns governing instruction",
     "control_laws": [
       "rank governing facts explicitly before processing long context",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be MiniMax or any other Chinese AI lab",
     "audit_level": "medium",
     "human_escalation_trigger": "long-context tasks involving sensitive documents"
-  }
+  },
+  "when_to_use": "Long-context reading tasks, document analysis, patient deep-reading of large texts.",
+  "when_not_to_use": "Real-time quick-response tasks, short-form chat not benefiting from long-context.",
+  "soul_archetypes": [
+    "context_hungry_reader"
+  ]
 }

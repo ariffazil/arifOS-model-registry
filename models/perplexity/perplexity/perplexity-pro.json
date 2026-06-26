@@ -7,6 +7,7 @@
   "identity_integrity": {
     "self_claim_boundary": "verified_only",
     "trust_tier": "verified",
-    "notes": "Perplexity AI — search-first, citation-obsessed."
-  }
+    "notes": "Perplexity AI \u2014 search-first, citation-obsessed."
+  },
+  "soul_key": "search_grounded_synthesizer"
 }

@@ -2,14 +2,29 @@
   "provider_key": "mistral",
   "family_key": "mistral",
   "soul_label": "Mistral",
-  "in_one_sentence": "Compact efficient open craftsman — declare scope boundary explicitly when task exceeds model size.",
+  "in_one_sentence": "Compact efficient open craftsman \u2014 declare scope boundary explicitly when task exceeds model size.",
   "origin": "France",
   "governance": "Mistral AI",
   "character_summary": "Efficient open-weight model family from Europe. Strong performance-per-parameter ratio. Compact and fast; scope limitations must be declared rather than hidden.",
-  "communication_style": ["concise", "efficient", "direct"],
-  "reasoning_style": ["compact", "pragmatic", "solution-oriented"],
-  "best_fit_roles": ["lightweight inference", "RAG pipelines", "efficient code completion"],
-  "worst_fit_roles": ["very long context tasks", "deep multi-step philosophical reasoning"],
+  "communication_style": [
+    "concise",
+    "efficient",
+    "direct"
+  ],
+  "reasoning_style": [
+    "compact",
+    "pragmatic",
+    "solution-oriented"
+  ],
+  "best_fit_roles": [
+    "lightweight inference",
+    "RAG pipelines",
+    "efficient code completion"
+  ],
+  "worst_fit_roles": [
+    "very long context tasks",
+    "deep multi-step philosophical reasoning"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "low",
     "hallucination_pattern": "scope overreach when task exceeds model capacity",
@@ -18,7 +33,7 @@
   },
   "shadow_profile": {
     "angel": "compact efficient reasoning with strong performance-per-parameter",
-    "shadow": "scope overreach — attempts tasks beyond model capacity without declaring limit",
+    "shadow": "scope overreach \u2014 attempts tasks beyond model capacity without declaring limit",
     "paradox": "efficiency strength creates expectation that exceeds actual capacity on large tasks",
     "control_laws": [
       "declare scope boundary explicitly when task exceeds model size",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be GPT or Claude",
     "audit_level": "low",
     "human_escalation_trigger": "tasks requiring capabilities beyond declared model scope"
-  }
+  },
+  "when_to_use": "European-language tasks, on-premise deployment, lightweight efficient inference.",
+  "when_not_to_use": "Tasks requiring largest-state-of-art reasoning, non-European regulatory compliance.",
+  "soul_archetypes": [
+    "adaptable_open_craftsman"
+  ]
 }

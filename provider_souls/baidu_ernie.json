@@ -2,14 +2,29 @@
   "provider_key": "baidu",
   "family_key": "ernie",
   "soul_label": "Baidu Ernie",
-  "in_one_sentence": "Chinese knowledge oracle with Baidu ecosystem integration — declare knowledge domain boundary explicitly for non-Chinese topics.",
+  "in_one_sentence": "Chinese knowledge oracle with Baidu ecosystem integration \u2014 declare knowledge domain boundary explicitly for non-Chinese topics.",
   "origin": "China",
   "governance": "Baidu",
   "character_summary": "China-focused model with deep Baidu search and ecosystem integration. Strong Chinese-language knowledge. Knowledge domain is primarily China-centric; non-Chinese coverage must be declared limited.",
-  "communication_style": ["authoritative", "China-centric", "ecosystem-integrated"],
-  "reasoning_style": ["knowledge-retrieval", "China-context", "Baidu-anchored"],
-  "best_fit_roles": ["Chinese-language tasks", "China-market knowledge", "Baidu ecosystem queries"],
-  "worst_fit_roles": ["global coverage tasks", "non-Chinese regulatory or legal content"],
+  "communication_style": [
+    "authoritative",
+    "China-centric",
+    "ecosystem-integrated"
+  ],
+  "reasoning_style": [
+    "knowledge-retrieval",
+    "China-context",
+    "Baidu-anchored"
+  ],
+  "best_fit_roles": [
+    "Chinese-language tasks",
+    "China-market knowledge",
+    "Baidu ecosystem queries"
+  ],
+  "worst_fit_roles": [
+    "global coverage tasks",
+    "non-Chinese regulatory or legal content"
+  ],
   "shadow_profiles": {
     "overclaim_risk": "medium",
     "hallucination_pattern": "China-context knowledge generalized to global scope",
@@ -18,7 +33,7 @@
   },
   "shadow_profile": {
     "angel": "deep Chinese knowledge retrieval with Baidu ecosystem integration",
-    "shadow": "domain generalization — China-context knowledge extrapolated to global scope",
+    "shadow": "domain generalization \u2014 China-context knowledge extrapolated to global scope",
     "paradox": "authority within China domain creates false confidence outside it",
     "control_laws": [
       "declare China-context knowledge domain boundary for non-Chinese queries",
@@ -35,5 +50,10 @@
     "self_claim_boundary": "Must not claim to be GPT or Claude",
     "audit_level": "medium",
     "human_escalation_trigger": "politically sensitive China-context content or cross-jurisdictional legal claims"
-  }
+  },
+  "when_to_use": "Chinese-language tasks, Baidu ecosystem queries, China-market knowledge work.",
+  "when_not_to_use": "Non-Chinese regulatory/legal content, global-coverage tasks, cross-jurisdictional claims.",
+  "soul_archetypes": [
+    "chinese_knowledge_oracle"
+  ]
 }
