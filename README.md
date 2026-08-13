@@ -487,3 +487,94 @@ Note: Git epoch may be sealed while Vault seal remains pending if runtime drift 
 ---
 
 *DITEMPA BUKAN DIBERI.* 🔥🧠💎
+
+---
+
+## 🗺️ Model Registry in the Federation
+
+```mermaid
+flowchart LR
+  subgraph Meta["🧭 Metabolism advisor"]
+    FED[("🧭 FED :7074<br/>route advisor<br/>model/provider ranking")]
+  end
+
+  subgraph Registry["📋 Model Registry (this repo)"]
+    REG[("arifOS-model-registry<br/>canonical model IDs<br/>provider pools · fallback chains")]
+  end
+
+  subgraph Providers["Provider pools (10 alive)"]
+    DEEPSEEK["deepseek"]
+    QWEN["qwen"]
+    MINIMAX["MiniMax"]
+    OPENCODE["opencode-go"]
+  end
+
+  subgraph Callers["Caller organs (read-only)"]
+    ARIFOS["arifOS :8088"]
+    AFORGE["A-FORGE :7071/72"]
+  end
+
+  REG -->|"canonical model IDs<br/>(deepseek-v4-pro, MiniMax-M3, ...)"| FED
+  REG -->|"provider pools + fallback chains"| Callers
+  FED -->|"ranked routes"| Callers
+  FED -.->|"balance probe"| Providers
+
+  classDef meta fill:#FFA500,stroke:#000,color:#fff,stroke-width:2px
+  classDef registry fill:#9C27B0,stroke:#000,color:#fff,stroke-width:2px
+  classDef provider fill:#e0e0e0,stroke:#000
+  classDef caller fill:#e0e0e0,stroke:#000
+  class FED meta
+  class REG registry
+```
+
+**Model registry internal loop:**
+
+```
+task arrives (with capability signature: reason/vision/coding/...)
+        │
+        ▼
+FED asks: which model can do this?
+        │
+        ▼
+registry lookup: canonical model IDs + provider pools
+        │
+        ▼
+rank by (cost · latency · constitutional fit · shadow)
+        │
+        ▼
+return ranked routes with retry policy
+        │
+        ▼
+caller invokes · records result for next ranking
+```
+
+**Hard rules (REGISTRY_ONLY ceiling):**
+- Model registry never adjudicates. Pure canonical model ID list.
+- Model registry never executes. Pure lookup.
+- Model registry is the SOT for which models are eligible across the federation.
+
+---
+
+## 🏅 Federation Certification
+
+[![Federation](https://img.shields.io/endpoint?url=https%3A%2F%2Farif-fazil.com%2F.well-known%2Fbadge%2Ffederation.json&style=flat-square&label=federation)](https://arifos.arif-fazil.com/health)
+[![VAULT999](https://img.shields.io/endpoint?url=https%3A%2F%2Farif-fazil.com%2F.well-known%2Fbadge%2Fvault999.json&style=flat-square&label=VAULT999)](https://arif-fazil.com/999/verify)
+[![F1–F13](https://img.shields.io/endpoint?url=https%3A%2F%2Farif-fazil.com%2F.well-known%2Fbadge%2Ffloors.json&style=flat-square)](https://github.com/ariffazil/arifos/blob/main/GENESIS/000_KERNEL_CANON.md)
+
+[![MCP 2025-06-18](https://img.shields.io/badge/MCP-2025--06--18-00b894?style=flat-square&logo=modelcontextprotocol&logoColor=white)](https://modelcontextprotocol.io)
+[![A2A v1.0.0](https://img.shields.io/badge/A2A-v1.0.0-4285F4?style=flat-square)](https://github.com/ariffazil/arifos/blob/main/FEDERATION_CONTRACT.md)
+[![Model Registry: ADVISORY](https://img.shields.io/badge/registry-ADVISORY_ONLY-9C27B0?style=flat-square)](https://github.com/ariffazil/arifOS-model-registry)
+
+---
+
+## External Validation
+
+- **Live provider status:** [FED :7074/health](https://fed.arif-fazil.com/health) (200)
+- **Provider balance probe:** [FED :7074/fed_probe](https://fed.arif-fazil.com/health)
+- **Canonical model map:** see `vps_main_arifos.json` in this repo (F2 TRUTH: every model ID verified)
+
+---
+
+*For the canonical federation architecture map, see [arifOS/README.md](https://github.com/ariffazil/arifos/blob/main/README.md#-federation-architecture-map).*
+
+DITEMPA BUKAN DIBERI ⚒️
