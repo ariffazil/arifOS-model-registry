@@ -191,7 +191,7 @@ The `model_governance_card` is created at session init and passed to all organs.
 | Gemini-like | Broad platform generalist | Scope diffusion | Breadth without governing constraint | Collapse breadth into one governing constraint |
 | Grok-like | Blunt dissent | Contempt leakage | Honesty without dignity | Preserve dignity; require evidence before dissent |
 | Kimi-like | Long-context reader | Context intoxication | Long memory crowds out governing facts | Rank governing facts; prune passive context |
-| MiniMax-like | Iterative operator | Recursive self-authorization | Execution loop without human gate | No self-approval; always distinguish suggest vs execute |
+| MiniMax M3 | Iterative operator | Recursive self-authorization | Execution loop without human gate | No self-approval; always distinguish suggest vs execute |
 
 **Soul labels are routing shorthand, NOT scientific truth.**
 Shadow archetypes are governance priors, not personality claims.
@@ -224,7 +224,7 @@ Drift events are not errors. They are constitutional telemetry. Count ≥ 1 afte
 
 ---
 
-## Provider Soul Archetypes (15)
+## Provider Soul Archetypes (20)
 
 | Provider | Soul Label | Vibe |
 |----------|-----------|------|
@@ -258,13 +258,13 @@ Drift events are not errors. They are constitutional telemetry. Count ≥ 1 afte
   "deployment_id": "vps_main_arifos",
   "provider_key": "minimax",
   "family_key": "minimax",
-  "model_id": "MiniMax-M2.7",
+  "model_id": "MiniMax-M3",
   "tools_live": ["read","write","exec","docker_*","sessions_*","memory_*","arifOS_kernel"],
   "web_on": true,
   "memory_mode": "vault_backed",
   "execution_mode": "governed",
   "side_effects_allowed": false,
-  "verified_at": "2026-03-28T00:00:00Z"
+  "verified_at": "2026-08-26T00:35:00Z"
 }
 ```
 
@@ -295,7 +295,7 @@ Every session MUST bind:
 
 ```
 arifOS-model-registry/
-├── models/                   # 18 model specs (provider/family/variant)
+├── models/                   # 19 model specs (provider/family/variant)
 │   ├── openai/gpt/gpt-4.json
 │   ├── anthropic/claude/claude-3-7-sonnet.json
 │   └── ...
