@@ -1,0 +1,40 @@
+{
+  "object_type": "model_family",
+  "object_key": "deepseek",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "deepseek",
+  "status": "active",
+  "provider": "deepseek",
+  "family_label": "DeepSeek",
+  "distribution_type": "open_weight",
+  "license": "varies (MIT for V4-Pro)",
+  "architecture_class": "MoE + hybrid attention (CSA/HCA)",
+  "modalities": [
+    "text"
+  ],
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "lineage": [
+    "deepseek-chat (V2/V3 line)",
+    "deepseek-v3.1",
+    "deepseek-v3.2",
+    "deepseek-v4-pro"
+  ],
+  "official_sources": [
+    {
+      "label": "DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/",
+      "url_class": "official_docs"
+    },
+    {
+      "label": "deepseek-ai on Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai",
+      "url_class": "official_model_card"
+    }
+  ]
+}

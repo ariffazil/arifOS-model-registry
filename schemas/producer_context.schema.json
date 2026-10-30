@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arifOS registry v3 producer_context",
+  "type": "object",
+  "required": [
+    "object_type",
+    "object_key",
+    "model_release_ref",
+    "route_ref",
+    "requested_model",
+    "resolved_model",
+    "identity_state",
+    "registry_revision"
+  ],
+  "properties": {
+    "object_type": {
+      "const": "producer_context"
+    },
+    "object_key": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "provider_offering_ref": {
+      "type": "string"
+    },
+    "resolution_evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "probe_receipt_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "epistemic_label": {
+      "enum": [
+        "OBS",
+        "DER",
+        "INT",
+        "SPEC",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

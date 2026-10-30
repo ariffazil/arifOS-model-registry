@@ -1,0 +1,54 @@
+{
+  "object_type": "model_release",
+  "object_key": "gpt-oss-120b",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "release_key": "gpt-oss-120b",
+  "family_key": "openai_gpt_oss",
+  "provider": "openai",
+  "model_id": "gpt-oss-120b",
+  "release_date": "2025-08",
+  "snapshot_date": null,
+  "knowledge_cutoff": {
+    "value": null,
+    "status": "unknown",
+    "must_not_infer_from_snapshot_date": true
+  },
+  "parameter_structure": "MoE 117B total / 5.1B active",
+  "weight_availability": "open_weight",
+  "license": "Apache-2.0",
+  "official_model_card": "https://huggingface.co/openai/gpt-oss-120b",
+  "artifact_hashes": {
+    "weights_sha256": null,
+    "tokenizer_hash": null,
+    "configuration_hash": null,
+    "chat_template_hash": null,
+    "quantization": null,
+    "inference_engine": null,
+    "engine_version": null
+  },
+  "supersedes": null,
+  "derived_from": [],
+  "version_stability": "pin_capable",
+  "pin_requirements": [
+    "weights_sha256",
+    "tokenizer_hash",
+    "configuration_hash",
+    "chat_template_hash",
+    "quantization",
+    "inference_engine",
+    "engine_version"
+  ],
+  "routing_class": "frozen_reference_candidate",
+  "canonicality": "candidate_until_artifact_stack_pinned",
+  "availability": {
+    "lane": "groq",
+    "state": "operator_reported_alive",
+    "independent_probe_receipt": "REQUIRED"
+  },
+  "limitations": [
+    "Open weights give the POSSIBILITY of freezing, not proof that the Groq lane serves the same revision permanently",
+    "Frozen-runtime-baseline use blocked until artifact/serving revision pinned"
+  ]
+}

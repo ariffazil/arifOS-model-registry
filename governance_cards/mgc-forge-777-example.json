@@ -1,0 +1,39 @@
+{
+  "object_type": "model_governance_card",
+  "object_key": "mgc-forge-777-example",
+  "schema_version": 1,
+  "card_id": "mgc-forge-777-example",
+  "card_kind": "example_fixture_not_live",
+  "session_id": null,
+  "lane_id": "forge-777",
+  "registry_revision": "1996e95d6fe46f9db5ed0795e0c06d5af4328657",
+  "source_manifest_hash": null,
+  "compiled_at": "2026-10-30T00:00:00Z",
+  "requested_model": "deepseek-v3.2",
+  "resolved_model": "UNKNOWN",
+  "identity_state": "UNRESOLVED",
+  "resolution_evidence_ref": null,
+  "route_id": "fed_4000",
+  "mutability": "PROVIDER_ALIAS_FLOATING",
+  "failure_domain": "UNKNOWN",
+  "freshness_state": "STALE",
+  "eligible_roles": [
+    "current_capability_worker"
+  ],
+  "forbidden_roles": [
+    "identity_witness",
+    "longitudinal_baseline",
+    "independent_verifier",
+    "self_authorizing_judge"
+  ],
+  "tool_policy_ref": "runtime_wiring/WIRING_STATUS.yaml#tool_policy",
+  "memory_policy_ref": "runtime_wiring/WIRING_STATUS.yaml#memory_provenance",
+  "authority_ceiling": {
+    "propose": true,
+    "verify": false,
+    "authorize": false,
+    "execute": false
+  },
+  "verdict": "HOLD",
+  "card_hash": "sha256:64887b21763c7ef4135d0ff1d931a5b30941163c14c54cf0b12d0717f9896c17"
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arifOS registry v3 model_family",
+  "type": "object",
+  "required": [
+    "object_type",
+    "object_key",
+    "family_key",
+    "provider",
+    "family_label",
+    "distribution_type",
+    "official_sources"
+  ],
+  "properties": {
+    "object_type": {
+      "const": "model_family"
+    },
+    "object_key": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "family_label": {
+      "type": "string"
+    },
+    "architecture_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "distribution_type": {
+      "enum": [
+        "closed",
+        "open_weight",
+        "mixed"
+      ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modalities": {
+      "type": "array"
+    },
+    "languages": {
+      "type": "array"
+    },
+    "context_architecture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lineage": {
+      "type": "array"
+    },
+    "official_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "url_class"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "url_class": {
+            "enum": [
+              "official_docs",
+              "official_model_card",
+              "official_repo",
+              "official_platform"
+            ]
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "active",
+        "sources_unverified",
+        "archived"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arifOS registry v3 probe_receipt",
+  "type": "object",
+  "required": [
+    "object_type",
+    "object_key",
+    "receipt_id",
+    "route_key",
+    "requested_model",
+    "api_resolved_model",
+    "resolution_state",
+    "witness_class",
+    "observed_at"
+  ],
+  "properties": {
+    "object_type": {
+      "const": "probe_receipt"
+    },
+    "object_key": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "self_claimed_identity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "self_claim_is_identity_evidence": {
+      "const": false
+    },
+    "http_status": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "latency_ms": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "fingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "finish_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "token_counts": {
+      "type": "object"
+    },
+    "credential_class": {
+      "type": "string"
+    },
+    "probe_hash": {
+      "type": "string"
+    },
+    "raw_receipt_location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

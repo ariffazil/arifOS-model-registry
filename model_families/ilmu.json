@@ -1,0 +1,27 @@
+{
+  "object_type": "model_family",
+  "object_key": "ilmu",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "ilmu",
+  "status": "sources_unverified",
+  "provider": "ilmu",
+  "family_label": "ILMU",
+  "distribution_type": "open_weight",
+  "license": "unverified",
+  "architecture_class": null,
+  "modalities": [
+    "text"
+  ],
+  "languages": [
+    "bm",
+    "en",
+    "sea_languages"
+  ],
+  "lineage": [
+    "ilmu-nemo-nano",
+    "ilmu-nemo-super"
+  ],
+  "official_sources": []
+}

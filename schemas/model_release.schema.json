@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arifOS registry v3 model_release",
+  "type": "object",
+  "required": [
+    "object_type",
+    "object_key",
+    "release_key",
+    "family_key",
+    "provider",
+    "model_id",
+    "weight_availability",
+    "knowledge_cutoff"
+  ],
+  "properties": {
+    "object_type": {
+      "const": "model_release"
+    },
+    "object_key": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "family_key": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "snapshot_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "knowledge_cutoff": {
+      "type": "object",
+      "required": [
+        "value",
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "declared",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "must_not_infer_from_snapshot_date": {
+          "type": "boolean"
+        }
+      }
+    },
+    "parameter_structure": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "weight_availability": {
+      "enum": [
+        "closed_or_undisclosed",
+        "open_weight"
+      ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "official_model_card": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "artifact_hashes": {
+      "type": "object"
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "derived_from": {
+      "type": "array"
+    },
+    "version_stability": {
+      "enum": [
+        "provider_pinned_alias",
+        "floating",
+        "pin_capable",
+        "pinned_artifact"
+      ]
+    },
+    "pin_requirements": {
+      "type": "array"
+    },
+    "routing_class": {
+      "type": "string"
+    },
+    "canonicality": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,35 @@
+{
+  "object_type": "model_family",
+  "object_key": "openai_gpt",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "openai_gpt",
+  "status": "active",
+  "provider": "openai",
+  "family_label": "GPT (API)",
+  "distribution_type": "closed",
+  "license": null,
+  "architecture_class": "proprietary",
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "lineage": [
+    "gpt-4",
+    "gpt-4o",
+    "gpt-5.x"
+  ],
+  "official_sources": [
+    {
+      "label": "OpenAI Platform Docs",
+      "url": "https://platform.openai.com/docs",
+      "url_class": "official_docs"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "object_type": "model_family",
+  "object_key": "meta_llama",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "meta_llama",
+  "status": "active",
+  "provider": "meta",
+  "family_label": "Llama",
+  "distribution_type": "open_weight",
+  "license": "Llama Community License",
+  "architecture_class": "dense + MoE",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "lineage": [
+    "llama-3",
+    "llama-3.3",
+    "llama-4"
+  ],
+  "official_sources": [
+    {
+      "label": "Llama.com",
+      "url": "https://www.llama.com/",
+      "url_class": "official_model_card"
+    },
+    {
+      "label": "meta-llama on Hugging Face",
+      "url": "https://huggingface.co/meta-llama",
+      "url_class": "official_model_card"
+    }
+  ]
+}

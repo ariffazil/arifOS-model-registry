@@ -1,0 +1,32 @@
+{
+  "object_type": "model_family",
+  "object_key": "01ai_yi",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "01ai_yi",
+  "status": "active",
+  "provider": "01ai",
+  "family_label": "Yi",
+  "distribution_type": "open_weight",
+  "license": "Apache-2.0 / Yi license",
+  "architecture_class": "dense",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "lineage": [
+    "yi-large"
+  ],
+  "official_sources": [
+    {
+      "label": "01.AI on Hugging Face",
+      "url": "https://huggingface.co/01-ai",
+      "url_class": "official_model_card"
+    }
+  ]
+}

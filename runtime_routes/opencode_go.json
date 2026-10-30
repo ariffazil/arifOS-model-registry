@@ -1,0 +1,26 @@
+{
+  "object_type": "runtime_route",
+  "object_key": "opencode_go",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "route_key": "opencode_go",
+  "transport": "gateway_mediated",
+  "endpoint": null,
+  "auth_class": "subscription_credential",
+  "resolves_to": {
+    "offering_key": "opencode_go_glm",
+    "release_key": "glm-5.2",
+    "resolution_state": "unresolved",
+    "observed_resolved_model": null,
+    "last_verified_at": null
+  },
+  "catalog_only_models": [
+    "glm-5.2 (catalog_state listed, execution unavailable)"
+  ],
+  "allowed_uses": [],
+  "forbidden_uses": [
+    "all until funding resolved"
+  ],
+  "status": "blocked"
+}

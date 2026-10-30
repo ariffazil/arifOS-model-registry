@@ -1,0 +1,31 @@
+{
+  "object_type": "model_family",
+  "object_key": "microsoft_copilot",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "microsoft_copilot",
+  "status": "active",
+  "provider": "microsoft",
+  "family_label": "Copilot (enterprise)",
+  "distribution_type": "closed",
+  "license": null,
+  "architecture_class": "serving layer",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "languages": [
+    "multilingual"
+  ],
+  "lineage": [
+    "copilot-enterprise"
+  ],
+  "official_sources": [
+    {
+      "label": "Microsoft Learn Copilot",
+      "url": "https://learn.microsoft.com/en-us/copilot/",
+      "url_class": "official_docs"
+    }
+  ]
+}

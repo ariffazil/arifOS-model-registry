@@ -1,0 +1,28 @@
+{
+  "object_type": "probe_receipt",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "observed_at": null,
+  "observed_at_status": "REQUIRED_FROM_HERMES_RAW_RECEIPT",
+  "raw_receipt_location": null,
+  "raw_receipt_status": "REQUIRED",
+  "credential_class": "operator_credential",
+  "fingerprint": null,
+  "object_key": "hermes-deepseek-direct",
+  "route_key": "deepseek_direct",
+  "receipt_id": "hermes-deepseek-direct-20261030",
+  "requested_model": "(deepseek-direct /models)",
+  "api_resolved_model": null,
+  "resolution_state": "unresolved",
+  "self_claimed_identity": null,
+  "http_status": 200,
+  "latency_ms": null,
+  "finish_reason": "no_inference_attempted",
+  "token_counts": {},
+  "witness_class": "operator_reported",
+  "notes": [
+    "/models=200 + balance insufficient; endpoint reachable != model_alive"
+  ],
+  "probe_hash": "sha256:e16c75a9b8a6bee5538ca583b3058c824b87686fa3f74823b5102d8d6a9e2bd4"
+}

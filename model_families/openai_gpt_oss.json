@@ -1,0 +1,37 @@
+{
+  "object_type": "model_family",
+  "object_key": "openai_gpt_oss",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "openai_gpt_oss",
+  "status": "active",
+  "provider": "openai",
+  "family_label": "GPT-OSS (open weight)",
+  "distribution_type": "open_weight",
+  "license": "Apache-2.0",
+  "architecture_class": "MoE (gpt-oss-120b: 117B total / 5.1B active)",
+  "modalities": [
+    "text"
+  ],
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "lineage": [
+    "gpt-oss-120b",
+    "gpt-oss-20b"
+  ],
+  "official_sources": [
+    {
+      "label": "OpenAI gpt-oss announcement",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "url_class": "official_model_card"
+    },
+    {
+      "label": "openai on Hugging Face",
+      "url": "https://huggingface.co/openai",
+      "url_class": "official_model_card"
+    }
+  ]
+}

@@ -20,6 +20,15 @@ SCHEMAS_PATH = REGISTRY_PATH / "schemas"
 # Fixtures
 # =============================================================================
 
+def _real_model_files():
+    """Model files under test. wrong-provider/* are injection-test honeypots
+    (see scripts/INJECTION_POINT.md) — deliberately malformed, same exclusion
+    the CLI validator applies to wrong_ files."""
+    return [p for p in (REGISTRY_PATH / "models").rglob("*.json")
+            if "wrong-provider" not in p.parts]
+
+
+
 @pytest.fixture(scope="session")
 def catalog():
     with open(CATALOG_PATH, encoding="utf-8") as f:
@@ -164,23 +173,25 @@ class TestProviderSouls:
 class TestModelFiles:
     MODEL_REQUIRED = ["provider", "model_family", "model_variant", "soul_archetype"]
 
-    @pytest.mark.parametrize("model_file", list((REGISTRY_PATH / "models").rglob("*.json")))
+    @pytest.mark.parametrize("model_file", _real_model_files())
     def test_model_required_fields(self, model_file):
         data = load_json(model_file)
         for field in self.MODEL_REQUIRED:
             assert field in data, f"{model_file}: missing field '{field}'"
 
-    @pytest.mark.parametrize("model_file", list((REGISTRY_PATH / "models").rglob("*.json")))
+    @pytest.mark.parametrize("model_file", _real_model_files())
     def test_model_soul_archetype_exists(self, model_file, catalog):
         """Model's soul_archetype must be registered in catalog."""
         data = load_json(model_file)
         soul_archetype = data.get("soul_archetype")
         if soul_archetype:
-            # Derive soul key from soul_archetype label — look up in soul files
-            matched = False
+            # Registered = soul file match (key or label) OR catalog archetype membership
+            registered = set(catalog.get("soul_archetypes", [])) | set(catalog.get("semantic_archetypes", []))
+            matched = soul_archetype in registered
             for soul_file in SOULS_PATH.glob("*.json"):
                 soul = load_json(soul_file)
-                if soul.get("soul_label") == soul_archetype:
+                # Link on canonical key (commit 91601f7); label match kept for legacy files
+                if soul.get("soul_key") == soul_archetype or soul.get("soul_label") == soul_archetype:
                     matched = True
                     break
             assert matched, (

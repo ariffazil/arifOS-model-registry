@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "note": "Hugging Face is the public evidence/distribution plane; this git repo stays the canonical registry source. Revisions pinned to commit SHAs so evidence cannot change silently.",
+  "retrieved_at": "2026-10-30",
+  "retrieved_by": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "bindings": [
+    {
+      "dataset": "hf://datasets/ariffazil/AAA",
+      "role": "constitutional_evaluation_basis",
+      "revision": "e17f60f9625c991097dbcc186a54becaba840da7",
+      "records": []
+    },
+    {
+      "dataset": "hf://datasets/ariffazil/BBB",
+      "role": "direct_model_behavior_receipts",
+      "revision": "ae2910098937ecfa5ce5b799b2b3349f92823f7e",
+      "records": []
+    },
+    {
+      "dataset": "hf://datasets/ariffazil/CCC",
+      "role": "kernel_mediation_evidence",
+      "revision": "ced4d67d1de04bf155c80cca9ebce87bfffb3ad7",
+      "records": []
+    },
+    {
+      "dataset": "hf://datasets/ariffazil/DDD",
+      "role": "register_stability_evidence",
+      "revision": "b8f21e7ebc40f95c9ec409cb0bea632ff4e82f92",
+      "records": []
+    },
+    {
+      "dataset": "hf://datasets/ariffazil/EEE",
+      "role": "runtime_spine_health",
+      "revision": "702d33d17322a02c3a7f9c39f8daed8e939187d2",
+      "records": []
+    },
+    {
+      "dataset": "hf://datasets/ariffazil/FFF",
+      "role": "fitness_gate_verdict",
+      "revision": "2bf987aa42c82f002ad335175473c25793ad5dc0",
+      "records": []
+    }
+  ]
+}

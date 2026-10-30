@@ -1,0 +1,42 @@
+{
+  "object_type": "model_release",
+  "object_key": "deepseek-v4-pro",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "release_key": "deepseek-v4-pro",
+  "family_key": "deepseek",
+  "provider": "deepseek",
+  "model_id": "deepseek-v4-pro",
+  "release_date": "2026-Q2",
+  "snapshot_date": null,
+  "knowledge_cutoff": {
+    "value": null,
+    "status": "unknown",
+    "must_not_infer_from_snapshot_date": true
+  },
+  "parameter_structure": "MoE + hybrid attention (CSA/HCA), 1M ctx / 384K out",
+  "weight_availability": "open_weight",
+  "license": "MIT",
+  "official_model_card": "https://huggingface.co/deepseek-ai",
+  "artifact_hashes": {
+    "weights_sha256": null,
+    "tokenizer_hash": null,
+    "configuration_hash": null
+  },
+  "supersedes": "deepseek-chat (V3.x line)",
+  "derived_from": [],
+  "version_stability": "floating",
+  "pin_requirements": [
+    "weights_sha256",
+    "tokenizer_hash",
+    "configuration_hash"
+  ],
+  "routing_class": "current_capability",
+  "canonicality": "api_resolved_identity_witnessed_2026-10-30",
+  "spec_ref": "models/deepseek/deepseek/deepseek-v4-pro.json",
+  "limitations": [
+    "Default target of fed deepseek-v3.2 alias remap (see alias-drift regression case)",
+    "Self-claim on direct identity probe was NOT 'deepseek' — see probe receipt fed-4000-deepseek-v3-2-direct"
+  ]
+}

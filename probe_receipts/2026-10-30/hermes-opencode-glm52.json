@@ -1,0 +1,28 @@
+{
+  "object_type": "probe_receipt",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "observed_at": null,
+  "observed_at_status": "REQUIRED_FROM_HERMES_RAW_RECEIPT",
+  "raw_receipt_location": null,
+  "raw_receipt_status": "REQUIRED",
+  "credential_class": "operator_credential",
+  "fingerprint": null,
+  "object_key": "hermes-opencode-glm52",
+  "route_key": "opencode_go",
+  "receipt_id": "hermes-opencode-glm-5-2-20261030",
+  "requested_model": "glm-5.2",
+  "api_resolved_model": null,
+  "resolution_state": "unresolved",
+  "self_claimed_identity": null,
+  "http_status": null,
+  "latency_ms": null,
+  "finish_reason": null,
+  "token_counts": {},
+  "witness_class": "operator_reported",
+  "notes": [
+    "catalog_state=listed, execution_state=unavailable, failure_class=billing_or_upstream_funds"
+  ],
+  "probe_hash": "sha256:6e9fb55df7b64e452e111af7f0a327d67cfb50dbfa820b1f43852b4cc8046ed7"
+}

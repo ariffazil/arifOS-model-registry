@@ -1,0 +1,46 @@
+{
+  "object_type": "model_release",
+  "object_key": "qwen-plus-2025-01-25",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "release_key": "qwen-plus-2025-01-25",
+  "family_key": "alibaba_qwen",
+  "provider": "alibaba",
+  "model_id": "qwen-plus-2025-01-25",
+  "snapshot_date": "2025-01-25",
+  "release_date": null,
+  "knowledge_cutoff": {
+    "value": null,
+    "status": "unknown",
+    "must_not_infer_from_snapshot_date": true
+  },
+  "parameter_structure": null,
+  "weight_availability": "closed_or_undisclosed",
+  "license": null,
+  "official_model_card": "https://help.aliyun.com/zh/model-studio/models",
+  "artifact_hashes": {
+    "weights_sha256": null,
+    "tokenizer_hash": null,
+    "configuration_hash": null
+  },
+  "supersedes": null,
+  "derived_from": [],
+  "version_stability": "provider_pinned_alias",
+  "pin_requirements": [],
+  "routing_class": "frozen_reference_candidate",
+  "canonicality": "verified_runtime_fact",
+  "availability": {
+    "state": "alive",
+    "evidence_class": "operator_probe",
+    "http_status": 200,
+    "observed_at": null,
+    "observed_at_status": "REQUIRED_FROM_HERMES_RAW_RECEIPT",
+    "snapshot_age_at_observation_months": 21
+  },
+  "limitations": [
+    "Snapshot date does not prove knowledge cutoff",
+    "Provider-side pinning does not prove immutable weights",
+    "Re-probe required to detect withdrawal or remapping"
+  ]
+}

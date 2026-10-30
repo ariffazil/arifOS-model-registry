@@ -1,0 +1,41 @@
+{
+  "object_type": "model_family",
+  "object_key": "minimax",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "minimax",
+  "status": "active",
+  "provider": "minimax",
+  "family_label": "MiniMax",
+  "distribution_type": "mixed",
+  "license": "varies",
+  "architecture_class": "MoE",
+  "modalities": [
+    "text",
+    "vision",
+    "audio",
+    "video-gen"
+  ],
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "lineage": [
+    "minimax-m2.7",
+    "minimax-m3"
+  ],
+  "official_sources": [
+    {
+      "label": "MiniMax Platform",
+      "url": "https://platform.minimax.io/",
+      "url_class": "official_docs"
+    },
+    {
+      "label": "MiniMaxAI on Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI",
+      "url_class": "official_model_card"
+    }
+  ]
+}

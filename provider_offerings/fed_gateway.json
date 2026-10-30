@@ -1,0 +1,25 @@
+{
+  "object_type": "provider_offering",
+  "object_key": "fed_gateway",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "offering_key": "fed_gateway",
+  "provider": "fed",
+  "model_release_key": "multiple (per-request alias)",
+  "alias_policy": "latest_floating",
+  "region": "localhost:4000",
+  "api_compat": "openai-compatible",
+  "pricing_class": "internal",
+  "quota_state": "active",
+  "deprecation_state": "not_declared",
+  "offering_url": null,
+  "availability": {
+    "state": "alive",
+    "evidence_class": "direct_probe",
+    "observed_at": "2026-10-29T23:21:23Z"
+  },
+  "notes": [
+    "Witnessed silent alias remap deepseek-v3.2 -> deepseek-v4-pro (regression case)"
+  ]
+}

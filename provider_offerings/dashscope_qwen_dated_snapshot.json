@@ -1,0 +1,26 @@
+{
+  "object_type": "provider_offering",
+  "object_key": "dashscope_qwen_dated_snapshot",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "offering_key": "dashscope_qwen_dated_snapshot",
+  "provider": "dashscope",
+  "model_release_key": "qwen-plus-2025-01-25",
+  "alias_policy": "dated_snapshot",
+  "region": null,
+  "api_compat": "openai-compatible",
+  "pricing_class": null,
+  "quota_state": "unknown",
+  "deprecation_state": "not_declared",
+  "offering_url": "https://help.aliyun.com/zh/model-studio/models",
+  "availability": {
+    "state": "alive",
+    "evidence_class": "operator_probe",
+    "observed_at": null,
+    "observed_at_status": "REQUIRED_FROM_HERMES_RAW_RECEIPT"
+  },
+  "notes": [
+    "Dated snapshots are the federation's oldest verified-alive frozen-reference lane"
+  ]
+}

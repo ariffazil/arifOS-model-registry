@@ -1,0 +1,176 @@
+[
+  {
+    "object_type": "routing_decision",
+    "object_key": "fed_4000::deepseek-v3.2",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "fed_4000",
+    "decision": "HOLD",
+    "rationale": "Witnessed silent alias remap to deepseek-v4-pro — canonical regression case",
+    "basis_receipts": [
+      "probe_receipts/2026-10-30/fed-4000-deepseek-v3-2-direct.json",
+      "probe_receipts/2026-10-30/hermes-fed-alias-drift.json"
+    ],
+    "allowed_uses": [
+      "current_capability_work",
+      "non_longitudinal_tasks"
+    ],
+    "forbidden_uses": [
+      "frozen_baseline",
+      "longitudinal_comparison",
+      "release_regression",
+      "model_identity_attestation"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  },
+  {
+    "object_type": "routing_decision",
+    "object_key": "fed_4000::deepseek-v4-pro",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "fed_4000",
+    "decision": "CURRENT_CAPABILITY",
+    "rationale": "API-resolved identity witnessed on explicit request",
+    "basis_receipts": [
+      "probe_receipts/2026-10-30/fed-4000-deepseek-v3-2-direct.json"
+    ],
+    "allowed_uses": [
+      "current_capability_work",
+      "coding",
+      "long_context"
+    ],
+    "forbidden_uses": [
+      "frozen_baseline",
+      "identity_witness"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  },
+  {
+    "object_type": "routing_decision",
+    "object_key": "dashscope_direct::qwen-plus-2025-01-25",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "dashscope_direct",
+    "decision": "FROZEN_REFERENCE",
+    "rationale": "Oldest verified-alive provider-pinned snapshot (~21 months at observation)",
+    "basis_receipts": [
+      "probe_receipts/2026-10-30/hermes-qwen-plus-snapshot.json"
+    ],
+    "allowed_uses": [
+      "frozen_reference",
+      "longitudinal_comparison_baseline_candidate"
+    ],
+    "forbidden_uses": [
+      "current_affairs_without_retrieval",
+      "knowledge_cutoff_claims"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  },
+  {
+    "object_type": "routing_decision",
+    "object_key": "groq_lane::gpt-oss-120b",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "groq_lane",
+    "decision": "HOLD",
+    "rationale": "Open-weight pin-capable candidate; artifact stack not pinned; no independent probe",
+    "basis_receipts": [
+      "model_releases/gpt-oss-120b.json"
+    ],
+    "allowed_uses": [],
+    "forbidden_uses": [
+      "frozen_runtime_baseline until pinned",
+      "identity_attestation"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  },
+  {
+    "object_type": "routing_decision",
+    "object_key": "zai_direct::glm-5.3 (floating)",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "zai_direct",
+    "decision": "CURRENT_CAPABILITY",
+    "rationale": "Alive, floating alias; never a baseline",
+    "basis_receipts": [
+      "provider_offerings/zai_glm_floating.json"
+    ],
+    "allowed_uses": [
+      "current_capability_work"
+    ],
+    "forbidden_uses": [
+      "frozen_baseline",
+      "longitudinal_comparison"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  },
+  {
+    "object_type": "routing_decision",
+    "object_key": "opencode_go::glm-5.2",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "opencode_go",
+    "decision": "BLOCKED",
+    "rationale": "Lane not executable — billing_or_upstream_funds; catalog listing is not capability",
+    "basis_receipts": [
+      "probe_receipts/2026-10-30/hermes-opencode-glm52.json"
+    ],
+    "allowed_uses": [],
+    "forbidden_uses": [
+      "all"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  },
+  {
+    "object_type": "routing_decision",
+    "object_key": "deepseek_direct::deepseek-v4-pro",
+    "created_at": "2026-10-30",
+    "updated_at": "2026-10-30",
+    "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+    "route_key": "deepseek_direct",
+    "decision": "BLOCKED",
+    "rationale": "/models reachable (200) but inference blocked by balance; catalog reachability != model_alive",
+    "basis_receipts": [
+      "probe_receipts/2026-10-30/hermes-deepseek-direct.json"
+    ],
+    "allowed_uses": [],
+    "forbidden_uses": [
+      "all until balance restored"
+    ],
+    "proposed_by": "kimi-code/FI-008",
+    "authority_basis": "user_directive_2026-10-30 + hermes_probe + fi008_direct_probe",
+    "decided_at": "2026-10-30",
+    "ratified": false,
+    "ratification": "awaiting_888"
+  }
+]

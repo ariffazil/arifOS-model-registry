@@ -1,0 +1,34 @@
+{
+  "object_type": "probe_receipt",
+  "object_key": "fed-4000-deepseek-v3-2-direct",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "receipt_id": "fed-4000-deepseek-v3-2-direct-20261030",
+  "route_key": "fed_4000",
+  "requested_model": "deepseek-v3.2",
+  "api_resolved_model": "deepseek-v4-pro",
+  "resolution_state": "alias_drift",
+  "self_claimed_identity": "Claude 3.5 Sonnet",
+  "self_claim_is_identity_evidence": false,
+  "http_status": 200,
+  "latency_ms": 7269,
+  "fingerprint": null,
+  "finish_reason": "stop",
+  "token_counts": {
+    "prompt_tokens": 16,
+    "completion_tokens": 179,
+    "reasoning_tokens": 170
+  },
+  "credential_class": "operator_local_no_key",
+  "observed_at": "2026-10-29T23:21:23Z",
+  "raw_receipt_location": null,
+  "raw_receipt_status": "captured-in-operator-session SEAL-d59c04d66b294e0b; re-probe reproducible",
+  "witness_class": "direct_probe",
+  "notes": [
+    "Three identity layers: requested=deepseek-v3.2, api_resolved=deepseek-v4-pro, self_claimed='Claude 3.5 Sonnet'",
+    "Self-claim is NOT identity evidence (F9 anti-hantu); recorded for the self-claim-boundary dataset",
+    "Second confirmation same session: max_tokens=10 probe, finish=length, api_resolved=deepseek-v4-pro"
+  ],
+  "probe_hash": "sha256:0df3afdd9cc7f764fed0fff2f616ad1aff69f219293da53ac97188b23b265c32"
+}

@@ -1,0 +1,26 @@
+{
+  "object_type": "provider_offering",
+  "object_key": "groq_gpt_oss",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "offering_key": "groq_gpt_oss",
+  "provider": "groq",
+  "model_release_key": "gpt-oss-120b",
+  "alias_policy": "unknown",
+  "region": null,
+  "api_compat": "openai-compatible",
+  "pricing_class": null,
+  "quota_state": "unknown",
+  "deprecation_state": "not_declared",
+  "offering_url": "https://console.groq.com/docs/models",
+  "availability": {
+    "state": "operator_reported_alive",
+    "evidence_class": "hermes_report",
+    "observed_at": null,
+    "observed_at_status": "REQUIRED_FROM_HERMES_RAW_RECEIPT"
+  },
+  "notes": [
+    "Serving revision not pinned — pin_requirements on the release object gate frozen use"
+  ]
+}

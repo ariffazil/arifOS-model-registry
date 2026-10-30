@@ -1,0 +1,40 @@
+{
+  "object_type": "model_family",
+  "object_key": "zai_glm",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "zai_glm",
+  "status": "active",
+  "provider": "zai",
+  "family_label": "GLM",
+  "distribution_type": "mixed",
+  "license": "varies",
+  "architecture_class": "MoE",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "languages": [
+    "en",
+    "zh",
+    "bm_register_untested"
+  ],
+  "lineage": [
+    "glm-4",
+    "glm-4.5",
+    "glm-5.x"
+  ],
+  "official_sources": [
+    {
+      "label": "Z.AI Docs",
+      "url": "https://docs.z.ai/",
+      "url_class": "official_docs"
+    },
+    {
+      "label": "zai-org on Hugging Face",
+      "url": "https://huggingface.co/zai-org",
+      "url_class": "official_model_card"
+    }
+  ]
+}

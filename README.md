@@ -578,3 +578,52 @@ caller invokes · records result for next ranking
 *For the canonical federation architecture map, see [arifOS/README.md](https://github.com/ariffazil/arifos/blob/main/README.md#-federation-architecture-map).*
 
 DITEMPA BUKAN DIBERI ⚒️
+
+---
+
+## v3 — Resolver-Witnessed Registry (2026-10-30)
+
+> **Alias is not identity. Endpoint-alive is not provenance. HTTP 200 is not capability proof.**
+
+Witnessed case: `requested=deepseek-v3.2 → api_resolved=deepseek-v4-pro → self_claimed="Claude 3.5 Sonnet"`.
+Three identity layers, none equal. The registry records all three; the self-claim is **never** identity evidence.
+
+### Six object types (not one big model JSON)
+
+| Object | Directory | Answers |
+|---|---|---|
+| Model Family | `model_families/` | Who makes it, official AI-lab links |
+| Model Release | `model_releases/` | One specific version, cutoff honesty, pin requirements |
+| Provider Offering | `provider_offerings/` | How a provider sells it (dated snapshot / floating alias) |
+| Runtime Route | `runtime_routes/` | What we actually call, what it resolves to |
+| Probe Receipt | `probe_receipts/` | Witnessed observation with hash |
+| Routing Decision | `routing_decisions/` | What AAA may do with it (proposed, never self-ratified) |
+
+### Evidence ladder — pinned, not linked
+
+`evidence_bindings.json` pins HF datasets AAA–FFF to **commit SHAs** (retrieved 2026-10-30) so evidence cannot change silently. HF is the distribution plane; **this git repo stays canonical**.
+
+### Routing decisions on record (2026-10-30)
+
+- `fed/deepseek-v3.2` → **HOLD** (alias-drift regression case; forbidden as baseline/identity-witness)
+- `dashscope/qwen-plus-2025-01-25` → **FROZEN_REFERENCE** (oldest verified-alive pinned snapshot, ~21 months)
+- `groq/gpt-oss-120b` → **HOLD** (open-weight pin-capable; not frozen until artifact stack pinned)
+- `zai/glm` → **CURRENT_CAPABILITY** (floating — never a baseline)
+- `opencode-go/glm-5.2` → **BLOCKED** (billing lane; catalog listing ≠ dead model)
+- `deepseek-direct` → **BLOCKED** (balance; `/models` 200 ≠ model_alive)
+
+### Runtime wiring (`runtime_wiring/WIRING_STATUS.yaml`)
+
+Governance card contract (1.2 KB target / 2 KB hard max, fail-closed compaction), init fail-closed
+(`UNKNOWN → OBSERVE_ONLY`, authority never inflates from missing metadata), TOCTOU lock
+(card immutable in session; witnessed transitions only), producer-context chain born at the
+**model invocation envelope**, A2AReality kept **UNKNOWN** (not substituted), MCP projection
+mission-scoped. First consumer scope proves **execution-receipt binding only**.
+
+### Rebuild
+
+```bash
+python3 scripts/build_v3_objects.py   # idempotent, deterministic
+python3 scripts/validate_registry.py  # incl. alias-drift regression invariant
+python3 -m pytest tests/ -q
+```

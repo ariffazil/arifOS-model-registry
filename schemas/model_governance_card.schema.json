@@ -1,0 +1,148 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arifOS model_governance_card v1 (runtime wiring, JUDGE-corrected)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "card_id",
+    "session_id",
+    "lane_id",
+    "registry_revision",
+    "compiled_at",
+    "requested_model",
+    "resolved_model",
+    "identity_state",
+    "route_id",
+    "mutability",
+    "eligible_roles",
+    "forbidden_roles",
+    "authority_ceiling",
+    "verdict",
+    "card_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "card_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lane_id": {
+      "type": "string"
+    },
+    "registry_revision": {
+      "type": "string"
+    },
+    "source_manifest_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "compiled_at": {
+      "type": "string"
+    },
+    "requested_model": {
+      "type": "string"
+    },
+    "resolved_model": {
+      "type": "string"
+    },
+    "identity_state": {
+      "enum": [
+        "MATCHED",
+        "MISMATCH",
+        "UNRESOLVED"
+      ]
+    },
+    "resolution_evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "route_id": {
+      "type": "string"
+    },
+    "mutability": {
+      "enum": [
+        "PROVIDER_ALIAS_FLOATING",
+        "PROVIDER_PINNED_SNAPSHOT",
+        "PINNED_ARTIFACT"
+      ]
+    },
+    "failure_domain": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "freshness_state": {
+      "type": "string"
+    },
+    "eligible_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbidden_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tool_policy_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "memory_policy_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authority_ceiling": {
+      "type": "object",
+      "required": [
+        "propose",
+        "verify",
+        "authorize",
+        "execute"
+      ],
+      "properties": {
+        "propose": {
+          "type": "boolean"
+        },
+        "verify": {
+          "type": "boolean"
+        },
+        "authorize": {
+          "type": "boolean"
+        },
+        "execute": {
+          "type": "boolean"
+        }
+      }
+    },
+    "verdict": {
+      "enum": [
+        "INITIALIZED",
+        "DEGRADED",
+        "HOLD"
+      ]
+    },
+    "card_hash": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

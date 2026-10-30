@@ -1,0 +1,24 @@
+{
+  "object_type": "runtime_route",
+  "object_key": "deepseek_direct",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "route_key": "deepseek_direct",
+  "transport": "http_openai_compat",
+  "endpoint": "https://api.deepseek.com/v1",
+  "auth_class": "api_key_required",
+  "resolves_to": {
+    "offering_key": "deepseek_direct",
+    "release_key": null,
+    "resolution_state": "unresolved",
+    "observed_resolved_model": null,
+    "last_verified_at": null
+  },
+  "catalog_only_models": [],
+  "allowed_uses": [],
+  "forbidden_uses": [
+    "all until balance restored"
+  ],
+  "status": "blocked"
+}

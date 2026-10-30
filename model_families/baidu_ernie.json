@@ -1,0 +1,33 @@
+{
+  "object_type": "model_family",
+  "object_key": "baidu_ernie",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "baidu_ernie",
+  "status": "active",
+  "provider": "baidu",
+  "family_label": "ERNIE",
+  "distribution_type": "closed",
+  "license": null,
+  "architecture_class": "proprietary",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "lineage": [
+    "ernie-4.0",
+    "ernie-4.5"
+  ],
+  "official_sources": [
+    {
+      "label": "Baidu Qianfan Docs",
+      "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html",
+      "url_class": "official_docs"
+    }
+  ]
+}

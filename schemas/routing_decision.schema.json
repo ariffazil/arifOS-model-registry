@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arifOS registry v3 routing_decision",
+  "type": "object",
+  "required": [
+    "object_type",
+    "object_key",
+    "route_key",
+    "decision",
+    "rationale",
+    "proposed_by"
+  ],
+  "properties": {
+    "object_type": {
+      "const": "routing_decision"
+    },
+    "object_key": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "PRIMARY_DEFAULT",
+        "ACTIVE_FALLBACK",
+        "FROZEN_REFERENCE",
+        "FROZEN_REFERENCE_CANDIDATE",
+        "NICHE_LANGUAGE",
+        "CODE_SPECIALIST",
+        "CURRENT_CAPABILITY",
+        "HOLD",
+        "BLOCKED"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "basis_receipts": {
+      "type": "array"
+    },
+    "forbidden_uses": {
+      "type": "array"
+    },
+    "allowed_uses": {
+      "type": "array"
+    },
+    "proposed_by": {
+      "type": "string"
+    },
+    "authority_basis": {
+      "type": "string"
+    },
+    "decided_at": {
+      "type": "string"
+    },
+    "ratified": {
+      "type": "boolean"
+    },
+    "ratification": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,29 @@
+{
+  "object_type": "runtime_route",
+  "object_key": "dashscope_direct",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "route_key": "dashscope_direct",
+  "transport": "http_openai_compat",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "auth_class": "api_key_required",
+  "resolves_to": {
+    "offering_key": "dashscope_qwen_dated_snapshot",
+    "release_key": "qwen-plus-2025-01-25",
+    "resolution_state": "matched",
+    "observed_resolved_model": "qwen-plus-2025-01-25",
+    "last_verified_at": null,
+    "last_verified_at_status": "REQUIRED_FROM_HERMES_RAW_RECEIPT"
+  },
+  "catalog_only_models": [],
+  "allowed_uses": [
+    "frozen_reference",
+    "longitudinal_comparison_baseline_candidate",
+    "reproducibility_replay"
+  ],
+  "forbidden_uses": [
+    "current_affairs_without_retrieval"
+  ],
+  "status": "active"
+}

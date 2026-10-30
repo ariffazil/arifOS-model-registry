@@ -1,0 +1,47 @@
+{
+  "object_type": "model_family",
+  "object_key": "alibaba_qwen",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "alibaba_qwen",
+  "status": "active",
+  "provider": "alibaba",
+  "family_label": "Qwen",
+  "distribution_type": "mixed",
+  "license": "varies (Apache-2.0 for open releases)",
+  "architecture_class": "dense + MoE",
+  "modalities": [
+    "text",
+    "vision",
+    "audio"
+  ],
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "lineage": [
+    "Qwen2",
+    "Qwen2.5",
+    "Qwen3",
+    "Qwen3-Next"
+  ],
+  "official_sources": [
+    {
+      "label": "Alibaba Cloud Model Studio (DashScope)",
+      "url": "https://help.aliyun.com/zh/model-studio/",
+      "url_class": "official_docs"
+    },
+    {
+      "label": "Qwen on Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "url_class": "official_model_card"
+    },
+    {
+      "label": "QwenLM GitHub",
+      "url": "https://github.com/QwenLM",
+      "url_class": "official_repo"
+    }
+  ]
+}

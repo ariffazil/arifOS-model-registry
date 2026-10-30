@@ -1,0 +1,27 @@
+{
+  "object_type": "runtime_route",
+  "object_key": "groq_lane",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "route_key": "groq_lane",
+  "transport": "http_openai_compat",
+  "endpoint": "https://api.groq.com/openai/v1",
+  "auth_class": "api_key_required",
+  "resolves_to": {
+    "offering_key": "groq_gpt_oss",
+    "release_key": "gpt-oss-120b",
+    "resolution_state": "unresolved",
+    "observed_resolved_model": null,
+    "last_verified_at": null
+  },
+  "catalog_only_models": [],
+  "allowed_uses": [
+    "frozen_reference_candidate_work"
+  ],
+  "forbidden_uses": [
+    "frozen_baseline until artifact stack pinned",
+    "model_identity_attestation until independent probe"
+  ],
+  "status": "hold"
+}

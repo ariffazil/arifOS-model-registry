@@ -1,0 +1,92 @@
+# AAA_MODEL_GOVERNANCE_RUNTIME_WIRING::2026-10-30::v1 — status of record
+# Corrections from F13-pending JUDGE verdict incorporated verbatim.
+
+mcp_projection_mission_scoped:
+  scope_note: >
+    Mission-specific projection ONLY. Not a claim that MCP contains only these
+    three protocol capabilities (spec also defines roots, sampling, elicitation,
+    authorization, discovery, caching, logging, pagination).
+  resource: arifos://model-governance-card/{lane}
+  prompt: /init references the resource and instructs the agent to bind it
+  tool:
+    name: arif_init
+    role: resolver_and_binder
+    never: owner_or_creator_of_card
+
+a2a_reality_reference:
+  requested_source: a2aproject/A2AReality
+  source_state: UNKNOWN_SOURCE_UNRESOLVED
+  substituted_with_a2a: false
+  falsifier:
+    - canonical repository becomes reachable
+    - ARIF supplies authoritative pointer
+
+producer_context_chain:
+  origin: model_invocation_envelope   # JUDGE correction: born at model output, not at A-FORGE
+  chain:
+    - init_creates_model_governance_card
+    - model_invocation_binds_card_hash
+    - model_output_receives_producer_context
+    - tool_invocation_inherits_producer_context
+    - aforge_receipt_binds_execution_to_producer_context
+    - memory_writer_persists_producer_context
+  first_consumer_scope:
+    proved: execution_receipt_binding_only
+    not_yet_proved:
+      - provenance_for_non_executed_outputs
+      - memory_writes
+      - inter_agent_messages
+
+card_contract:
+  target_size_bytes: 1200
+  hard_max_bytes: 2048
+  target_lines: 40
+  overflow_policy: fail_closed_compaction
+  biography_forbidden: true
+  embedded_probe_history_forbidden: true
+  forbidden_payload:
+    - probe history
+    - company profile / family tree
+    - current pricing
+    - full hazard catalogue
+    - raw API endpoints
+    - credential environment names
+    - fallback candidate lists
+    - natural-language biography
+
+init_fail_closed:
+  lifecycle_state: INITIALIZED
+  identity_state: UNKNOWN
+  operating_mode: OBSERVE_ONLY
+  consequential_tools: DENIED
+  memory_promotion: DENIED
+  model_self_claim: REQUESTED_ALIAS_ONLY
+  note: >
+    INIT may succeed structurally with UNKNOWN, but the capability lease
+    shrinks — availability collapse and authority inflation are both blocked.
+
+toctou_lock:
+  invariant: registry_revision_used_to_compile_card == registry_revision_in_init_receipt
+  card_immutability: within_session
+  silent_hot_reload: forbidden
+  refresh_protocol:
+    - old_card_hash
+    - new_card_hash
+    - changed_fields
+    - reason
+    - policy_verdict
+    - transition_receipt
+
+boundaries:
+  model_supports_tool_calling: not_the_same_as
+  note: >
+    Model supports tool calling != model owns the tool != model is authorized
+    to invoke it != tool execution succeeded != world outcome succeeded.
+    Registry describes compatibility. Capability lease grants access.
+    888 authorizes. A-FORGE executes. Receipt witnesses the outcome.
+
+registry_is_not:
+  - leaderboard
+  - secret_store          # stores credential_env_ref, never key values
+  - authorization_engine  # eligibility only; execution authorization is 888
+  - long_term_memory      # model/route/probe/incident/policy facts, not conversations

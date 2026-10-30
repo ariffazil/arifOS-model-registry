@@ -1,0 +1,40 @@
+{
+  "object_type": "model_family",
+  "object_key": "moonshot_kimi",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-10-30",
+  "provenance": "kimi-code/FI-008, session SEAL-d59c04d66b294e0b, user-directed 2026-10-30",
+  "family_key": "moonshot_kimi",
+  "status": "active",
+  "provider": "moonshot",
+  "family_label": "Kimi",
+  "distribution_type": "mixed",
+  "license": "varies",
+  "architecture_class": "dense + MoE",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "lineage": [
+    "kimi-k1.5",
+    "kimi-k2",
+    "kimi-k3"
+  ],
+  "official_sources": [
+    {
+      "label": "Moonshot Platform Docs",
+      "url": "https://platform.moonshot.ai/docs",
+      "url_class": "official_docs"
+    },
+    {
+      "label": "moonshotai on Hugging Face",
+      "url": "https://huggingface.co/moonshotai",
+      "url_class": "official_model_card"
+    }
+  ]
+}
