@@ -6,7 +6,7 @@
   "card_kind": "example_fixture_not_live",
   "session_id": null,
   "lane_id": "forge-777",
-  "registry_revision": "1996e95d6fe46f9db5ed0795e0c06d5af4328657",
+  "registry_revision": "9472fd6523951c17a4c6b9717e1f996f46e809e9",
   "source_manifest_hash": null,
   "compiled_at": "2026-10-30T00:00:00Z",
   "requested_model": "deepseek-v3.2",
@@ -35,5 +35,5 @@
     "execute": false
   },
   "verdict": "HOLD",
-  "card_hash": "sha256:64887b21763c7ef4135d0ff1d931a5b30941163c14c54cf0b12d0717f9896c17"
+  "card_hash": "sha256:83ddc3105be6ac8a53e8ba7cf39f36ee973441cb55f06caac6316fdfc8ff17bd"
 }

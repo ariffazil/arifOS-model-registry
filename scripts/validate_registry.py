@@ -147,6 +147,8 @@ def validate_v3():
                            "witness_class", "observed_at", "probe_hash"],
         "governance_cards": ["object_type", "object_key", "schema_version", "card_id",
                              "card_hash", "verdict", "authority_ceiling"],
+        "role_assessments": ["object_type", "object_key", "experiment", "assessments",
+                             "ratified", "authority_basis"],
     }
     json_files = {}  # relpath -> data, for cross-checks
     for d, required in v3_dirs.items():
@@ -300,7 +302,7 @@ def main():
         v3_count = sum(len(_glob.glob(str(REGISTRY_DIR / d / "**" / "*.json"), recursive=True))
                        for d in ["model_families", "model_releases", "provider_offerings",
                                  "runtime_routes", "probe_receipts", "routing_decisions",
-                                 "governance_cards"])
+                                 "governance_cards", "role_assessments"])
         print(f"   ✅ v3 objects valid ({v3_count} files) — alias-drift regression + card budget OK")
 
     # Summary

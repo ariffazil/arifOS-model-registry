@@ -12,7 +12,8 @@ import pytest
 
 REGISTRY_PATH = Path(__file__).parent.parent
 V3_DIRS = ["model_families", "model_releases", "provider_offerings",
-           "runtime_routes", "probe_receipts", "routing_decisions", "governance_cards"]
+           "runtime_routes", "probe_receipts", "routing_decisions", "governance_cards",
+           "role_assessments"]
 
 
 def _json_files():
@@ -176,3 +177,20 @@ def test_wiring_status_corrections_present():
     assert "hard_max_bytes: 2048" in ws
     assert "silent_hot_reload: forbidden" in ws
     assert "resolver_and_binder" in ws
+
+
+def test_retrospective_probe_cannot_claim_ex_ante(files):
+    """Temporal Reality Loop discipline: retrospective probes are scoped, never
+    promoted to genuine ex-ante prediction evidence."""
+    ra = files["role_assessments/petronas_retrospective_probe_001.json"]
+    exp = ra["experiment"]
+    assert exp["mode"] == "retrospective_simulation"
+    assert exp["outcome_may_predate_generation"] is True
+    assert "evidence_of_genuine_ex_ante_prediction" in exp["unsuitable_for"]
+    assert "predictive_superiority_claim" in exp["unsuitable_for"]
+    assert exp["no_tools_proves"] == "external_retrieval_disabled_only"
+    for a in ra["assessments"]:
+        assert a["status"] == "provisional"
+        assert a["routing"].get("sole_verifier", a["routing"].get("sole_financial_verifier")) == "denied"
+    for law in ["snapshot_name != verified_cutoff", "no_tools != no_parametric_leakage"]:
+        assert law in ra["temporal_identity_law"]

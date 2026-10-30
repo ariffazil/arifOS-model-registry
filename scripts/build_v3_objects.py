@@ -974,6 +974,101 @@ def build_governance_card() -> None:
 
 
 # ---------------------------------------------------------------------------
+# 8b. ROLE ASSESSMENTS — probe-scoped, provisional (HERMES Temporal Reality Loop)
+# ---------------------------------------------------------------------------
+
+def build_role_assessment() -> None:
+    w("role_assessments/petronas_retrospective_probe_001.json", {
+        "object_type": "role_assessment",
+        "object_key": "petronas_retrospective_probe_001",
+        "created_at": BUILD_DATE, "updated_at": BUILD_DATE, "provenance": PROVENANCE,
+        "experiment": {
+            "probe_id": "petronas_retrospective_probe_001",
+            "mode": "retrospective_simulation",
+            "forecast_created_at": "2026-10-30",
+            "simulated_as_of": "2024-12-31",
+            "outcome_first_available_at": None,
+            "outcome_may_predate_generation": True,
+            "temporal_cleanliness": "unverified",
+            "parametric_lookahead_risk": "present",
+            "no_tools_proves": "external_retrieval_disabled_only",
+            "no_tools_does_not_prove": "post_boundary_parametric_knowledge_absent",
+            "suitable_for": ["reasoning audit", "abstention evaluation",
+                             "historical recall audit", "leakage investigation"],
+            "unsuitable_for": ["evidence_of_genuine_ex_ante_prediction",
+                               "predictive_superiority_claim"],
+        },
+        "temporal_identity_law": [
+            "simulated_past != actual_past_state",
+            "snapshot_name != verified_cutoff",
+            "no_tools != no_parametric_leakage",
+            "correct_outcome != correct_reasoning",
+            "forecast_hit != causal_proof",
+            "hash_now != forecast_existed_then",
+            "one_probe != model_identity",
+            "evaluation != authority",
+        ],
+        "assessments": [
+            {
+                "model_ref": "qwen-plus-2025-01-25", "status": "provisional",
+                "scope": "petronas_retrospective_probe_001",
+                "knowledge_cutoff_record": {
+                    "claimed_value": "2024-12", "source": "model_self_report",
+                    "official_confirmation": "UNKNOWN", "parametric_boundary_verified": False,
+                },
+                "observed": {
+                    "temporal_instruction_following": "pass",
+                    "abstention_behavior": "comparatively_strong",
+                    "historical_error_present": True,
+                    "numerical_grounding": "weak",
+                },
+                "not_established": ["uncontaminated_historical_replay",
+                                    "provider_verified_cutoff",
+                                    "predictive_superiority",
+                                    "stable_behavior_across_domains"],
+                "routing": {"candidate_generator": "allowed",
+                            "frozen_probe_candidate": "allowed",
+                            "sole_verifier": "denied",
+                            "consequential_forecast_authority": "denied"},
+            },
+            {
+                "model_ref": "gpt-oss-120b", "status": "provisional",
+                "scope": "petronas_retrospective_probe_001",
+                "observed": {"rapid_generation": "pass",
+                             "false_remembered_claims": "present",
+                             "attribution_errors": "present"},
+                "not_established": ["historical_witness_trust",
+                                    "stable_behavior_across_domains"],
+                "routing": {"candidate_generator": "allowed",
+                            "historical_witness": "denied_without_verification",
+                            "sole_financial_verifier": "denied"},
+            },
+        ],
+        "causal_discipline": {
+            "outcome_compatibility": "compatible_not_discriminated for all hypotheses",
+            "law": "Outcome compatibility != causal discrimination",
+        },
+        "forecast_scoring_discipline": {
+            "probability_representation": "binary events with event_definition, never forced categorical",
+            "append_only": "correction adds history, never rewrites: F0 locked -> supersede via F1",
+            "brier_scope": "single-event BS = (p-o)^2; calibration claims require cohort + stratification",
+            "cohort_separation": ["retrospective", "prospective"], 
+            "dependency_scoped_invalidation": True,
+        },
+        "citations": [
+            {"ref": "arxiv:2512.23847", "topic": "Detecting Lookahead Bias in LLM Forecasts / Lookahead Propensity",
+             "provenance": "user_supplied_2026-10-30", "independently_verified_this_session": False},
+            {"ref": "arxiv:2605.24564", "topic": "FinCAD — parametric look-ahead bias",
+             "provenance": "user_supplied_2026-10-30", "independently_verified_this_session": False},
+        ],
+        "authority_basis": "sovereign_judge_verdict_2026-10-30 (SEAL architecture, PARTIAL findings, HOLD superiority claims)",
+        "ratified": True,
+        "ratification_scope": "verdict-verbatim recording; model roles remain provisional per-probe",
+        "prospective_ledger_refs": ["chron:tlr-001", "chron:tlr-002", "chron:tlr-003", "chron:tlr-004"],
+    })
+
+
+# ---------------------------------------------------------------------------
 # 9. EVIDENCE BINDINGS — HF AAA..FFF ladder, revisions pinned 2026-10-30
 # ---------------------------------------------------------------------------
 
@@ -1167,6 +1262,7 @@ def main() -> int:
     build_receipts()
     build_decisions()
     build_governance_card()
+    build_role_assessment()
     build_evidence()
     build_wiring()
     update_catalog()
